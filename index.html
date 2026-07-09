@@ -252,13 +252,14 @@
     transition: box-shadow .2s ease, transform .2s ease;
   }
 
-  .empty{
+  .empty, .erro{
     text-align:center;
     padding:60px 20px;
     color:var(--ink-soft);
     font-family:'IBM Plex Mono', monospace;
     font-size:13px;
   }
+  .erro{ color:var(--seal); }
 
   footer{
     text-align:center;
@@ -314,66 +315,19 @@
 <main>
   <div class="grid" id="grid"></div>
   <div class="empty" id="vazio" style="display:none;">Nenhuma fonte encontrada com esses filtros.</div>
+  <div class="erro" id="erro" style="display:none;">
+    Não foi possível carregar <code>fontes.json</code>. Verifique se o arquivo está na mesma pasta que este HTML.
+  </div>
 </main>
 
-<footer>FICHÁRIO DIGITAL — DADOS CARREGADOS DE fontes.json (LOCAL)</footer>
+<footer>FICHÁRIO DIGITAL — DADOS CARREGADOS DE fontes.json</footer>
 
 <script>
-/* ------------------------------------------------------------------
-   FONTE DOS DADOS
-   Substitua o array abaixo pela leitura do seu banco de dados real
-   (ex.: fetch('fontes.json') ou uma chamada à sua API/planilha).
-   Cada objeto corresponde a uma linha da planilha "Fontes".
--------------------------------------------------------------------*/
-const FONTES = [
-  {
-    id: 1,
-    arquivo: "ABNP",
-    tipoCod: "C",
-    tipo: "Cartografia",
-    titulo: "Atlas Colonial Português",
-    descricao: "Mapa de Loanda e Conga.",
-    link: "#",
-    arquivoNome: "2015-04-29 13.17.18.jpg",
-    ano: "1917",
-    paginas: 1,
-    area: "Geografia da África Central",
-    palavrasChave: "mapa, Angola, Congo, cartografia colonial"
-  },
-  {
-    id: 2,
-    arquivo: "ABNP",
-    tipoCod: "B",
-    tipo: "Bibliografia/Jornal",
-    titulo: "Brancos e pretos na Bahia — D. Pierson",
-    descricao: "Referências de jornais baianos consultados pelo autor. Pg. 341.",
-    link: "#",
-    arquivoNome: "Referências consultados por D. Pierson em Jornais baianos 1935.jpg",
-    ano: "1935",
-    paginas: 1,
-    area: "História das Religiões/Candomblé na Bahia",
-    palavrasChave: "jornal, Bahia, candomblé, D. Pierson"
-  },
-  {
-    id: 3,
-    arquivo: "ABNP",
-    tipoCod: "I",
-    tipo: "Iconografia",
-    titulo: "Bilhete postal de Angola PI-17882P",
-    descricao: "Cambondo – debulha do milho.",
-    link: "#",
-    arquivoNome: "2015-04-29 12.48.14.jpg",
-    ano: "191?",
-    paginas: 2,
-    area: "Costumes da África Central",
-    palavrasChave: "cartão postal, Angola, agricultura, costumes"
-  }
-];
-
-/* ------------------------------------------------------------------ */
+let FONTES = [];
 
 const grid = document.getElementById('grid');
 const vazio = document.getElementById('vazio');
+const erroEl = document.getElementById('erro');
 const contagem = document.getElementById('contagem');
 const busca = document.getElementById('busca');
 const filtroArquivo = document.getElementById('filtroArquivo');
@@ -382,15 +336,13 @@ const filtroArea = document.getElementById('filtroArea');
 const ordenar = document.getElementById('ordenar');
 
 function popularSelect(select, valores){
+  select.querySelectorAll('option:not(:first-child)').forEach(o => o.remove());
   [...new Set(valores)].sort().forEach(v=>{
     const opt = document.createElement('option');
     opt.value = v; opt.textContent = v;
     select.appendChild(opt);
   });
 }
-popularSelect(filtroArquivo, FONTES.map(f=>f.arquivo));
-popularSelect(filtroTipo, FONTES.map(f=>f.tipo));
-popularSelect(filtroArea, FONTES.map(f=>f.area));
 
 function escapeHtml(str){
   return String(str).replace(/[&<>"']/g, s => ({
@@ -422,7 +374,9 @@ function renderizar(){
 
   grid.innerHTML = '';
   contagem.textContent = lista.length;
-  vazio.style.display = lista.length ? 'none' : 'block';
+  vazio.style.display = (lista.length || !FONTES.length) ? 'none' : 'block';
+  if (!FONTES.length) vazio.style.display = 'none';
+  vazio.style.display = (FONTES.length && !lista.length) ? 'block' : 'none';
 
   lista.forEach((f, idx)=>{
     const card = document.createElement('article');
@@ -451,7 +405,22 @@ function renderizar(){
   el.addEventListener('change', renderizar);
 });
 
-renderizar();
+async function carregarDados(){
+  try{
+    const resp = await fetch('fontes.json', { cache: 'no-store' });
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    FONTES = await resp.json();
+    popularSelect(filtroArquivo, FONTES.map(f=>f.arquivo));
+    popularSelect(filtroTipo, FONTES.map(f=>f.tipo));
+    popularSelect(filtroArea, FONTES.map(f=>f.area));
+    renderizar();
+  }catch(e){
+    console.error('Falha ao carregar fontes.json:', e);
+    erroEl.style.display = 'block';
+  }
+}
+
+carregarDados();
 </script>
 
 </body>
