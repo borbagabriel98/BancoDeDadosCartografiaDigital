@@ -59,6 +59,46 @@
   header::before{ top:22px; }
   header::after{ bottom:14px; }
 
+  .brand-mark{
+    position:absolute;
+    top:18px;
+    right:24px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .brand-mark .logo-slot{
+    width:44px;
+    height:44px;
+    border:1px solid var(--line);
+    border-radius:2px;
+    background:var(--card);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    flex-shrink:0;
+  }
+  .brand-mark .logo-slot img{
+    max-width:100%;
+    max-height:100%;
+    object-fit:contain;
+    display:block;
+  }
+  .brand-mark .brand-label{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:10.5px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    text-align:left;
+    line-height:1.35;
+    max-width:130px;
+  }
+  @media (max-width:640px){
+    .brand-mark{ position:static; justify-content:center; margin-bottom:14px; }
+  }
+
   .eyebrow{
     font-family:'IBM Plex Mono', monospace;
     font-size:11px;
@@ -252,6 +292,58 @@
     transition: box-shadow .2s ease, transform .2s ease;
   }
 
+  .legenda{
+    max-width:1100px;
+    margin:0 auto;
+    padding:16px 24px 0;
+  }
+  .legenda details{
+    border:1px solid var(--line);
+    background:var(--paper-dark);
+    padding:12px 16px;
+  }
+  .legenda summary{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--brass-dark);
+    cursor:pointer;
+  }
+  .legenda-corpo{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap:18px;
+    margin-top:12px;
+  }
+  .legenda-grupo h4{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:10px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin:0 0 8px;
+  }
+  .legenda-item{
+    display:flex;
+    align-items:baseline;
+    gap:8px;
+    font-size:12.5px;
+    color:var(--ink);
+    padding:3px 0;
+  }
+  .legenda-item .swatch{
+    width:10px; height:10px;
+    border-radius:2px;
+    flex-shrink:0;
+    background:var(--brass);
+  }
+  .legenda-item .sigla{
+    font-family:'IBM Plex Mono', monospace;
+    font-weight:700;
+    min-width:44px;
+  }
+
   .empty, .erro{
     text-align:center;
     padding:60px 20px;
@@ -279,6 +371,12 @@
 <body>
 
 <header>
+  <div class="brand-mark">
+    <span class="logo-slot">
+      <img src="https://i.ibb.co/BHCR3jZ5/Whats-App-Image-2026-07-09-at-17-18-58-1.jpg" alt="Logo do projeto" onerror="this.parentElement.style.display='none'">
+    </span>
+    <span class="brand-label">Cartografia<br>Digital</span>
+  </div>
   <div class="eyebrow">Projeto de Pesquisa · Fontes Históricas</div>
   <h1>CARTOGRAFIA DIGITAL NO MUNDO ATLÂNTICO</h1>
   <p>Fichário de Fontes</p>
@@ -302,6 +400,14 @@
     <select id="filtroArea"><option value="">Todas</option></select>
   </div>
   <div class="field">
+    <label for="filtroCidade">Cidade</label>
+    <select id="filtroCidade"><option value="">Todas</option></select>
+  </div>
+  <div class="field">
+    <label for="filtroPais">País</label>
+    <select id="filtroPais"><option value="">Todos</option></select>
+  </div>
+  <div class="field">
     <label for="ordenar">Ordenar por</label>
     <select id="ordenar">
       <option value="id">Nº de catálogo</option>
@@ -310,6 +416,13 @@
     </select>
   </div>
   <div class="count-tag"><b id="contagem">0</b> registro(s)</div>
+</div>
+
+<div class="legenda">
+  <details>
+    <summary>Legenda de siglas (arquivos e tipos de fonte)</summary>
+    <div class="legenda-corpo" id="legendaCorpo"></div>
+  </details>
 </div>
 
 <main>
@@ -325,6 +438,24 @@
 <script>
 let FONTES = [];
 
+// Legenda das siglas de TIPO (edite os nomes por extenso conforme necessário)
+const TIPO_LEGENDA = {
+  C: 'Cartografia',
+  B: 'Bibliografia / Jornal',
+  I: 'Iconografia',
+  F: 'Fotografia',
+  D: 'Documento oficial',
+  M: 'Manuscrito',
+  A: 'Áudio'
+};
+
+// Legenda das siglas de ARQUIVO — adicione aqui o nome por extenso de cada sigla
+// usada na coluna "arquivo" do fontes.json, ex: "ABNP": "Arquivo da Biblioteca
+// Nacional de Portugal". Siglas sem entrada aqui aparecem sem nome por extenso.
+const ARQUIVO_LEGENDA = {
+  // "ABNP": "Arquivo da Biblioteca Nacional de Portugal",
+};
+
 const grid = document.getElementById('grid');
 const vazio = document.getElementById('vazio');
 const erroEl = document.getElementById('erro');
@@ -333,7 +464,10 @@ const busca = document.getElementById('busca');
 const filtroArquivo = document.getElementById('filtroArquivo');
 const filtroTipo = document.getElementById('filtroTipo');
 const filtroArea = document.getElementById('filtroArea');
+const filtroCidade = document.getElementById('filtroCidade');
+const filtroPais = document.getElementById('filtroPais');
 const ordenar = document.getElementById('ordenar');
+const legendaCorpo = document.getElementById('legendaCorpo');
 
 function popularSelect(select, valores){
   select.querySelectorAll('option:not(:first-child)').forEach(o => o.remove());
@@ -355,6 +489,8 @@ function renderizar(){
   const arq = filtroArquivo.value;
   const tipo = filtroTipo.value;
   const area = filtroArea.value;
+  const cidade = filtroCidade.value;
+  const pais = filtroPais.value;
 
   let lista = FONTES.filter(f=>{
     const texto = `${f.titulo} ${f.descricao} ${f.palavrasChave}`.toLowerCase();
@@ -362,6 +498,8 @@ function renderizar(){
     if (arq && f.arquivo !== arq) return false;
     if (tipo && f.tipo !== tipo) return false;
     if (area && f.area !== area) return false;
+    if (cidade && f.cidade !== cidade) return false;
+    if (pais && f.pais !== pais) return false;
     return true;
   });
 
@@ -393,6 +531,9 @@ function renderizar(){
       <div class="meta-row">
         <span><em>Ano</em>${escapeHtml(f.ano)}</span>
         <span><em>Págs.</em>${escapeHtml(f.paginas)}</span>
+        ${f.cidade ? `<span><em>Cidade</em>${escapeHtml(f.cidade)}</span>` : ''}
+        ${f.pais ? `<span><em>País</em>${escapeHtml(f.pais)}</span>` : ''}
+        ${f.codigoDocumento ? `<span><em>Cód. no arquivo</em>${escapeHtml(f.codigoDocumento)}</span>` : ''}
       </div>
       <a class="link-arquivo" href="${escapeHtml(f.link)}" target="_blank" rel="noopener">Abrir arquivo digitalizado →</a>
     `;
@@ -400,7 +541,7 @@ function renderizar(){
   });
 }
 
-[busca, filtroArquivo, filtroTipo, filtroArea, ordenar].forEach(el=>{
+[busca, filtroArquivo, filtroTipo, filtroArea, filtroCidade, filtroPais, ordenar].forEach(el=>{
   el.addEventListener('input', renderizar);
   el.addEventListener('change', renderizar);
 });
@@ -413,11 +554,44 @@ async function carregarDados(){
     popularSelect(filtroArquivo, FONTES.map(f=>f.arquivo));
     popularSelect(filtroTipo, FONTES.map(f=>f.tipo));
     popularSelect(filtroArea, FONTES.map(f=>f.area));
+    popularSelect(filtroCidade, FONTES.map(f=>f.cidade).filter(Boolean));
+    popularSelect(filtroPais, FONTES.map(f=>f.pais).filter(Boolean));
+    renderizarLegenda();
     renderizar();
   }catch(e){
     console.error('Falha ao carregar fontes.json:', e);
     erroEl.style.display = 'block';
   }
+}
+
+function renderizarLegenda(){
+  const tiposUsados = [...new Set(FONTES.map(f=>f.tipoCod).filter(Boolean))].sort();
+  const arquivosUsados = [...new Set(FONTES.map(f=>f.arquivo).filter(Boolean))].sort();
+
+  const blocoTipos = `
+    <div class="legenda-grupo">
+      <h4>Tipos de fonte</h4>
+      ${tiposUsados.map(cod => `
+        <div class="legenda-item">
+          <span class="swatch" style="background:var(--c-${cod}, var(--brass))"></span>
+          <span class="sigla">${escapeHtml(cod)}</span>
+          <span>${escapeHtml(TIPO_LEGENDA[cod] || '(adicionar legenda)')}</span>
+        </div>
+      `).join('')}
+    </div>`;
+
+  const blocoArquivos = `
+    <div class="legenda-grupo">
+      <h4>Arquivos</h4>
+      ${arquivosUsados.map(sigla => `
+        <div class="legenda-item">
+          <span class="sigla">${escapeHtml(sigla)}</span>
+          <span>${escapeHtml(ARQUIVO_LEGENDA[sigla] || '(adicionar legenda)')}</span>
+        </div>
+      `).join('')}
+    </div>`;
+
+  legendaCorpo.innerHTML = blocoTipos + blocoArquivos;
 }
 
 carregarDados();

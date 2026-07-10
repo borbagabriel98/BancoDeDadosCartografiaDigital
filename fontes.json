@@ -11,6 +11,9 @@
     "ano": "1917",
     "paginas": 1,
     "area": "Geografia da África Central",
+    "cidade": "",
+    "pais": "",
+    "codigoDocumento": "",
     "palavrasChave": "mapa, Angola, Congo, cartografia colonial"
   },
   {
@@ -25,6 +28,9 @@
     "ano": "1935",
     "paginas": 1,
     "area": "História das Religiões/Candomblé na Bahia",
+    "cidade": "",
+    "pais": "",
+    "codigoDocumento": "",
     "palavrasChave": "jornal, Bahia, candomblé, D. Pierson"
   },
   {
@@ -39,6 +45,9 @@
     "ano": "191?",
     "paginas": 2,
     "area": "Costumes da África Central",
+    "cidade": "",
+    "pais": "",
+    "codigoDocumento": "PI-17882P",
     "palavrasChave": "cartão postal, Angola, agricultura, costumes"
   }
 ]
