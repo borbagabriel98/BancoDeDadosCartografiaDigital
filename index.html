@@ -20,12 +20,14 @@
     --shadow: rgba(38,49,61,0.18);
 
     --c-C: #4C6B8A;  /* Cartografia - azul mapa */
-    --c-B: #8C4A3B;  /* Bibliografia/Jornal - vermelho tinta */
+    --c-B: #8C4A3B;  /* Bibliografia - vermelho tinta */
     --c-I: #A97A3D;  /* Iconografia - sépia */
     --c-F: #5B7A54;  /* Fotografia - verde musgo */
     --c-D: #6B5B95;  /* Documento oficial - roxo selo */
     --c-M: #4B5563;  /* Manuscrito - grafite */
-    --c-A: #B08D57;  /* Áudio - dourado */
+    --c-A: #B08D57;  /* Áudio/Depoimento oral - dourado */
+    --c-IMP: #B5652D;  /* Impresso/Jornal-Boletim - laranja queimado */
+    --c-PPC: #6E3B3B;  /* Processo Político e Civil - vinho */
   }
 
   *{box-sizing:border-box;}
@@ -443,19 +445,25 @@ let FONTES = [];
 // Legenda das siglas de TIPO (edite os nomes por extenso conforme necessário)
 const TIPO_LEGENDA = {
   C: 'Cartografia',
-  B: 'Bibliografia / Jornal',
+  B: 'Bibliografia/Jornal',
   I: 'Iconografia',
   F: 'Fotografia',
   D: 'Documento oficial',
   M: 'Manuscrito',
-  A: 'Áudio'
+  A: 'Áudio/Depoimento oral',
+  IMP: 'Impresso/Jornal-Boletim',
+  PPC: 'Processo Político e Civil'
 };
 
 // Legenda das siglas de ARQUIVO — adicione aqui o nome por extenso de cada sigla
 // usada na coluna "arquivo" do fontes.json, ex: "ABNP": "Arquivo da Biblioteca
 // Nacional de Portugal". Siglas sem entrada aqui aparecem sem nome por extenso.
 const ARQUIVO_LEGENDA = {
-  // "ABNP": "Arquivo da Biblioteca Nacional de Portugal",
+  "ADBMNE": "Arquivo Diplomático e Biblioteca do Ministério dos Negócios Estrangeiros",
+  "AHU": "Arquivo Histórico Ultramarino",
+  "ANTT": "Arquivo Nacional Torre do Tombo",
+  "BFCHS": "Biblioteca da Faculdade de Ciências Humanas e Sociais da Universidade Nova de Lisboa",
+  "BNP": "Biblioteca Nacional de Portugal",
 };
 
 const grid = document.getElementById('grid');
