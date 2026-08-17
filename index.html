@@ -48,7 +48,7 @@
 
   /* ---------- Header ---------- */
   header{
-    padding: 56px 24px 32px;
+    padding: 56px 24px 40px;
     text-align:center;
     border-bottom: 1px solid var(--line);
     position:relative;
@@ -70,10 +70,11 @@
     display:flex;
     align-items:center;
     gap:12px;
+    max-width: 22vw;
   }
   .brand-mark .logo-slot{
-    width:230px;
-    height:230px;
+    width:clamp(56px, 10vw, 230px);
+    height:clamp(56px, 10vw, 230px);
     border:1px solid var(--line);
     border-radius:2px;
     background:var(--card);
@@ -101,9 +102,15 @@
   }
   @media (min-width:641px){
     header{ padding-bottom: 90px; }
+    header{ padding-left: clamp(90px, 14vw, 260px); padding-right: clamp(90px, 14vw, 260px); }
+  }
+  @media (max-width:900px){
+    .brand-mark .logo-slot{ width:clamp(48px, 9vw, 90px); height:clamp(48px, 9vw, 90px); }
   }
   @media (max-width:640px){
-    .brand-mark{ position:static; justify-content:center; margin-bottom:14px; }
+    header{ padding-left:24px; padding-right:24px; }
+    .brand-mark{ position:static; justify-content:center; margin-bottom:14px; max-width:none; }
+    .brand-mark .logo-slot{ width:80px; height:80px; }
   }
 
   .eyebrow{
@@ -131,15 +138,17 @@
 
   /* ---------- Toolbar (gaveta de filtros) ---------- */
   .drawer{
-    max-width:1100px;
-    margin: -1px auto 0;
-    padding: 18px 24px;
+    width:100%;
+    max-width:none;
+    margin: 0;
+    padding: 22px clamp(24px, 6vw, 80px);
     background:var(--paper-dark);
     border-bottom:1px solid var(--line);
     display:flex;
     flex-wrap:wrap;
-    gap:14px;
+    gap:18px 22px;
     align-items:flex-end;
+    justify-content:center;
     position:sticky;
     top:0;
     z-index:10;
@@ -174,11 +183,13 @@
   #busca{ min-width:220px; flex:1; }
 
   .count-tag{
-    margin-left:auto;
+    width:100%;
+    text-align:center;
+    margin-top:2px;
     font-family:'IBM Plex Mono', monospace;
     font-size:11px;
     color:var(--ink-soft);
-    padding-bottom:9px;
+    padding-bottom:2px;
     white-space:nowrap;
   }
   .count-tag b{ color:var(--ink); }
