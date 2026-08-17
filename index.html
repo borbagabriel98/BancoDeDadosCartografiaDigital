@@ -145,20 +145,38 @@
     background:var(--paper-dark);
     border-bottom:1px solid var(--line);
     display:flex;
-    flex-wrap:wrap;
-    gap:18px 22px;
-    align-items:flex-end;
-    justify-content:center;
+    flex-direction:column;
+    gap:14px;
+    align-items:center;
     position:sticky;
     top:0;
     z-index:10;
     backdrop-filter: blur(2px);
   }
+  .drawer-row{
+    width:100%;
+    display:flex;
+    flex-wrap:nowrap;
+    gap:16px;
+    align-items:flex-end;
+    justify-content:center;
+    overflow-x:auto;
+    padding-bottom:2px;
+  }
+  .drawer-row-secondary{
+    flex-wrap:wrap;
+    row-gap:8px;
+    justify-content:center;
+  }
+  .drawer-row-secondary .field{ flex:0 1 260px; }
   .field{
     display:flex;
     flex-direction:column;
     gap:5px;
+    flex:1 1 130px;
+    min-width:0;
   }
+  .drawer-row .field{ flex-shrink:1; }
   .field label{
     font-family:'IBM Plex Mono', monospace;
     font-size:10px;
@@ -174,22 +192,20 @@
     background:var(--card);
     color:var(--ink);
     border-radius:2px;
-    min-width:150px;
+    min-width:120px;
+    width:100%;
   }
   .field input:focus, .field select:focus{
     outline:2px solid var(--brass);
     outline-offset:1px;
   }
-  #busca{ min-width:220px; flex:1; }
+  #busca{ min-width:180px; flex:1.4; }
 
   .count-tag{
-    width:100%;
-    text-align:center;
-    margin-top:2px;
     font-family:'IBM Plex Mono', monospace;
     font-size:11px;
     color:var(--ink-soft);
-    padding-bottom:2px;
+    padding-bottom:9px;
     white-space:nowrap;
   }
   .count-tag b{ color:var(--ink); }
@@ -304,6 +320,18 @@
   }
   .link-arquivo:hover{ opacity:.65; }
 
+  .link-indisponivel{
+    margin-top:6px;
+    align-self:flex-start;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    opacity:.7;
+    font-style:italic;
+    border-bottom:1px dashed var(--line);
+    padding-bottom:1px;
+  }
+
   .card:hover{
     box-shadow: 0 2px 0 var(--line), 6px 10px 20px var(--shadow);
     transform: translateY(-2px);
@@ -400,39 +428,43 @@
 </header>
 
 <div class="drawer">
-  <div class="field">
-    <label for="busca">Buscar</label>
-    <input type="text" id="busca" placeholder="título, descrição, palavra-chave…">
+  <div class="drawer-row">
+    <div class="field">
+      <label for="busca">Buscar</label>
+      <input type="text" id="busca" placeholder="título, descrição, palavra-chave…">
+    </div>
+    <div class="field">
+      <label for="filtroArquivo">Arquivo</label>
+      <select id="filtroArquivo"><option value="">Todos</option></select>
+    </div>
+    <div class="field">
+      <label for="filtroTipo">Tipo de fonte</label>
+      <select id="filtroTipo"><option value="">Todos</option></select>
+    </div>
+    <div class="field">
+      <label for="filtroCidade">Cidade</label>
+      <select id="filtroCidade"><option value="">Todas</option></select>
+    </div>
+    <div class="field">
+      <label for="filtroPais">País</label>
+      <select id="filtroPais"><option value="">Todos</option></select>
+    </div>
+    <div class="field">
+      <label for="ordenar">Ordenar por</label>
+      <select id="ordenar">
+        <option value="id">Nº de catálogo</option>
+        <option value="ano">Ano</option>
+        <option value="titulo">Título (A–Z)</option>
+      </select>
+    </div>
   </div>
-  <div class="field">
-    <label for="filtroArquivo">Arquivo</label>
-    <select id="filtroArquivo"><option value="">Todos</option></select>
+  <div class="drawer-row drawer-row-secondary">
+    <div class="field">
+      <label for="filtroArea">Área/Temática</label>
+      <select id="filtroArea"><option value="">Todas</option></select>
+    </div>
+    <div class="count-tag"><b id="contagem">0</b> registro(s)</div>
   </div>
-  <div class="field">
-    <label for="filtroTipo">Tipo de fonte</label>
-    <select id="filtroTipo"><option value="">Todos</option></select>
-  </div>
-  <div class="field">
-    <label for="filtroArea">Área/Temática</label>
-    <select id="filtroArea"><option value="">Todas</option></select>
-  </div>
-  <div class="field">
-    <label for="filtroCidade">Cidade</label>
-    <select id="filtroCidade"><option value="">Todas</option></select>
-  </div>
-  <div class="field">
-    <label for="filtroPais">País</label>
-    <select id="filtroPais"><option value="">Todos</option></select>
-  </div>
-  <div class="field">
-    <label for="ordenar">Ordenar por</label>
-    <select id="ordenar">
-      <option value="id">Nº de catálogo</option>
-      <option value="ano">Ano</option>
-      <option value="titulo">Título (A–Z)</option>
-    </select>
-  </div>
-  <div class="count-tag"><b id="contagem">0</b> registro(s)</div>
 </div>
 
 <div class="legenda">
@@ -560,7 +592,9 @@ function renderizar(){
         ${f.pais ? `<span><em>País</em>${escapeHtml(f.pais)}</span>` : ''}
         ${f.codigoDocumento ? `<span><em>Cód. no arquivo</em>${escapeHtml(f.codigoDocumento)}</span>` : ''}
       </div>
-      <a class="link-arquivo" href="${escapeHtml(f.link)}" target="_blank" rel="noopener">Abrir arquivo digitalizado →</a>
+      ${(f.linkDisponivel !== false && f.link)
+        ? `<a class="link-arquivo" href="${escapeHtml(f.link)}" target="_blank" rel="noopener">Abrir arquivo digitalizado →</a>`
+        : `<span class="link-indisponivel">Link não disponibilizado</span>`}
     `;
     grid.appendChild(card);
   });
