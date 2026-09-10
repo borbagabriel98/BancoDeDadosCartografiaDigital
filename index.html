@@ -46,7 +46,7 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  /* ---------- Header ---------- */
+  /* ---------- Header/Cabeçalho ---------- */
   header{
     padding: 56px 24px 40px;
     text-align:center;
@@ -322,7 +322,7 @@
     line-height:1.6;
   }
 
-  /* ---------- Toolbar (gaveta de filtros) ---------- */
+  /* ---------- Filtros ---------- */
   .drawer{
     width:100%;
     max-width:none;
@@ -901,7 +901,6 @@
 <script>
 let FONTES = [];
 
-// Legenda das siglas de TIPO (edite os nomes por extenso conforme necessário)
 const TIPO_LEGENDA = {
   C: 'Cartografia',
   B: 'Bibliografia',
@@ -916,9 +915,6 @@ const TIPO_LEGENDA = {
   RELAT: 'Relatório'
 };
 
-// Legenda das siglas de ARQUIVO — adicione aqui o nome por extenso de cada sigla
-// usada na coluna "arquivo" do fontes.json, ex: "ABNP": "Arquivo da Biblioteca
-// Nacional de Portugal". Siglas sem entrada aqui aparecem sem nome por extenso.
 const ARQUIVO_LEGENDA = {
   "ADBMNE": "Arquivo Diplomático e Biblioteca do Ministério dos Negócios Estrangeiros",
   "AHU": "Arquivo Histórico Ultramarino",
@@ -1069,7 +1065,7 @@ function renderizarLegenda(){
 
 carregarDados();
 
-/* ---------- Navegação entre páginas ---------- */
+/* ---------- Navegação de páginas ---------- */
 const navBtns = document.querySelectorAll('.site-nav button');
 const pages = document.querySelectorAll('.page');
 
