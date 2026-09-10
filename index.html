@@ -116,12 +116,24 @@
   /* ---------- Navegação entre páginas ---------- */
   .site-nav{
     display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:6px;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
     padding:14px clamp(16px, 5vw, 60px);
     background:var(--paper-dark);
     border-bottom:1px solid var(--line);
+  }
+  .site-nav-row{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:6px;
+  }
+  .site-nav-row--fichario{
+    margin-top:2px;
+    padding-top:10px;
+    border-top:1px dashed var(--line);
+    width:100%;
   }
   .site-nav button{
     font-family:'IBM Plex Mono', monospace;
@@ -614,15 +626,19 @@
 </header>
 
 <nav class="site-nav" id="siteNav">
-  <button data-page="home" class="active">Fichário</button>
-  <button data-page="quem-somos">Quem Somos</button>
-  <button data-page="onde-chegar">Onde Queremos Chegar</button>
-  <button data-page="recorte-temporal">Recorte Temporal</button>
-  <button data-page="sobre-cdfhma">Sobre a Cartografia Digital</button>
-  <button data-page="direitos-autorais">Direitos Autorais</button>
-  <button data-page="curadoria-digital">Curadoria Digital</button>
-  <button data-page="parceiros">Parceiros e Sites Institucionais</button>
-  <button data-page="referencias">Referências</button>
+  <div class="site-nav-row">
+    <button data-page="quem-somos">Quem Somos</button>
+    <button data-page="onde-chegar">Onde Queremos Chegar</button>
+    <button data-page="recorte-temporal">Recorte Temporal</button>
+    <button data-page="sobre-cdfhma">Sobre a Cartografia Digital</button>
+    <button data-page="direitos-autorais">Direitos Autorais</button>
+    <button data-page="curadoria-digital">Curadoria Digital</button>
+    <button data-page="parceiros">Parceiros e Sites Institucionais</button>
+    <button data-page="referencias">Referências</button>
+  </div>
+  <div class="site-nav-row site-nav-row--fichario">
+    <button data-page="home" class="active">Fichário</button>
+  </div>
 </nav>
 
 <div class="page active" id="page-home">
@@ -662,6 +678,25 @@
     <div class="field">
       <label for="filtroArea">Área/Temática</label>
       <select id="filtroArea"><option value="">Todas</option></select>
+    </div>
+    <div class="field">
+      <label for="filtroTipoData">Tipo de data</label>
+      <select id="filtroTipoData">
+        <option value="">Todos</option>
+        <option value="data">Data exata (dia/mês/ano)</option>
+        <option value="ano">Somente ano</option>
+        <option value="seculo">Século</option>
+        <option value="aproximado">Aproximado (c.a.)</option>
+        <option value="semData">Sem data</option>
+      </select>
+    </div>
+    <div class="field" style="flex:0 1 110px;">
+      <label for="anoDe">Ano de</label>
+      <input type="number" id="anoDe" placeholder="ex. 1900">
+    </div>
+    <div class="field" style="flex:0 1 110px;">
+      <label for="anoAte">Ano até</label>
+      <input type="number" id="anoAte" placeholder="ex. 1950">
     </div>
     <div class="count-tag"><b id="contagem">0</b> registro(s)</div>
   </div>
@@ -933,6 +968,9 @@ const filtroTipo = document.getElementById('filtroTipo');
 const filtroArea = document.getElementById('filtroArea');
 const filtroCidade = document.getElementById('filtroCidade');
 const filtroPais = document.getElementById('filtroPais');
+const filtroTipoData = document.getElementById('filtroTipoData');
+const anoDe = document.getElementById('anoDe');
+const anoAte = document.getElementById('anoAte');
 const ordenar = document.getElementById('ordenar');
 const legendaCorpo = document.getElementById('legendaCorpo');
 
@@ -958,6 +996,9 @@ function renderizar(){
   const area = filtroArea.value;
   const cidade = filtroCidade.value;
   const pais = filtroPais.value;
+  const tipoData = filtroTipoData.value;
+  const deVal = anoDe.value.trim() ? parseInt(anoDe.value, 10) : null;
+  const ateVal = anoAte.value.trim() ? parseInt(anoAte.value, 10) : null;
 
   let lista = FONTES.filter(f=>{
     const texto = `${f.titulo} ${f.descricao} ${f.palavrasChave}`.toLowerCase();
@@ -967,12 +1008,22 @@ function renderizar(){
     if (area && f.area !== area) return false;
     if (cidade && f.cidade !== cidade) return false;
     if (pais && f.pais !== pais) return false;
+    if (tipoData && f.anoTipo !== tipoData) return false;
+    if (deVal !== null || ateVal !== null){
+      if (f.anoInicio === null || f.anoFim === null) return false;
+      if (deVal !== null && f.anoFim < deVal) return false;
+      if (ateVal !== null && f.anoInicio > ateVal) return false;
+    }
     return true;
   });
 
   const criterio = ordenar.value;
   lista.sort((a,b)=>{
-    if (criterio === 'ano') return String(a.ano).localeCompare(String(b.ano));
+    if (criterio === 'ano'){
+      const ai = a.anoInicio === null ? Infinity : a.anoInicio;
+      const bi = b.anoInicio === null ? Infinity : b.anoInicio;
+      return ai - bi;
+    }
     if (criterio === 'titulo') return a.titulo.localeCompare(b.titulo, 'pt-BR');
     return a.id - b.id;
   });
@@ -1010,7 +1061,7 @@ function renderizar(){
   });
 }
 
-[busca, filtroArquivo, filtroTipo, filtroArea, filtroCidade, filtroPais, ordenar].forEach(el=>{
+[busca, filtroArquivo, filtroTipo, filtroArea, filtroCidade, filtroPais, filtroTipoData, anoDe, anoAte, ordenar].forEach(el=>{
   el.addEventListener('input', renderizar);
   el.addEventListener('change', renderizar);
 });

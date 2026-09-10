@@ -15,7 +15,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "PT/AHD/2/BR/S001-007/DS00071",
-    "palavrasChave": "Jaime Batalha Reis, bibliografia, história da África, anotações"
+    "palavrasChave": "Jaime Batalha Reis, bibliografia, história da África, anotações",
+    "anoInicio": null,
+    "anoFim": null,
+    "anoTipo": "semData"
   },
   {
     "id": 2,
@@ -33,7 +36,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "PT/AHD/2/BR/S001-003/DS00004",
-    "palavrasChave": "Jaime Batalha Reis, povos bantos, África Central, etnografia"
+    "palavrasChave": "Jaime Batalha Reis, povos bantos, África Central, etnografia",
+    "anoInicio": null,
+    "anoFim": null,
+    "anoTipo": "semData"
   },
   {
     "id": 3,
@@ -51,7 +57,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "PT/AHD/2/BR/S001-007/DS00073",
-    "palavrasChave": "Comércio Português, tortura, escravidão, Angola, Capello e Ivens, Afrikan Lakes Company"
+    "palavrasChave": "Comércio Português, tortura, escravidão, Angola, Capello e Ivens, Afrikan Lakes Company",
+    "anoInicio": 1888,
+    "anoFim": 1888,
+    "anoTipo": "ano"
   },
   {
     "id": 4,
@@ -69,7 +78,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "PT/AHD/1/MU-GM/GNP01-RNP/S0237/UI10247",
-    "palavrasChave": "Jorge Amado, Agostinho da Silva, Angola, Brasil, política externa, 1963"
+    "palavrasChave": "Jorge Amado, Agostinho da Silva, Angola, Brasil, política externa, 1963",
+    "anoInicio": 1963,
+    "anoFim": 1963,
+    "anoTipo": "ano"
   },
   {
     "id": 5,
@@ -87,7 +99,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "PT/AHD/1/MU-GM/GNP01-RNP/S0328/UI03135",
-    "palavrasChave": "Oscar Ribas, Uso e Costumes de Angola, Universidade da Bahia, antropologia"
+    "palavrasChave": "Oscar Ribas, Uso e Costumes de Angola, Universidade da Bahia, antropologia",
+    "anoInicio": 1965,
+    "anoFim": 1965,
+    "anoTipo": "ano"
   },
   {
     "id": 6,
@@ -105,7 +120,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "PT/AHD/1/MU-GM/GNP01-RNP/S0237/UI10259",
-    "palavrasChave": "Cruzada Social e Cultural do Preto Brasileiro, Agostinho Neto, Angola, Padre Pinto de Andrade, Exército Nacional Congolês"
+    "palavrasChave": "Cruzada Social e Cultural do Preto Brasileiro, Agostinho Neto, Angola, Padre Pinto de Andrade, Exército Nacional Congolês",
+    "anoInicio": 1964,
+    "anoFim": 1964,
+    "anoTipo": "ano"
   },
   {
     "id": 7,
@@ -123,7 +141,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "PT/AHD/1/MU-GM/GNP01-RNP/S0237/UI10239",
-    "palavrasChave": "Comunidade Afro Luso-Brasileira, golpe militar 1964, Angola, Moçambique, Brasil"
+    "palavrasChave": "Comunidade Afro Luso-Brasileira, golpe militar 1964, Angola, Moçambique, Brasil",
+    "anoInicio": 1964,
+    "anoFim": 1964,
+    "anoTipo": "ano"
   },
   {
     "id": 8,
@@ -141,7 +162,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "PT/AHD/1/MU-GM/GNP01-RNP/S0237/UI10243",
-    "palavrasChave": "CEAO, Universidade Federal da Bahia, Waldir de Oliveira, Agostinho da Silva, Congresso Internacional de Africanistas, Maria Archer"
+    "palavrasChave": "CEAO, Universidade Federal da Bahia, Waldir de Oliveira, Agostinho da Silva, Congresso Internacional de Africanistas, Maria Archer",
+    "anoInicio": 1961,
+    "anoFim": 1971,
+    "anoTipo": "ano"
   },
   {
     "id": 9,
@@ -159,7 +183,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "SL78",
-    "palavrasChave": "História, Etnologia, África Centro-Ocidental, Séc. XIX"
+    "palavrasChave": "História, Etnologia, África Centro-Ocidental, Séc. XIX",
+    "anoInicio": 2013,
+    "anoFim": 2013,
+    "anoTipo": "ano"
   },
   {
     "id": 10,
@@ -177,7 +204,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "SL1091",
-    "palavrasChave": "José Redinha, etnografia, grupos étnicos, Angola, cartografia étnica"
+    "palavrasChave": "José Redinha, etnografia, grupos étnicos, Angola, cartografia étnica",
+    "anoInicio": 1965,
+    "anoFim": 1965,
+    "anoTipo": "ano"
   },
   {
     "id": 11,
@@ -195,7 +225,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "SL406",
-    "palavrasChave": "Frederico Delgado Rosa, Filipe Verde, exploradores, reis africanos, século XIX"
+    "palavrasChave": "Frederico Delgado Rosa, Filipe Verde, exploradores, reis africanos, século XIX",
+    "anoInicio": 2013,
+    "anoFim": 2013,
+    "anoTipo": "ano"
   },
   {
     "id": 12,
@@ -213,7 +246,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "SL 3646",
-    "palavrasChave": "Domingos José Franque, Tratado de Simulambuco, Cabinda, N’Goio"
+    "palavrasChave": "Domingos José Franque, Tratado de Simulambuco, Cabinda, N’Goio",
+    "anoInicio": 1940,
+    "anoFim": 1940,
+    "anoTipo": "ano"
   },
   {
     "id": 13,
@@ -231,7 +267,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "20/E",
-    "palavrasChave": "A. Lopes Mendes, Congresso Internacional de Orientalistas, Índia Portuguesa, Brasil"
+    "palavrasChave": "A. Lopes Mendes, Congresso Internacional de Orientalistas, Índia Portuguesa, Brasil",
+    "anoInicio": 1892,
+    "anoFim": 1892,
+    "anoTipo": "ano"
   },
   {
     "id": 14,
@@ -249,7 +288,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "33/D",
-    "palavrasChave": "F.A. Pinto, etnografia, Angola, Congo, cartografia 1885"
+    "palavrasChave": "F.A. Pinto, etnografia, Angola, Congo, cartografia 1885",
+    "anoInicio": 1888,
+    "anoFim": 1888,
+    "anoTipo": "ano"
   },
   {
     "id": 15,
@@ -267,7 +309,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "4.15.8/2011/AFR",
-    "palavrasChave": "Isabel Castro Henriques, Torre de Belém, UNESCO, Rota do Escravo, africanos em Portugal"
+    "palavrasChave": "Isabel Castro Henriques, Torre de Belém, UNESCO, Rota do Escravo, africanos em Portugal",
+    "anoInicio": 2011,
+    "anoFim": 2011,
+    "anoTipo": "ano"
   },
   {
     "id": 16,
@@ -285,7 +330,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "SL525",
-    "palavrasChave": "David Birmingham, Arlindo Barbeitos, reino do Kongo, canibalismo, migrações"
+    "palavrasChave": "David Birmingham, Arlindo Barbeitos, reino do Kongo, canibalismo, migrações",
+    "anoInicio": 2003,
+    "anoFim": 2003,
+    "anoTipo": "ano"
   },
   {
     "id": 17,
@@ -303,7 +351,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "SL 2071",
-    "palavrasChave": "James Duffy, Ronald Segal, colonialismo português, Angola, Congo"
+    "palavrasChave": "James Duffy, Ronald Segal, colonialismo português, Angola, Congo",
+    "anoInicio": 1962,
+    "anoFim": 1962,
+    "anoTipo": "ano"
   },
   {
     "id": 18,
@@ -321,7 +372,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "SL270",
-    "palavrasChave": "Nacionalismo, História da África Ocidental, História da África Oriental, Relações Internacionais"
+    "palavrasChave": "Nacionalismo, História da África Ocidental, História da África Oriental, Relações Internacionais",
+    "anoInicio": 1956,
+    "anoFim": 1956,
+    "anoTipo": "ano"
   },
   {
     "id": 19,
@@ -339,7 +393,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "SL2069",
-    "palavrasChave": "Isabel Castro Henriques, iconografia, território colonial, Angola, cartografia"
+    "palavrasChave": "Isabel Castro Henriques, iconografia, território colonial, Angola, cartografia",
+    "anoInicio": 2004,
+    "anoFim": 2004,
+    "anoTipo": "ano"
   },
   {
     "id": 20,
@@ -357,7 +414,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU",
-    "palavrasChave": "Segurança Pública, Cárcere"
+    "palavrasChave": "Segurança Pública, Cárcere",
+    "anoInicio": 1847,
+    "anoFim": 1847,
+    "anoTipo": "ano"
   },
   {
     "id": 21,
@@ -375,7 +435,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU",
-    "palavrasChave": "Segurança Pública, Cárcere"
+    "palavrasChave": "Segurança Pública, Cárcere",
+    "anoInicio": 1847,
+    "anoFim": 1847,
+    "anoTipo": "ano"
   },
   {
     "id": 22,
@@ -393,7 +456,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU",
-    "palavrasChave": "Direito Público"
+    "palavrasChave": "Direito Público",
+    "anoInicio": 1847,
+    "anoFim": 1847,
+    "anoTipo": "ano"
   },
   {
     "id": 23,
@@ -411,7 +477,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU",
-    "palavrasChave": "Direito Público, Escravidão em Angola"
+    "palavrasChave": "Direito Público, Escravidão em Angola",
+    "anoInicio": 1847,
+    "anoFim": 1847,
+    "anoTipo": "ano"
   },
   {
     "id": 24,
@@ -429,7 +498,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU",
-    "palavrasChave": "Educação, Ensino e Escravidão em Angola"
+    "palavrasChave": "Educação, Ensino e Escravidão em Angola",
+    "anoInicio": 1847,
+    "anoFim": 1847,
+    "anoTipo": "ano"
   },
   {
     "id": 25,
@@ -447,7 +519,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU_BOCA",
-    "palavrasChave": "Comunicação, História Colonial, Angola"
+    "palavrasChave": "Comunicação, História Colonial, Angola",
+    "anoInicio": 1937,
+    "anoFim": 1937,
+    "anoTipo": "ano"
   },
   {
     "id": 26,
@@ -465,7 +540,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU",
-    "palavrasChave": "Comunicação, História Colonial, Angola"
+    "palavrasChave": "Comunicação, História Colonial, Angola",
+    "anoInicio": 1937,
+    "anoFim": 1937,
+    "anoTipo": "ano"
   },
   {
     "id": 27,
@@ -483,7 +561,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU_BOA",
-    "palavrasChave": "Relações Internacionais, Cultura, Ciência, Tecnologia e Educação"
+    "palavrasChave": "Relações Internacionais, Cultura, Ciência, Tecnologia e Educação",
+    "anoInicio": 1965,
+    "anoFim": 1965,
+    "anoTipo": "ano"
   },
   {
     "id": 28,
@@ -501,7 +582,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU",
-    "palavrasChave": "Educação, Ensino Primário em Angola"
+    "palavrasChave": "Educação, Ensino Primário em Angola",
+    "anoInicio": 1965,
+    "anoFim": 1965,
+    "anoTipo": "ano"
   },
   {
     "id": 29,
@@ -519,7 +603,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU_MU_DGM",
-    "palavrasChave": "Primeira Guerra Mundial, Expedições Militares, Angola, Moçambique"
+    "palavrasChave": "Primeira Guerra Mundial, Expedições Militares, Angola, Moçambique",
+    "anoInicio": 1914,
+    "anoFim": 1922,
+    "anoTipo": "ano"
   },
   {
     "id": 30,
@@ -537,7 +624,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU_BNU",
-    "palavrasChave": "Economia, Contabilidade, Administração Bancária, Negócios"
+    "palavrasChave": "Economia, Contabilidade, Administração Bancária, Negócios",
+    "anoInicio": 1863,
+    "anoFim": 1939,
+    "anoTipo": "ano"
   },
   {
     "id": 31,
@@ -555,7 +645,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU_CARTi",
-    "palavrasChave": "Cartografia, Geografia, História, Europa, Ásia, África, América, Oceania"
+    "palavrasChave": "Cartografia, Geografia, História, Europa, Ásia, África, América, Oceania",
+    "anoInicio": 1501,
+    "anoFim": 2000,
+    "anoTipo": "seculo"
   },
   {
     "id": 32,
@@ -573,7 +666,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU_CARTm",
-    "palavrasChave": "Cartografia do Brasil, Geografia do Brasil, História do Brasil"
+    "palavrasChave": "Cartografia do Brasil, Geografia do Brasil, História do Brasil",
+    "anoInicio": 1501,
+    "anoFim": 2000,
+    "anoTipo": "seculo"
   },
   {
     "id": 33,
@@ -591,7 +687,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU_CARTm",
-    "palavrasChave": "Cartografia, Geografia, História, Europa, Ásia, África, América, Oceania"
+    "palavrasChave": "Cartografia, Geografia, História, Europa, Ásia, África, América, Oceania",
+    "anoInicio": 1601,
+    "anoFim": 2000,
+    "anoTipo": "seculo"
   },
   {
     "id": 34,
@@ -609,7 +708,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU_CU_005-02",
-    "palavrasChave": "Relações Internacionais"
+    "palavrasChave": "Relações Internacionais",
+    "anoInicio": 1599,
+    "anoFim": 1700,
+    "anoTipo": "ano"
   },
   {
     "id": 35,
@@ -627,7 +729,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU_ACL_CU_BRASIL-BAHIA",
-    "palavrasChave": "Relações Internacionais"
+    "palavrasChave": "Relações Internacionais",
+    "anoInicio": 1604,
+    "anoFim": 1828,
+    "anoTipo": "ano"
   },
   {
     "id": 36,
@@ -645,7 +750,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU_CU_BAHIA-CA",
-    "palavrasChave": "Relações Internacionais"
+    "palavrasChave": "Relações Internacionais",
+    "anoInicio": 1613,
+    "anoFim": 1807,
+    "anoTipo": "ano"
   },
   {
     "id": 37,
@@ -663,7 +771,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU_CU_001",
-    "palavrasChave": "Relações Internacionais"
+    "palavrasChave": "Relações Internacionais",
+    "anoInicio": 1602,
+    "anoFim": 1833,
+    "anoTipo": "ano"
   },
   {
     "id": 38,
@@ -681,7 +792,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU/MU/GM/GNP",
-    "palavrasChave": "Relações Internacionais"
+    "palavrasChave": "Relações Internacionais",
+    "anoInicio": 1921,
+    "anoFim": 1974,
+    "anoTipo": "ano"
   },
   {
     "id": 39,
@@ -699,7 +813,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU_ICONm",
-    "palavrasChave": "Iconografias de África, Ásia, Brasil"
+    "palavrasChave": "Iconografias de África, Ásia, Brasil",
+    "anoInicio": 1773,
+    "anoFim": 1972,
+    "anoTipo": "ano"
   },
   {
     "id": 40,
@@ -717,7 +834,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU_ICONi",
-    "palavrasChave": "Iconografias da Europa, Ásia, África, Oceania e América"
+    "palavrasChave": "Iconografias da Europa, Ásia, África, Oceania e América",
+    "anoInicio": 1601,
+    "anoFim": 2000,
+    "anoTipo": "seculo"
   },
   {
     "id": 41,
@@ -735,7 +855,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHUMUd001",
-    "palavrasChave": "Cartografia, Relações Internacionais"
+    "palavrasChave": "Cartografia, Relações Internacionais",
+    "anoInicio": 1883,
+    "anoFim": 1936,
+    "anoTipo": "ano"
   },
   {
     "id": 42,
@@ -753,7 +876,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU-L2869",
-    "palavrasChave": "Etnografia, Colonização, Angola"
+    "palavrasChave": "Etnografia, Colonização, Angola",
+    "anoInicio": 1926,
+    "anoFim": 1926,
+    "anoTipo": "ano"
   },
   {
     "id": 43,
@@ -771,7 +897,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU-L15256",
-    "palavrasChave": "Etnografia, Costumes, Angola, Bantu"
+    "palavrasChave": "Etnografia, Costumes, Angola, Bantu",
+    "anoInicio": 1938,
+    "anoFim": 1938,
+    "anoTipo": "ano"
   },
   {
     "id": 44,
@@ -789,7 +918,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU-L5054",
-    "palavrasChave": "Etnografia, Angola, Geologia, Geografia"
+    "palavrasChave": "Etnografia, Angola, Geologia, Geografia",
+    "anoInicio": 1943,
+    "anoFim": 1943,
+    "anoTipo": "ano"
   },
   {
     "id": 45,
@@ -807,7 +939,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU-L9574",
-    "palavrasChave": "Etnografia, História, Angola, Costumes"
+    "palavrasChave": "Etnografia, História, Angola, Costumes",
+    "anoInicio": 1933,
+    "anoFim": 1933,
+    "anoTipo": "ano"
   },
   {
     "id": 46,
@@ -825,7 +960,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU-L0931",
-    "palavrasChave": "Etnografia, Ciências Políticas e Sociais"
+    "palavrasChave": "Etnografia, Ciências Políticas e Sociais",
+    "anoInicio": 1958,
+    "anoFim": 1958,
+    "anoTipo": "ano"
   },
   {
     "id": 47,
@@ -843,7 +981,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU-L1279",
-    "palavrasChave": "Costumes, Etnologia, Bantos"
+    "palavrasChave": "Costumes, Etnologia, Bantos",
+    "anoInicio": 1965,
+    "anoFim": 1965,
+    "anoTipo": "ano"
   },
   {
     "id": 48,
@@ -861,7 +1002,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU-L9300/I",
-    "palavrasChave": "Etnografia, Angola, Etnologia"
+    "palavrasChave": "Etnografia, Angola, Etnologia",
+    "anoInicio": 1983,
+    "anoFim": 1983,
+    "anoTipo": "ano"
   },
   {
     "id": 49,
@@ -879,7 +1023,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU-L9300/II",
-    "palavrasChave": "Etnografia, Angola, Etnologia, Religiosidade"
+    "palavrasChave": "Etnografia, Angola, Etnologia, Religiosidade",
+    "anoInicio": 1983,
+    "anoFim": 1983,
+    "anoTipo": "ano"
   },
   {
     "id": 50,
@@ -897,7 +1044,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU-L1501",
-    "palavrasChave": "Etnografia, Etnologia, Angola"
+    "palavrasChave": "Etnografia, Etnologia, Angola",
+    "anoInicio": 1915,
+    "anoFim": 1915,
+    "anoTipo": "ano"
   },
   {
     "id": 51,
@@ -915,7 +1065,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU-L9286",
-    "palavrasChave": "Etnografia, Etnologia, Gramática, Umbundo, Angola"
+    "palavrasChave": "Etnografia, Etnologia, Gramática, Umbundo, Angola",
+    "anoInicio": 1964,
+    "anoFim": 1964,
+    "anoTipo": "ano"
   },
   {
     "id": 52,
@@ -933,7 +1086,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU-L3383",
-    "palavrasChave": "Etnografia, Angola, Etnologia, Religiosidade, Ritos"
+    "palavrasChave": "Etnografia, Angola, Etnologia, Religiosidade, Ritos",
+    "anoInicio": 1958,
+    "anoFim": 1958,
+    "anoTipo": "ano"
   },
   {
     "id": 53,
@@ -951,7 +1107,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU-L3136",
-    "palavrasChave": "Etnografia, Etnologia, Etnolinguística, Religião, Feitiçaria, Ritos funerários"
+    "palavrasChave": "Etnografia, Etnologia, Etnolinguística, Religião, Feitiçaria, Ritos funerários",
+    "anoInicio": 1967,
+    "anoFim": 1967,
+    "anoTipo": "ano"
   },
   {
     "id": 54,
@@ -969,7 +1128,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU-L2317",
-    "palavrasChave": "Etnografia, Etnologia, Religião, Feitiçaria, Magia, Bruxaria"
+    "palavrasChave": "Etnografia, Etnologia, Religião, Feitiçaria, Magia, Bruxaria",
+    "anoInicio": 1969,
+    "anoFim": 1969,
+    "anoTipo": "ano"
   },
   {
     "id": 55,
@@ -987,7 +1149,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU-L12491",
-    "palavrasChave": "Etnografia, Etnologia, Religião, Povos Bantos, Angola"
+    "palavrasChave": "Etnografia, Etnologia, Religião, Povos Bantos, Angola",
+    "anoInicio": 1963,
+    "anoFim": 1963,
+    "anoTipo": "ano"
   },
   {
     "id": 56,
@@ -1005,7 +1170,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-AHU-L0422",
-    "palavrasChave": "Etnografia, Etnolinguística, Angola, Etnologia, Provérbios"
+    "palavrasChave": "Etnografia, Etnolinguística, Angola, Etnologia, Provérbios",
+    "anoInicio": 1951,
+    "anoFim": 1951,
+    "anoTipo": "ano"
   },
   {
     "id": 57,
@@ -1023,7 +1191,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-TT-CMZ-AF-GT-E-25-2-131",
-    "palavrasChave": "Costumes, Batuques, África Oriental, Moçambique"
+    "palavrasChave": "Costumes, Batuques, África Oriental, Moçambique",
+    "anoInicio": 1935,
+    "anoFim": 1935,
+    "anoTipo": "ano"
   },
   {
     "id": 58,
@@ -1041,7 +1212,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-TT-CMZ-AF-GT-E-25-2-119",
-    "palavrasChave": "Costumes, Feitiçaria, Religiosidade, África Oriental, Moçambique"
+    "palavrasChave": "Costumes, Feitiçaria, Religiosidade, África Oriental, Moçambique",
+    "anoInicio": 1935,
+    "anoFim": 1935,
+    "anoTipo": "ano"
   },
   {
     "id": 59,
@@ -1059,7 +1233,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-TT-CMZ-AF-GT-E-25-2-134",
-    "palavrasChave": "Costumes, Batuques, África Oriental, Moçambique"
+    "palavrasChave": "Costumes, Batuques, África Oriental, Moçambique",
+    "anoInicio": 1935,
+    "anoFim": 1935,
+    "anoTipo": "ano"
   },
   {
     "id": 60,
@@ -1077,7 +1254,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "ca-PT-TT-HPC-MC20-DOC813_c0001.jpg",
-    "palavrasChave": "Religião, ideologia religiosa católica no Brasil, liberdade religiosa, Brasil República"
+    "palavrasChave": "Religião, ideologia religiosa católica no Brasil, liberdade religiosa, Brasil República",
+    "anoInicio": 1921,
+    "anoFim": 1921,
+    "anoTipo": "ano"
   },
   {
     "id": 61,
@@ -1095,7 +1275,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "ca-PT-TT-HPC-MC20-DOC815_c0001.jpg",
-    "palavrasChave": "Religião, ideologia religiosa católica no Brasil, liberdade religiosa, Brasil República"
+    "palavrasChave": "Religião, ideologia religiosa católica no Brasil, liberdade religiosa, Brasil República",
+    "anoInicio": 1922,
+    "anoFim": 1922,
+    "anoTipo": "ano"
   },
   {
     "id": 62,
@@ -1113,7 +1296,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "ca-PT-TT-HPC-MC20-DOC816_c0001.jpg",
-    "palavrasChave": "Religião, ideologia religiosa católica no Brasil, liberdade religiosa, Brasil República"
+    "palavrasChave": "Religião, ideologia religiosa católica no Brasil, liberdade religiosa, Brasil República",
+    "anoInicio": 1923,
+    "anoFim": 1923,
+    "anoTipo": "ano"
   },
   {
     "id": 63,
@@ -1131,7 +1317,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "ca-PT-TT-HPC-MC20-DOC818_c0001.jpg",
-    "palavrasChave": "Religião, ideologia religiosa católica no Brasil, liberdade religiosa, Brasil República"
+    "palavrasChave": "Religião, ideologia religiosa católica no Brasil, liberdade religiosa, Brasil República",
+    "anoInicio": 1924,
+    "anoFim": 1924,
+    "anoTipo": "ano"
   },
   {
     "id": 64,
@@ -1149,7 +1338,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "ca-PT-TT-HPC-MC20-DOC820_c0001.jpg",
-    "palavrasChave": "Religião, ideologia religiosa católica no Brasil, liberdade religiosa, Brasil República"
+    "palavrasChave": "Religião, ideologia religiosa católica no Brasil, liberdade religiosa, Brasil República",
+    "anoInicio": 1926,
+    "anoFim": 1926,
+    "anoTipo": "ano"
   },
   {
     "id": 65,
@@ -1167,7 +1359,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "ca-PT-TT-HPC-MC20-DOC590_c0001.jpg",
-    "palavrasChave": "Missões religiosas, Angola, Cristianismo, século XX"
+    "palavrasChave": "Missões religiosas, Angola, Cristianismo, século XX",
+    "anoInicio": 1925,
+    "anoFim": 1925,
+    "anoTipo": "ano"
   },
   {
     "id": 66,
@@ -1185,7 +1380,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT/TT/SCCIA/007/0005",
-    "palavrasChave": "Etnografia, Angola, Jinga, História da África, Séc. XX"
+    "palavrasChave": "Etnografia, Angola, Jinga, História da África, Séc. XX",
+    "anoInicio": 1970,
+    "anoFim": 1970,
+    "anoTipo": "ano"
   },
   {
     "id": 67,
@@ -1203,7 +1401,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT/TT/SCCIA/007/0008",
-    "palavrasChave": "Etnografia, Angola, Ovimbundu, História da África, Séc. XX"
+    "palavrasChave": "Etnografia, Angola, Ovimbundu, História da África, Séc. XX",
+    "anoInicio": 1970,
+    "anoFim": 1970,
+    "anoTipo": "ano"
   },
   {
     "id": 68,
@@ -1221,7 +1422,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT/TT/SCCIA/007/0007",
-    "palavrasChave": "Etnografia, Angola, Kikongo, História da África, Séc. XX"
+    "palavrasChave": "Etnografia, Angola, Kikongo, História da África, Séc. XX",
+    "anoInicio": 1970,
+    "anoFim": 1970,
+    "anoTipo": "ano"
   },
   {
     "id": 69,
@@ -1239,7 +1443,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT/TT/SNI-DGE/14-3/494",
-    "palavrasChave": "Cinema africano"
+    "palavrasChave": "Cinema africano",
+    "anoInicio": 1952,
+    "anoFim": 1952,
+    "anoTipo": "ano"
   },
   {
     "id": 70,
@@ -1257,7 +1464,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT/TT/SNI-DSC/35/1/01663; PT/TT/SNI-DSC/35/1/01671",
-    "palavrasChave": "Literatura Africana, Mandingas, Colonização africana, Literatura Brasileira"
+    "palavrasChave": "Literatura Africana, Mandingas, Colonização africana, Literatura Brasileira",
+    "anoInicio": 1942,
+    "anoFim": 1942,
+    "anoTipo": "ano"
   },
   {
     "id": 71,
@@ -1275,7 +1485,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT/TT/SNI-DSC/35/1/01697",
-    "palavrasChave": "Literatura Africana, Mandingas, Colonização africana, Literatura Brasileira"
+    "palavrasChave": "Literatura Africana, Mandingas, Colonização africana, Literatura Brasileira",
+    "anoInicio": 1942,
+    "anoFim": 1942,
+    "anoTipo": "ano"
   },
   {
     "id": 72,
@@ -1293,7 +1506,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT/TT/SNI-DSC/35/3/00772",
-    "palavrasChave": "Literatura Africana, Mandingas, Colonização africana, Literatura Brasileira"
+    "palavrasChave": "Literatura Africana, Mandingas, Colonização africana, Literatura Brasileira",
+    "anoInicio": 1939,
+    "anoFim": 1939,
+    "anoTipo": "ano"
   },
   {
     "id": 73,
@@ -1311,7 +1527,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "SOC 1344 (UNLFCSH)",
-    "palavrasChave": "História da África Central, Congo, Angola, Mbanza Congo, Chefes"
+    "palavrasChave": "História da África Central, Congo, Angola, Mbanza Congo, Chefes",
+    "anoInicio": 2005,
+    "anoFim": 2005,
+    "anoTipo": "ano"
   },
   {
     "id": 74,
@@ -1329,7 +1548,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "JRD.HST.525 (UNLFCSH/CRIA-FCSH-UNL)",
-    "palavrasChave": "História do Brasil, Religião, Candomblé, Relações inter-étnicas, Relações raciais, Século XVIII, XIX e XX."
+    "palavrasChave": "História do Brasil, Religião, Candomblé, Relações inter-étnicas, Relações raciais, Século XVIII, XIX e XX.",
+    "anoInicio": 1998,
+    "anoFim": 1998,
+    "anoTipo": "ano"
   },
   {
     "id": 75,
@@ -1347,7 +1569,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "ANT 943 (UNLFCSH)",
-    "palavrasChave": "Angola, Cultura, Arte, Etnografia, Antropologia."
+    "palavrasChave": "Angola, Cultura, Arte, Etnografia, Antropologia.",
+    "anoInicio": 1976,
+    "anoFim": 1976,
+    "anoTipo": "ano"
   },
   {
     "id": 76,
@@ -1365,7 +1590,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "ANT 352/B (UNLFCSH)",
-    "palavrasChave": "África, Angola, Cabinda, Bawoyo, Mangoyo."
+    "palavrasChave": "África, Angola, Cabinda, Bawoyo, Mangoyo.",
+    "anoInicio": 1983,
+    "anoFim": 1983,
+    "anoTipo": "ano"
   },
   {
     "id": 77,
@@ -1383,7 +1611,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "HVID2 (UNLFCSH/CHAM-FCSH-UNL)",
-    "palavrasChave": "História da África, África Central, Religiosidade ancestral."
+    "palavrasChave": "História da África, África Central, Religiosidade ancestral.",
+    "anoInicio": 2001,
+    "anoFim": 2001,
+    "anoTipo": "ano"
   },
   {
     "id": 78,
@@ -1401,7 +1632,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "CRIA ANT 299 (UNLFCSH)",
-    "palavrasChave": "Angola, Antropologia da Saúde, século XIX e XX."
+    "palavrasChave": "Angola, Antropologia da Saúde, século XIX e XX.",
+    "anoInicio": 2013,
+    "anoFim": 2013,
+    "anoTipo": "ano"
   },
   {
     "id": 79,
@@ -1419,7 +1653,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "JRD.GEN.321 (UNLFCSH/CRIA-FCSH-UNL)",
-    "palavrasChave": "África Lusófona, Antropologia, Sociologia, História, Relações Internacionais, Economia."
+    "palavrasChave": "África Lusófona, Antropologia, Sociologia, História, Relações Internacionais, Economia.",
+    "anoInicio": 1987,
+    "anoFim": 1987,
+    "anoTipo": "ano"
   },
   {
     "id": 80,
@@ -1437,7 +1674,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "CRIA ANT 173 (UNLFCSH)",
-    "palavrasChave": "Candomblé, Antropologia das Religiões, Matriz Africana, Religiões Afro-brasileiras."
+    "palavrasChave": "Candomblé, Antropologia das Religiões, Matriz Africana, Religiões Afro-brasileiras.",
+    "anoInicio": 1987,
+    "anoFim": 1987,
+    "anoTipo": "ano"
   },
   {
     "id": 81,
@@ -1455,7 +1695,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "BM 4773/1 (UNLFCSH)",
-    "palavrasChave": "História da África Central, Angola, Congo, Matamba, Etnografia."
+    "palavrasChave": "História da África Central, Angola, Congo, Matamba, Etnografia.",
+    "anoInicio": 1965,
+    "anoFim": 1965,
+    "anoTipo": "ano"
   },
   {
     "id": 82,
@@ -1473,7 +1716,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "BM 4773/2 (UNLFCSH)",
-    "palavrasChave": "História da África Central, Angola, Congo, Matamba, Etnografia."
+    "palavrasChave": "História da África Central, Angola, Congo, Matamba, Etnografia.",
+    "anoInicio": 1965,
+    "anoFim": 1965,
+    "anoTipo": "ano"
   },
   {
     "id": 83,
@@ -1491,7 +1737,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "CHAM 94(673)(093) OLI/ANG (UNLFCSH)",
-    "palavrasChave": "Angola, Hotentotes, História da África, Século XIX."
+    "palavrasChave": "Angola, Hotentotes, História da África, Século XIX.",
+    "anoInicio": 1883,
+    "anoFim": 1887,
+    "anoTipo": "ano"
   },
   {
     "id": 84,
@@ -1509,7 +1758,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "CHAM 27(673) SAN/REL (UNLFCSH)",
-    "palavrasChave": "História das Religiões, Angola, Cristianismo, Religiões africanas, Antropologia das Religiões."
+    "palavrasChave": "História das Religiões, Angola, Cristianismo, Religiões africanas, Antropologia das Religiões.",
+    "anoInicio": 1969,
+    "anoFim": 1969,
+    "anoTipo": "ano"
   },
   {
     "id": 85,
@@ -1527,7 +1779,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "CRIA ANT 253 (UNLFCSH)",
-    "palavrasChave": "Candomblé, Antropologia Visual, Fotografia, Fotojornalismo."
+    "palavrasChave": "Candomblé, Antropologia Visual, Fotografia, Fotojornalismo.",
+    "anoInicio": 2009,
+    "anoFim": 2009,
+    "anoTipo": "ano"
   },
   {
     "id": 86,
@@ -1545,7 +1800,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "398.33|SOU|REI (UNLFCSH/CHAM-FCSH-UNL)",
-    "palavrasChave": "História cultural, Festas populares, Rei Congo, Diáspora africana, África Central, Congo, Angola."
+    "palavrasChave": "História cultural, Festas populares, Rei Congo, Diáspora africana, África Central, Congo, Angola.",
+    "anoInicio": 2002,
+    "anoFim": 2002,
+    "anoTipo": "ano"
   },
   {
     "id": 87,
@@ -1563,7 +1821,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "CS 14237/1 (UNLFCSH)",
-    "palavrasChave": "Antropologia Social e Cultural, África Centro-Ocidental, História da África."
+    "palavrasChave": "Antropologia Social e Cultural, África Centro-Ocidental, História da África.",
+    "anoInicio": 1992,
+    "anoFim": 1992,
+    "anoTipo": "ano"
   },
   {
     "id": 88,
@@ -1581,7 +1842,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "JRD.GEN.263 (UNLFCSH/CRIA-FCSH-UNL)",
-    "palavrasChave": "Angola, História, Colonialismo, África, Identidades."
+    "palavrasChave": "Angola, História, Colonialismo, África, Identidades.",
+    "anoInicio": 2002,
+    "anoFim": 2002,
+    "anoTipo": "ano"
   },
   {
     "id": 89,
@@ -1599,7 +1863,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "JRD.HST.543 (UNLFCSH/CRIA-FCSH-UNL)",
-    "palavrasChave": "Religião afro-brasileira, Candomblé, Psicanálise, Etnografia."
+    "palavrasChave": "Religião afro-brasileira, Candomblé, Psicanálise, Etnografia.",
+    "anoInicio": 1934,
+    "anoFim": 1988,
+    "anoTipo": "ano"
   },
   {
     "id": 90,
@@ -1617,7 +1884,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "CHAM 061.4 POR/NEG (UNLFCSH)",
-    "palavrasChave": "Europa, Colonialismo, Religiosidade, África."
+    "palavrasChave": "Europa, Colonialismo, Religiosidade, África.",
+    "anoInicio": 1999,
+    "anoFim": 1999,
+    "anoTipo": "ano"
   },
   {
     "id": 91,
@@ -1635,7 +1905,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "CHAM 94(6) (COL) – REP (UNLFCSH)",
-    "palavrasChave": "Literatura Africana, Cultura Africana, Representações Culturais, Missionação, História da África."
+    "palavrasChave": "Literatura Africana, Cultura Africana, Representações Culturais, Missionação, História da África.",
+    "anoInicio": 2011,
+    "anoFim": 2011,
+    "anoTipo": "ano"
   },
   {
     "id": 92,
@@ -1653,7 +1926,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "https://doi.org/10.4000/etnografica.2762",
-    "palavrasChave": "Antropologia Social, Mestiçagem, Raça, Gênero, Branqueamento, Candomblés."
+    "palavrasChave": "Antropologia Social, Mestiçagem, Raça, Gênero, Branqueamento, Candomblés.",
+    "anoInicio": 2000,
+    "anoFim": 2000,
+    "anoTipo": "ano"
   },
   {
     "id": 93,
@@ -1671,7 +1947,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "https://doi.org/10.4000/etnografica.292",
-    "palavrasChave": "Candomblé, Umbanda, Sincretismo, Religiões Transnacionais, Imigração, Portugal."
+    "palavrasChave": "Candomblé, Umbanda, Sincretismo, Religiões Transnacionais, Imigração, Portugal.",
+    "anoInicio": 2010,
+    "anoFim": 2010,
+    "anoTipo": "ano"
   },
   {
     "id": 94,
@@ -1689,7 +1968,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "https://doi.org/10.4000/etnografica.297",
-    "palavrasChave": "Etnografia, Perseguição religiosa, Quebra de 1912, Xangô rezado de baixo, Maceió-AL."
+    "palavrasChave": "Etnografia, Perseguição religiosa, Quebra de 1912, Xangô rezado de baixo, Maceió-AL.",
+    "anoInicio": 2010,
+    "anoFim": 2010,
+    "anoTipo": "ano"
   },
   {
     "id": 95,
@@ -1707,7 +1989,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "https://doi.org/10.4000/etnografica.374",
-    "palavrasChave": "Cultura popular, práticas, representações, discurso, recenso."
+    "palavrasChave": "Cultura popular, práticas, representações, discurso, recenso.",
+    "anoInicio": 2010,
+    "anoFim": 2010,
+    "anoTipo": "ano"
   },
   {
     "id": 96,
@@ -1725,7 +2010,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "CS PP 283 (UNLFCSH)",
-    "palavrasChave": "Elite crioula, Angola, Etnografia, História da África Central, Identidades, Intelectuais."
+    "palavrasChave": "Elite crioula, Angola, Etnografia, História da África Central, Identidades, Intelectuais.",
+    "anoInicio": 1984,
+    "anoFim": 1984,
+    "anoTipo": "ano"
   },
   {
     "id": 97,
@@ -1743,7 +2031,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "CS PP 283 (UNLFCSH)",
-    "palavrasChave": "Arquivo Histórico, Acervo Colonial, Documentação, História da África, Etnografia."
+    "palavrasChave": "Arquivo Histórico, Acervo Colonial, Documentação, História da África, Etnografia.",
+    "anoInicio": 1995,
+    "anoFim": 1995,
+    "anoTipo": "ano"
   },
   {
     "id": 98,
@@ -1761,7 +2052,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "TCD 591 (UNLFCSH)",
-    "palavrasChave": "Angola, Missionários, Jesuítas, Capuchinhos, Representação do Africano, Diferença e Alteridade."
+    "palavrasChave": "Angola, Missionários, Jesuítas, Capuchinhos, Representação do Africano, Diferença e Alteridade.",
+    "anoInicio": 2009,
+    "anoFim": 2009,
+    "anoTipo": "ano"
   },
   {
     "id": 99,
@@ -1779,7 +2073,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "T 268 (UNLFCSH)",
-    "palavrasChave": "Cultura portuguesa, Cultura africana, África, Psicologia comparada, Psicanálise, Raça, Sexualidade, Feiticismo, Mestiçagem"
+    "palavrasChave": "Cultura portuguesa, Cultura africana, África, Psicologia comparada, Psicanálise, Raça, Sexualidade, Feiticismo, Mestiçagem",
+    "anoInicio": 1999,
+    "anoFim": 1999,
+    "anoTipo": "ano"
   },
   {
     "id": 100,
@@ -1797,7 +2094,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "CRIA JRD ANT 621 (UNLFCSH)",
-    "palavrasChave": "Antropologia social e cultural, Magia, Política, Religião, Cosmologia, Sociedades primitivas"
+    "palavrasChave": "Antropologia social e cultural, Magia, Política, Religião, Cosmologia, Sociedades primitivas",
+    "anoInicio": 1974,
+    "anoFim": 1974,
+    "anoTipo": "ano"
   },
   {
     "id": 101,
@@ -1815,7 +2115,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "GS 610 (UNLFCSH)",
-    "palavrasChave": "Antropologia, Bibliografia, Angola"
+    "palavrasChave": "Antropologia, Bibliografia, Angola",
+    "anoInicio": 1984,
+    "anoFim": 1984,
+    "anoTipo": "ano"
   },
   {
     "id": 102,
@@ -1833,7 +2136,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "CRIA CS 311 (UNLFCSH)",
-    "palavrasChave": "América Latina, Colonialismo português, Migrações, Brasil, Países africanos de língua oficial portuguesa (PALOP), Portugal, Identidade, Religião, Sincretismo, Hibridismo, Multiculturalismo."
+    "palavrasChave": "América Latina, Colonialismo português, Migrações, Brasil, Países africanos de língua oficial portuguesa (PALOP), Portugal, Identidade, Religião, Sincretismo, Hibridismo, Multiculturalismo.",
+    "anoInicio": 2007,
+    "anoFim": 2007,
+    "anoTipo": "ano"
   },
   {
     "id": 103,
@@ -1851,7 +2157,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "BNES 939 (UNLFCSH)",
-    "palavrasChave": "Império africano, Século XIX, Século XX, História da África, Colonização portuguesa, Angola, São Tomé e Principe, Moçambique."
+    "palavrasChave": "Império africano, Século XIX, Século XX, História da África, Colonização portuguesa, Angola, São Tomé e Principe, Moçambique.",
+    "anoInicio": 2000,
+    "anoFim": 2000,
+    "anoTipo": "ano"
   },
   {
     "id": 104,
@@ -1869,7 +2178,10 @@
     "cidade": "Lisboa",
     "pais": "Portugal",
     "codigoDocumento": "HST COL 346 (UNLFCSH)",
-    "palavrasChave": "Administração colonial, Política colonial, Colônias portuguesas, Angola, Séculos XIX e XX, Antologias."
+    "palavrasChave": "Administração colonial, Política colonial, Colônias portuguesas, Angola, Séculos XIX e XX, Antologias.",
+    "anoInicio": 2011,
+    "anoFim": 2011,
+    "anoTipo": "ano"
   },
   {
     "id": 105,
@@ -1887,7 +2199,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "C.C. 959 A.",
-    "palavrasChave": "mapa, Angola, Loanda, Congo, cartografia colonial"
+    "palavrasChave": "mapa, Angola, Loanda, Congo, cartografia colonial",
+    "anoInicio": 1917,
+    "anoFim": 1917,
+    "anoTipo": "ano"
   },
   {
     "id": 106,
@@ -1905,7 +2220,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "S.C. 99210 V",
-    "palavrasChave": "Bahia, candomblé, Donald Pierson, jornais, religião"
+    "palavrasChave": "Bahia, candomblé, Donald Pierson, jornais, religião",
+    "anoInicio": 1971,
+    "anoFim": 1971,
+    "anoTipo": "ano"
   },
   {
     "id": 107,
@@ -1923,7 +2241,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PI-17882P",
-    "palavrasChave": "cartão postal, Angola, Cambondo, agricultura, costumes"
+    "palavrasChave": "cartão postal, Angola, Cambondo, agricultura, costumes",
+    "anoInicio": 1910,
+    "anoFim": 1919,
+    "anoTipo": "aproximado"
   },
   {
     "id": 108,
@@ -1941,7 +2262,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PI-6828P",
-    "palavrasChave": "cartão postal, Angola, Congo, feitiço, costumes"
+    "palavrasChave": "cartão postal, Angola, Congo, feitiço, costumes",
+    "anoInicio": 1903,
+    "anoFim": 1903,
+    "anoTipo": "aproximado"
   },
   {
     "id": 109,
@@ -1959,7 +2283,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PI-19551P",
-    "palavrasChave": "cartão postal, Angola, Libôllo, costumes"
+    "palavrasChave": "cartão postal, Angola, Libôllo, costumes",
+    "anoInicio": 1910,
+    "anoFim": 1919,
+    "anoTipo": "aproximado"
   },
   {
     "id": 110,
@@ -1977,7 +2304,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PI-19202P",
-    "palavrasChave": "cartão postal, Angola, Libôllo, costumes"
+    "palavrasChave": "cartão postal, Angola, Libôllo, costumes",
+    "anoInicio": 1910,
+    "anoFim": 1919,
+    "anoTipo": "aproximado"
   },
   {
     "id": 111,
@@ -1995,7 +2325,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PI-19205P",
-    "palavrasChave": "cartão postal, Angola, Libôllo, algodão, costumes"
+    "palavrasChave": "cartão postal, Angola, Libôllo, algodão, costumes",
+    "anoInicio": 1910,
+    "anoFim": 1919,
+    "anoTipo": "aproximado"
   },
   {
     "id": 112,
@@ -2013,7 +2346,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PI-6820P",
-    "palavrasChave": "cartão postal, Angola, Bailundo, costumes"
+    "palavrasChave": "cartão postal, Angola, Bailundo, costumes",
+    "anoInicio": 1903,
+    "anoFim": 1903,
+    "anoTipo": "aproximado"
   },
   {
     "id": 113,
@@ -2031,7 +2367,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PI-6838P",
-    "palavrasChave": "cartão postal, Angola, Caconda, costumes"
+    "palavrasChave": "cartão postal, Angola, Caconda, costumes",
+    "anoInicio": 1903,
+    "anoFim": 1903,
+    "anoTipo": "aproximado"
   },
   {
     "id": 114,
@@ -2049,7 +2388,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PI-6822P",
-    "palavrasChave": "cartão postal, Angola, Quissama, costumes"
+    "palavrasChave": "cartão postal, Angola, Quissama, costumes",
+    "anoInicio": 1903,
+    "anoFim": 1903,
+    "anoTipo": "aproximado"
   },
   {
     "id": 115,
@@ -2067,7 +2409,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PI-6823P",
-    "palavrasChave": "cartão postal, Angola, Caconda, costumes"
+    "palavrasChave": "cartão postal, Angola, Caconda, costumes",
+    "anoInicio": 1903,
+    "anoFim": 1903,
+    "anoTipo": "aproximado"
   },
   {
     "id": 116,
@@ -2085,7 +2430,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PI-19203P",
-    "palavrasChave": "cartão postal, Angola, Loanda, comércio, costumes"
+    "palavrasChave": "cartão postal, Angola, Loanda, comércio, costumes",
+    "anoInicio": 1910,
+    "anoFim": 1919,
+    "anoTipo": "aproximado"
   },
   {
     "id": 117,
@@ -2103,7 +2451,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "J. 3593 M.; J.1707/1 M; F. 2613 MICROFILME",
-    "palavrasChave": "jornal, Moçambique, Lourenço Marques, José Albasini, Grémio Africano"
+    "palavrasChave": "jornal, Moçambique, Lourenço Marques, José Albasini, Grémio Africano",
+    "anoInicio": 1909,
+    "anoFim": 1909,
+    "anoTipo": "data"
   },
   {
     "id": 118,
@@ -2121,7 +2472,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "J. 3593 M.; J.1707/1 M; F. 2613 MICROFILME",
-    "palavrasChave": "jornal, Moçambique, Lourenço Marques, José Albasini, Grémio Africano"
+    "palavrasChave": "jornal, Moçambique, Lourenço Marques, José Albasini, Grémio Africano",
+    "anoInicio": 1909,
+    "anoFim": 1909,
+    "anoTipo": "data"
   },
   {
     "id": 119,
@@ -2139,7 +2493,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "J. 3593 M.; J.1707/1 M; F. 2613 MICROFILME",
-    "palavrasChave": "jornal, Moçambique, batuques, José Albasini, Grémio Africano"
+    "palavrasChave": "jornal, Moçambique, batuques, José Albasini, Grémio Africano",
+    "anoInicio": 1909,
+    "anoFim": 1909,
+    "anoTipo": "data"
   },
   {
     "id": 120,
@@ -2157,7 +2514,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-BNP-Não coletado registro do microfilme",
-    "palavrasChave": "jornal, Angola, Benguela, anúncio"
+    "palavrasChave": "jornal, Angola, Benguela, anúncio",
+    "anoInicio": 1929,
+    "anoFim": 1929,
+    "anoTipo": "data"
   },
   {
     "id": 121,
@@ -2175,7 +2535,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-BNP-Não coletado registro do microfilme",
-    "palavrasChave": "jornal, Angola, Benguela, mão de obra indígena"
+    "palavrasChave": "jornal, Angola, Benguela, mão de obra indígena",
+    "anoInicio": 1930,
+    "anoFim": 1930,
+    "anoTipo": "data"
   },
   {
     "id": 122,
@@ -2193,7 +2556,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "PT-BNP-Não coletado registro do microfilme",
-    "palavrasChave": "jornal, Angola, Benguela, missões religiosas"
+    "palavrasChave": "jornal, Angola, Benguela, missões religiosas",
+    "anoInicio": 1930,
+    "anoFim": 1930,
+    "anoTipo": "data"
   },
   {
     "id": 123,
@@ -2211,7 +2577,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "MSS. 242, n. 102",
-    "palavrasChave": "manuscrito, Angola, Congo, costumes, vestuário, Grandpré"
+    "palavrasChave": "manuscrito, Angola, Congo, costumes, vestuário, Grandpré",
+    "anoInicio": 1751,
+    "anoFim": 1800,
+    "anoTipo": "ano"
   },
   {
     "id": 124,
@@ -2229,7 +2598,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "S.C. 7977 A.",
-    "palavrasChave": "dissertação, Angola, Sudoeste de Angola, história"
+    "palavrasChave": "dissertação, Angola, Sudoeste de Angola, história",
+    "anoInicio": 2001,
+    "anoFim": 2001,
+    "anoTipo": "ano"
   },
   {
     "id": 125,
@@ -2247,7 +2619,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "342.1(6); 330.3(6)",
-    "palavrasChave": "nação, nacionalismo, lusofonia, Angola, Cabo Verde, Guiné-Bissau, Moçambique, S. Tomé e Príncipe"
+    "palavrasChave": "nação, nacionalismo, lusofonia, Angola, Cabo Verde, Guiné-Bissau, Moçambique, S. Tomé e Príncipe",
+    "anoInicio": 1989,
+    "anoFim": 1989,
+    "anoTipo": "ano"
   },
   {
     "id": 126,
@@ -2265,7 +2640,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "316.3(673)",
-    "palavrasChave": "Angola, Brasil, imprensa, jornalismo, cultura"
+    "palavrasChave": "Angola, Brasil, imprensa, jornalismo, cultura",
+    "anoInicio": 1992,
+    "anoFim": 1992,
+    "anoTipo": "ano"
   },
   {
     "id": 127,
@@ -2283,7 +2661,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "008(673)",
-    "palavrasChave": "Angola, cultura, literatura anti-colonial, MPLA"
+    "palavrasChave": "Angola, cultura, literatura anti-colonial, MPLA",
+    "anoInicio": 1979,
+    "anoFim": 1979,
+    "anoTipo": "ano"
   },
   {
     "id": 128,
@@ -2301,7 +2682,10 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "398.4(81)",
-    "palavrasChave": "candomblé, religião, matriz africana, ketu, umbanda, Portugal"
+    "palavrasChave": "candomblé, religião, matriz africana, ketu, umbanda, Portugal",
+    "anoInicio": 2012,
+    "anoFim": 2012,
+    "anoTipo": "ano"
   },
   {
     "id": 129,
@@ -2319,6 +2703,9 @@
     "cidade": "Lisboa",
     "pais": "PT",
     "codigoDocumento": "869.0(673)",
-    "palavrasChave": "Angola, cultura, história, revolução"
+    "palavrasChave": "Angola, cultura, história, revolução",
+    "anoInicio": 1978,
+    "anoFim": 1978,
+    "anoTipo": "ano"
   }
 ]
