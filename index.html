@@ -72,6 +72,10 @@
     gap:12px;
     max-width: 22vw;
   }
+  .brand-mark--right{
+    left:auto;
+    right:24px;
+  }
   .brand-mark .logo-slot{
     width:clamp(56px, 10vw, 230px);
     height:clamp(56px, 10vw, 230px);
@@ -214,9 +218,15 @@
     flex:1;
     min-width:0;
   }
-  .page-image{
+  .page-figure{
     flex-shrink:0;
     width:clamp(140px, 22vw, 220px);
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .page-image{
+    width:100%;
     height:clamp(140px, 22vw, 220px);
     border:1px solid var(--line);
     border-radius:16px;
@@ -232,9 +242,33 @@
     object-fit:cover;
     display:block;
   }
+  .page-image.placeholder{
+    flex-direction:column;
+    gap:6px;
+    border-style:dashed;
+    color:var(--ink-soft);
+    text-align:center;
+    padding:10px;
+  }
+  .page-image.placeholder .ph-icon{ font-size:1.8rem; opacity:.55; }
+  .page-image.placeholder .ph-txt{ font-size:0.7rem; letter-spacing:.04em; text-transform:uppercase; opacity:.7; }
+  .page-figure-caption{
+    margin:0;
+    font-size:0.85rem;
+    line-height:1.55;
+    color:var(--ink-soft);
+  }
+  .page-figure-caption strong{ color:var(--ink); }
+  .page-intro-figure{
+    padding:20px clamp(16px, 5vw, 60px) 0;
+  }
+  .page-intro-figure .page-figure{
+    width:clamp(140px, 22vw, 220px);
+    margin:0 auto;
+  }
   @media (max-width:640px){
     .content-body-with-image{ flex-direction:column; }
-    .page-image{ width:100%; max-width:260px; height:auto; aspect-ratio:1/1; margin:0 auto 10px; }
+    .page-figure{ width:100%; max-width:260px; margin:0 auto 10px; }
   }
 
   .info-table{
@@ -652,6 +686,11 @@
       <img src="https://i.ibb.co/BHCR3jZ5/Whats-App-Image-2026-07-09-at-17-18-58-1.jpg" alt="Logo do projeto" onerror="this.parentElement.style.display='none'">
     </span>
   </div>
+  <div class="brand-mark brand-mark--right">
+    <span class="logo-slot">
+      <img src="https://i.ibb.co/gMy9X9Sw/imagem-direit.jpg" alt="Imagem institucional" onerror="this.parentElement.style.display='none'">
+    </span>
+  </div>
   <div class="eyebrow">Projeto de Pesquisa · Fontes Históricas</div>
   <h1>CARTOGRAFIA DIGITAL NO MUNDO ATLÂNTICO</h1>
   <p>Fichário de Fontes - Religiões e Religiosidades Africanas e Afro-brasileiras</p>
@@ -674,6 +713,15 @@
 </nav>
 
 <div class="page active" id="page-home">
+
+<div class="page-intro-figure">
+  <div class="page-figure">
+    <div class="page-image">
+      <img src="https://i.ibb.co/8LpVGJy8/fich-rio.png" alt="Fichário">
+    </div>
+    <p class="page-figure-caption"><strong>Baú central aberto:</strong> O fichário propriamente dito - baú de madeira tradicional africano, onde se guarda o valioso. Dentro, rolos (fontes orais/antigas) e fichas com padrões (fontes documentais).</p>
+  </div>
+</div>
 
 <div class="drawer">
   <div class="drawer-row">
@@ -757,8 +805,11 @@
     <div class="content-eyebrow">Sobre o Projeto</div>
     <h2>Quem Somos</h2>
     <div class="content-body-with-image">
-      <div class="page-image">
-        <img src="https://i.ibb.co/9mkWjY3M/Chat-GPT-Image-10-de-set-de-2026-16-35-57.png" alt="Quem Somos">
+      <div class="page-figure">
+        <div class="page-image">
+          <img src="https://i.ibb.co/9mkWjY3M/Chat-GPT-Image-10-de-set-de-2026-16-35-57.png" alt="Quem Somos">
+        </div>
+        <p class="page-figure-caption"><strong>Ubuntu:</strong> “Eu sou porque nós somos” – As 3 figuras abraçadas representam comunidade, apoio mútuo e ancestralidade.</p>
       </div>
       <div class="content-text">
         <p>Somos um repositório digital temático fruto de projeto de pesquisa pós-doutoral em História, realizado no Programa de Pós-graduação em História (PPGHIS), na Faculdade de Filosofia e Ciências Humanas (FAFICH) da Universidade Federal de Minas Gerais (UFMG) e que contempla fontes primárias e secundárias sobre a história das religiões e das religiosidades, localizadas territorialmente no mundo atlântico.</p>
@@ -776,8 +827,11 @@
     <div class="content-eyebrow">Perspectivas</div>
     <h2>Onde Queremos Chegar</h2>
     <div class="content-body-with-image">
-      <div class="page-image">
-        <img src="https://i.ibb.co/3m3kc5rJ/Chat-GPT-Image-10-de-set-de-2026-16-37-47.png" alt="Onde Queremos Chegar">
+      <div class="page-figure">
+        <div class="page-image">
+          <img src="https://i.ibb.co/3m3kc5rJ/Chat-GPT-Image-10-de-set-de-2026-16-37-47.png" alt="Onde Queremos Chegar">
+        </div>
+        <p class="page-figure-caption"><strong>Baobá:</strong> A árvore da vida africana – representa força, ancestralidade, raízes profundas e crescimento duradouro. É onde queremos chegar: firmes e frutíferos.</p>
       </div>
       <div class="content-text">
         <p>Como estamos mapeando ao longo desses últimos dez anos espaços de produção, de registros e de organização de acervos (arquivos históricos) sobre a história das religiões e da religiosidade afro-diaspórica nas Américas em diálogos com o Mundo Atlântico Norte e Sul, nesse sentido, temos interesse em ampliar essa cartografia a partir de fontes coletadas com outros acervos localizados no Brasil ou em outros territórios afrodiaspóricos nas Américas, desde que dialoguem com a temática.</p>
@@ -794,8 +848,11 @@
     <div class="content-eyebrow">Metodologia</div>
     <h2>Recorte Temporal</h2>
     <div class="content-body-with-image">
-      <div class="page-image">
-        <img src="https://i.ibb.co/Jwp5kcz9/Chat-GPT-Image-10-de-set-de-2026-16-41-16.png" alt="Recorte Temporal">
+      <div class="page-figure">
+        <div class="page-image">
+          <img src="https://i.ibb.co/Jwp5kcz9/Chat-GPT-Image-10-de-set-de-2026-16-41-16.png" alt="Recorte Temporal">
+        </div>
+        <p class="page-figure-caption"><strong>Sankofa:</strong> Pássaro Adinkra que olha para trás buscando um ovo no seu dorso – significa “volte e pegue”. Representa a ideia de aprender com o passado para construir o futuro.</p>
       </div>
       <div class="content-text">
         <p>No que diz respeito ao recorte temporal que a cartografia digital de fontes históricas expõe, temos três momentos distintos: o primeiro momento considerado central, diz respeito às fontes do período entre 1916 e 1966 (primeira metade do século XX) – pois trata-se da temporalidade que envolvia os estudos cotejados na tese de doutorado relacionada à história e à memória do candomblé Congo-Angola na Bahia (Nunes, 2017).</p>
@@ -812,6 +869,14 @@
   <div class="content-wrap">
     <div class="content-eyebrow">Dados da Pesquisa</div>
     <h2>Sobre a Cartografia Digital (CDFHMA)</h2>
+    <div class="content-body-with-image">
+      <div class="page-figure">
+        <div class="page-image">
+          <img src="https://i.ibb.co/1tvMBmZc/cartografia-digital.png" alt="Sobre a Cartografia Digital">
+        </div>
+        <p class="page-figure-caption"><strong>Mapa da África conectado:</strong> Continente em terracota com rede de pontos e linhas neon – representa território mapeado digitalmente, cada nó é uma história, um dado, uma comunidade.</p>
+      </div>
+      <div class="content-text">
     <p>Na presente Cartografia Digital de Fontes Históricas no Mundo Atlântico (CDFHMA) foi possível sistematizar e catalogar <strong>129 (cento e vinte e nove) fontes históricas</strong>, distribuídas em três arquivos públicos e duas bibliotecas, sendo uma biblioteca pública e outra pertencente à esfera privada. Deste total de fontes, 30 (trinta) referem-se a fontes primárias (cartografia, iconografias, manuscritos, processos civis políticos e relatórios) e 99 (noventa e nove) são fontes secundárias (catálogos, bibliografias e impressos - jornais e boletins).</p>
     <p>Nos arquivos públicos chegamos a um quantitativo de 72 (setenta e duas) fontes, equivalente a 55,81% das fontes coletadas. Quanto às bibliotecas, foi possível catalogar 57 (cinquenta e sete) fontes, que correspondem a 44,19% das fontes totais sistematizadas. Entre os arquivos pesquisados, concentram-se documentos no AHU com 28,68% (37), seguido pela BFCHS com 24,81% (32) e a BNP com 19,38% (25). Adiciona-se os documentos mapeados no ADBMNE com 14,73% (19) e o ANTT com 12,40% (16).</p>
 
@@ -874,6 +939,8 @@
     </ol>
 
     <p>O modelo da criação do banco de dados foi estruturado e armazenado em endereço da rede de alcance mundial. Essa contribuição tecnológica se deu a partir da colaboração do Prof. Dr. Luiz Machado e do bolsista/pesquisador Gabriel Borba, integrantes do curso Jogos Digitais do Instituto Federal de Educação, Ciência e Tecnologia da Bahia-IFBA, campus Lauro de Freitas.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -882,6 +949,14 @@
   <div class="content-wrap">
     <div class="content-eyebrow">Aspectos Legais</div>
     <h2>Quanto aos Direitos Autorais</h2>
+    <div class="content-body-with-image">
+      <div class="page-figure">
+        <div class="page-image">
+          <img src="https://i.ibb.co/1YwFvz6M/direitos-autorais.png" alt="Direitos Autorais">
+        </div>
+        <p class="page-figure-caption"><strong>Mão protetora sobre o escudo:</strong> A mão aberta no topo simboliza tutela, cuidado e proteção. Não é posse agressiva, é guarda responsável.</p>
+      </div>
+      <div class="content-text">
     <p>Para elaboração dessa CDFHMA sobre Religiões e Religiosidades Africanas e Afro-brasileiras, é necessário realizar alguns esclarecimentos sobre Direitos Autorais. Livros e documentos de arquivos históricos, quando se estabelecem em domínio público, tornam-se de uso livre. É permitido reprodução, distribuição e adaptação sem necessidade de autorização prévia.</p>
     <p>No Brasil, de acordo com a Lei 9.610/98 - Lei de Direitos Autorais (LDA), a paternidade da obra, uso, fruição e distribuição é garantida ao criador por 70 anos após a sua morte, exigindo autorização prévia para utilização. Documentos de Governo produzidos por órgãos públicos, a exemplo de atas, leis, relatórios oficiais, disponibilizados em arquivos históricos, não são protegidos por direitos autorais, pois trata-se de interesse público e podem ser usados livremente, desde que respeite a Lei No. 13.709/2018 - Lei Geral de Proteção de Dados (LGPD).</p>
     <p>Quanto à digitalização e ao direito sobre a cópia, todas as fontes ora catalogadas estão devidamente identificadas com número sequencial do documento dentro da cartografia, nome/sigla do arquivo histórico consultado, tipo de fonte, título da fonte, número de páginas do arquivo disponibilizado, área de interesse/temática, ano da fonte, descrição sumária do teor do documento consultado, código de referência da fonte no arquivo consultado e link para acessar ao documento digitalizado. O link de cada fonte catalogada pode ter acesso total ou parcial. Disponibilizamos também os sites institucionais dos arquivos históricos e bibliotecas aqui consultadas, para que facilite a interligação e conferência das fontes em seus arquivos originais de depósitos.</p>
@@ -891,6 +966,8 @@
       <li>Obras e documentos posteriores ao ano de 1956, estão disponíveis parcialmente, a exemplo de sumários, prólogos, capítulos e referências bibliográficas;</li>
       <li>Todas as obras e documentos integram acervos de arquivos históricos públicos, com exceção ao acervo da Biblioteca da Faculdade de Ciências Humanas e Sociais da Universidade Nova de Lisboa, instituição privada.</li>
     </ul>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -899,6 +976,14 @@
   <div class="content-wrap">
     <div class="content-eyebrow">Preservação e Gestão</div>
     <h2>Sobre a Curadoria Digital</h2>
+    <div class="content-body-with-image">
+      <div class="page-figure">
+        <div class="page-image">
+          <img src="https://i.ibb.co/v4zdNG2F/curadoria-digital.jpg" alt="Curadoria Digital">
+        </div>
+        <p class="page-figure-caption"><strong>Mãos de ancião sobre cesto trançado:</strong> A curadoria como sabedoria ancestral – mãos experientes que escolhem, não qualquer mão.</p>
+      </div>
+      <div class="content-text">
     <p>A partir da definição dos espaços de guarda dos objetos digitais através dos repositórios dos conteúdos e criação de metadados, temos uma etapa relevante que articulará e dará continuidade à digitalização e à manutenção do repositório da <em>CDFHMA</em>, denominado Curadoria Digital. Essa etapa constitui um processo fundamental para garantir a preservação, a qualidade, a integridade e a continuidade dos objetos digitais ao longo de seu ciclo de vida.</p>
     <p>Essa perspectiva permite compreender que a digitalização e a curadoria digital são processos complementares. A digitalização transforma um documento físico em uma representação digital, enquanto a curadoria agrega informações e procedimentos que permitem preservar essa representação e contextualizá-la adequadamente. Assim, a fonte digitalizada não deve ser confundida com o documento original, pois a passagem do suporte físico para o ambiente digital produz perdas, deslocamentos e novas formas de mediação. Eis que a fonte digitalizada representa, então, a imaterialidade do documento.</p>
     <p>Salientamos que a análise documental a partir de objetos/documentos digitais, portanto, não pode limitar-se ao conteúdo textual encontrado na tela. É necessário investigar também quem produziu o documento, em que circunstâncias, para qual finalidade, em que suporte, onde foi preservado e por quais processos chegou ao ambiente digital. A curadoria digital fará monitoramento permanente e atualização de novos documentos digitalizados, a partir da segunda fase de cartografia digital, contemplando outros arquivos públicos localizados em cidades brasileiras, tais como Salvador, Santo Amaro da Purificação, Rio de Janeiro e Belo Horizonte.</p>
@@ -908,6 +993,8 @@
     <p>Para acessar a sua trajetória acadêmica, favor consultar Currículo Lattes através do link <a href="http://lattes.cnpq.br/1891027810023631" target="_blank" rel="noopener">lattes.cnpq.br/1891027810023631</a>. Quanto às principais publicações, o acesso se dá pelo link <a href="https://linktr.ee/erivaldonunes?utm_source=linktree_profile_share" target="_blank" rel="noopener">linktr.ee/erivaldonunes</a>.</p>
 
     <div class="contact-box">Contato para falar conosco: <a href="mailto:cartdigitalfh@gmail.com">cartdigitalfh@gmail.com</a></div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -916,6 +1003,14 @@
   <div class="content-wrap">
     <div class="content-eyebrow">Rede de Colaboração</div>
     <h2>Parceiros Institucionais e Sites Institucionais de Buscas</h2>
+    <div class="content-body-with-image">
+      <div class="page-figure">
+        <div class="page-image">
+          <img src="https://i.ibb.co/Df8ygTTd/parceiros-esites.png" alt="Parceiros Institucionais e Sites Institucionais">
+        </div>
+        <p class="page-figure-caption"><strong>Círculo de mãos dadas:</strong> 7 mãos entrelaçadas formando uma roda – símbolo máximo de parceria, aliança e confiança mútua. Cada mão é um parceiro.</p>
+      </div>
+      <div class="content-text">
     <p>Os parceiros institucionais aqui citados estão relacionados aos vínculos existentes durante o desenvolvimento das etapas das pesquisas de doutorado (2012-2017) e de pós-doutorado (2025-2026), ambas realizadas no Brasil, mas com atividades de estágio doutoral em Lisboa, Portugal, realizada no ano de 2015.</p>
 
     <div class="partner-cols">
@@ -961,6 +1056,8 @@
       <li>Biblioteca Nacional de Portugal: <a href="https://www.bnportugal.gov.pt/" target="_blank" rel="noopener">bnportugal.gov.pt</a></li>
       <li>Biblioteca Nacional Digital de Portugal: <a href="https://bndigital.bnportugal.gov.pt/" target="_blank" rel="noopener">bndigital.bnportugal.gov.pt</a></li>
     </ul>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -969,6 +1066,15 @@
   <div class="content-wrap">
     <div class="content-eyebrow">Bibliografia Consultada</div>
     <h2>Referências - Apresentação Web</h2>
+
+    <div class="content-body-with-image">
+      <div class="page-figure">
+        <div class="page-image">
+          <img src="https://i.ibb.co/KjnBStVk/referencias.png" alt="Referências">
+        </div>
+        <p class="page-figure-caption"><strong>Livro aberto com dois saberes:</strong> Página esquerda com 16 Adinkras (escrita africana / conhecimento codificado), página direita com espirais (oralidade, fluxo da história contada).</p>
+      </div>
+      <div class="content-text">
 
     <p class="ref-item">BRASIL. <em>Lei No. 9.610 de 19 de fevereiro de 1998</em>. Altera, atualiza e consolida a legislação sobre direitos autorais e dá outras providências. Disponível em <a href="https://www.planalto.gov.br/ccivil_03/leis/l9610.htm" target="_blank" rel="noopener">planalto.gov.br/ccivil_03/leis/l9610.htm</a>, acessado em 21 jul. 2026.</p>
 
@@ -981,6 +1087,8 @@
     <p class="ref-item">NUNES, E. S. <em>Cartografia Digital de Fontes Históricas no Mundo Atlântico: Religiões e Religiosidades Afro-brasileiras</em>. Projeto de Pesquisa de Pós-doutorado. Belo Horizonte: Universidade Federal de Minas Gerais, 2025.</p>
 
     <p class="ref-item">______. <em>Contribuição para a história do Candomblé Congo-Angola a Bahia: o terreiro de Bernardino do Bate Folha (1916-1946)</em>. Tese de Doutorado. Universidade Federal da Bahia. Faculdade de Filosofia e Ciências Humanas. Salvador, 2017, 384f.</p>
+      </div>
+    </div>
   </div>
 </section>
 
