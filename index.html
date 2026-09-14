@@ -113,8 +113,15 @@
   }
   @media (max-width:640px){
     header{ padding-left:24px; padding-right:24px; }
-    .brand-mark{ position:static; justify-content:center; margin-bottom:14px; max-width:none; }
-    .brand-mark .logo-slot{ width:80px; height:80px; }
+    .brand-mark{
+      position:static;
+      display:inline-flex;
+      justify-content:center;
+      vertical-align:top;
+      margin:0 10px 14px;
+      max-width:none;
+    }
+    .brand-mark .logo-slot{ width:64px; height:64px; }
   }
 
   /* ---------- Navegação entre páginas ---------- */
@@ -398,6 +405,14 @@
     color:var(--ink-soft);
     font-size:15px;
     line-height:1.6;
+  }
+  header p.header-subtitle{
+    font-family:'Playfair Display', 'Georgia', serif;
+    font-size:clamp(16px, 2.4vw, 20px);
+    font-weight:600;
+    font-style:italic;
+    color:var(--brass-dark);
+    letter-spacing:.01em;
   }
 
   /* ---------- Filtros ---------- */
@@ -683,7 +698,7 @@
 <header>
   <div class="brand-mark">
     <span class="logo-slot">
-      <img src="https://i.ibb.co/BHCR3jZ5/Whats-App-Image-2026-07-09-at-17-18-58-1.jpg" alt="Logo do projeto" onerror="this.parentElement.style.display='none'">
+      <img src="https://i.ibb.co/hRgBhVH2/Whats-App-Image-2026-09-14-at-12-13-45.jpg" alt="Logo do projeto" onerror="this.parentElement.style.display='none'">
     </span>
   </div>
   <div class="brand-mark brand-mark--right">
@@ -691,9 +706,8 @@
       <img src="https://i.ibb.co/gMy9X9Sw/imagem-direit.jpg" alt="Imagem institucional" onerror="this.parentElement.style.display='none'">
     </span>
   </div>
-  <div class="eyebrow">Projeto de Pesquisa · Fontes Históricas</div>
   <h1>CARTOGRAFIA DIGITAL NO MUNDO ATLÂNTICO</h1>
-  <p>Fichário de Fontes - Religiões e Religiosidades Africanas e Afro-brasileiras</p>
+  <p class="header-subtitle">Religiões e Religiosidades Africanas e Afro-brasileiras</p>
 </header>
 
 <nav class="site-nav" id="siteNav">
@@ -708,7 +722,7 @@
     <button data-page="referencias">Referências</button>
   </div>
   <div class="site-nav-row site-nav-row--fichario">
-    <button data-page="home" class="active">Fichário</button>
+    <button data-page="home" class="active">FICHÁRIO GERAL.</button>
   </div>
 </nav>
 
@@ -1087,6 +1101,8 @@
     <p class="ref-item">NUNES, E. S. <em>Cartografia Digital de Fontes Históricas no Mundo Atlântico: Religiões e Religiosidades Afro-brasileiras</em>. Projeto de Pesquisa de Pós-doutorado. Belo Horizonte: Universidade Federal de Minas Gerais, 2025.</p>
 
     <p class="ref-item">______. <em>Contribuição para a história do Candomblé Congo-Angola a Bahia: o terreiro de Bernardino do Bate Folha (1916-1946)</em>. Tese de Doutorado. Universidade Federal da Bahia. Faculdade de Filosofia e Ciências Humanas. Salvador, 2017, 384f.</p>
+
+    <p class="ref-item">META PLATAFORMS, INCORP. 2026.</p>
       </div>
     </div>
   </div>
