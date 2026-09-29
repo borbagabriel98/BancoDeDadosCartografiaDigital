@@ -105,8 +105,11 @@
     max-width:130px;
   }
   @media (min-width:641px){
-    header{ padding-bottom: 90px; }
+    header{ padding-bottom: 75px; }
     header{ padding-left: clamp(90px, 14vw, 260px); padding-right: clamp(90px, 14vw, 260px); }
+  }
+  @media (min-width:768px){
+    header p.header-subtitle{ white-space:nowrap; }
   }
   @media (max-width:900px){
     .brand-mark .logo-slot{ width:clamp(48px, 9vw, 90px); height:clamp(48px, 9vw, 90px); }
@@ -212,6 +215,9 @@
     line-height:1.7;
     font-size:15px;
   }
+  #page-direitos-autorais .content-text ul{
+    font-size:15.5px;
+  }
   .content-wrap li{ margin-bottom:6px; }
   .content-wrap a{ color:var(--seal); }
   .content-wrap strong{ color:var(--brass-dark); }
@@ -225,11 +231,7 @@
     flex:1;
     min-width:0;
   }
-  .content-image{
-    display:block;
-    width:100%;
-    max-height:360px;
-    object-fit:contain;
+  .content-image-frame{
     margin:16px auto 0;
   }
   .page-figure{
@@ -258,17 +260,15 @@
     object-fit:contain;
     display:block;
   }
-  .project-logo{
-    display:flex;
-    justify-content:center;
-    margin-top:8px;
+  .page-image.content-image-frame{
+    width:fit-content;
+    max-width:100%;
+    min-height:0;
+    padding:0;
   }
-  .project-logo img{
+  .content-image-frame img{
     width:auto;
-    max-width:160px;
-    max-height:120px;
-    object-fit:contain;
-    display:block;
+    max-width:100%;
   }
   .page-image.placeholder{
     flex-direction:column;
@@ -846,9 +846,6 @@
           <img src="https://i.ibb.co/qLDRZt42/quem-somos.png" alt="Quem Somos">
         </div>
         <p class="page-figure-caption"><strong>Ubuntu:</strong> “Eu sou porque nós somos” – As 3 figuras abraçadas representam comunidade, apoio mútuo e ancestralidade.</p>
-        <div class="project-logo">
-          <img src="https://i.ibb.co/hRgBhVH2/Whats-App-Image-2026-09-14-at-12-13-45.jpg" alt="Logomarca do projeto CDFHMA">
-        </div>
       </div>
       <div class="content-text">
         <p>Somos um repositório digital temático fruto de projeto de pesquisa pós-doutoral em História, realizado no Programa de Pós-graduação em História (PPGHIS), na Faculdade de Filosofia e Ciências Humanas (FAFICH) da Universidade Federal de Minas Gerais (UFMG) e que contempla fontes primárias e secundárias sobre a história das religiões e das religiosidades, localizadas territorialmente no mundo atlântico.</p>
@@ -876,7 +873,9 @@
         <p>Como estamos mapeando ao longo desses últimos dez anos espaços de produção, de registros e de organização de acervos (arquivos históricos) sobre a história das religiões e da religiosidade afro-diaspórica nas Américas em diálogos com o Mundo Atlântico Norte e Sul, nesse sentido, temos interesse em ampliar essa cartografia a partir de fontes coletadas com outros acervos localizados no Brasil ou em outros territórios afrodiaspóricos nas Américas, desde que dialoguem com a temática.</p>
         <p>Oportunamente, arquivos históricos localizados nas cidades brasileiras de Salvador-BA, Santo Amaro da Purificação-BA, Rio de Janeiro-RJ e Belo Horizonte-MG farão parte dessa base de dados. Existe possibilidades de ampliar a cartografia com documentos de arquivos/bibliotecas existentes nas cidades de Lima/Peru, além de Providence/Rhode Island e New Orleans/Louisiana, ambas nos Estados Unidos da América.</p>
         <p>A Cartografia Digital, portanto, tem a intenção em disponibilizar num primeiro momento, um catálogo de fontes históricas sobre religiões e religiosidades africanas e afro-brasileiras, oriundas de arquivos históricos, em países que fazem parte do mundo atlântico: <strong>Brasil, Angola, República Democrática do Congo, República do Congo e Portugal</strong>. Esse locus de fontes históricas pode ser ampliado com a continuidade da pesquisa, cotejando o mundo atlântico/pacífico: Brasil, Peru, Estados Unidos da América, Portugal, Congo e Angola.</p>
-        <img class="content-image" src="https://i.ibb.co/XgpSfzJ/Logo-1-Cartografia-Ampliada.png" alt="Logo 1 Cartografia Ampliada">
+        <div class="page-image content-image-frame">
+          <img src="https://i.ibb.co/XgpSfzJ/Logo-1-Cartografia-Ampliada.png" alt="Logo 1 Cartografia Ampliada">
+        </div>
       </div>
     </div>
   </div>
@@ -1136,7 +1135,7 @@
   </div>
 </section>
 
-<footer>Inventário de fontes históricas localizadas em arquivos e bibliotecas - Mapas, Impressos/Jornais, Etnografias, Catálogos, Processos, Relatórios e Bibliografias de acervos em Portugal e no Brasil.</footer>
+<footer>Repositório digital de fontes históricas localizadas em arquivos e bibliotecas - Mapas, Impressos/Jornais, Etnografias, Catálogos, Processos, Relatórios e Bibliografias de acervos em Portugal e no Brasil.</footer>
 
 <script>
 let FONTES = [];
