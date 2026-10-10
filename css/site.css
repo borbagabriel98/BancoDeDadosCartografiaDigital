@@ -63,8 +63,8 @@
     align-items:center;
     justify-content:space-between;
     gap:16px;
-    max-width: 1400px;
-    margin: 0 auto;
+    max-width: none;
+    margin: 0;
   }
 
   .brand-mark{
@@ -79,8 +79,8 @@
     margin-left:auto;
   }
 
-  .brand-mark .logo-slot{    width:clamp(56px, 10vw, 230px);
-    height:clamp(56px, 10vw, 230px);
+  .brand-mark .logo-slot{    width:clamp(72px, 12vw, 250px);
+    height:clamp(72px, 12vw, 250px);
     border:1px solid var(--line);
     border-radius:16px;
     background:var(--card);
@@ -108,26 +108,50 @@
   }
   @media (min-width:641px){
     header{ padding-bottom: 75px; }
-    header{ padding-left: clamp(90px, 14vw, 260px); padding-right: clamp(90px, 14vw, 260px); }
+    header{ padding-left:24px; padding-right:24px; }
+    header{
+      display:grid;
+      grid-template-columns:minmax(0, 1fr) minmax(0, 6fr) minmax(0, 1fr);
+      column-gap:16px;
+      align-items:center;
+    }
+    .header-top{ display:contents; }
+    .brand-mark:first-child{
+      grid-column:1;
+      grid-row:1 / 4;
+      justify-self:start;
+      align-self:center;
+    }
+    .brand-mark--right{
+      grid-column:3;
+      grid-row:1 / 4;
+      justify-self:end;
+      align-self:center;
+      margin-left:0;
+    }
+    header h1,
+    header p.header-subtitle,
+    .header-language-wrap{ grid-column:2; }
+    header h1{ font-size:clamp(26px, 4.4vw, 42px); }
   }
   @media (min-width:768px){
     header p.header-subtitle{ white-space:nowrap; }
   }
   @media (max-width:900px){
-    .brand-mark .logo-slot{ width:clamp(48px, 9vw, 90px); height:clamp(48px, 9vw, 90px); }
+    .brand-mark .logo-slot{ width:clamp(60px, 10vw, 110px); height:clamp(60px, 10vw, 110px); }
   }
   @media (max-width:640px){
     header{ padding-left:24px; padding-right:24px; }
     .header-top{
-      flex-wrap:wrap;
-      justify-content:center;
+      flex-wrap:nowrap;
+      justify-content:space-between;
     }
     .brand-mark{
       position:static;
       display:inline-flex;
       justify-content:center;
       vertical-align:top;
-      margin:0 10px 14px;
+      margin:0 0 14px;
       max-width:none;
       flex:0 0 auto;
     }
@@ -518,7 +542,7 @@
   }
   header p.header-subtitle{
     font-family:'Playfair Display', 'Georgia', serif;
-    font-size:clamp(16px, 2.4vw, 20px);
+    font-size:clamp(15px, 2.2vw, 18px);
     font-weight:600;
     font-style:italic;
     color:var(--brass-dark);
