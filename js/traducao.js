@@ -3,9 +3,9 @@ const IDIOMA_ATIVO = ['en', 'es'].includes(IDIOMA) ? IDIOMA : 'pt';
 
 const ROTULOS = {
   en: {
-    siteTitle: 'DIGITAL CARTOGRAPHY IN THE ATLANTIC WORLD',
+    siteTitle: 'Digital Humanities in the Atlantic World - African and Afro-Brazilian Religions and Religious Practices',
     subtitle: 'African and Afro-Brazilian Religions and Religious Practices',
-    nav: ['About Us', 'Where We Are Going', 'Time Frame', 'About the Digital Cartography', 'Copyright', 'Digital Curation', 'Partners and Institutional Websites', 'References', 'GENERAL CATALOG'],
+    nav: ['About Us', 'Where We Are Going', 'About the Digital Mapping', 'Digital Curation', 'Partners, Institutional Websites and References', 'Copyright', 'GENERAL CATALOG'],
     footer: 'Digital repository of historical sources held in archives and libraries — maps, printed materials/newspapers, ethnographies, catalogs, legal proceedings, reports, and bibliographies from collections in Portugal and Brazil.',
     search: 'Search',
     searchPlaceholder: 'title, description, keyword…',
@@ -36,9 +36,9 @@ const ROTULOS = {
     ficheCaption: '<strong>Open central chest:</strong> The catalog itself is represented as a traditional African wooden chest, a place to keep valuable objects. Inside are scrolls (oral/ancient sources) and patterned cards (documentary sources).'
   },
   es: {
-    siteTitle: 'CARTOGRAFÍA DIGITAL EN EL MUNDO ATLÁNTICO',
+    siteTitle: 'Humanidades digitales en el mundo atlántico - Religiones y religiosidades africanas y afrobrasileñas',
     subtitle: 'Religiones y religiosidades africanas y afrobrasileñas',
-    nav: ['Quiénes somos', 'Hacia dónde vamos', 'Marco temporal', 'Sobre la cartografía digital', 'Derechos de autor', 'Curaduría digital', 'Socios y sitios institucionales', 'Referencias', 'CATÁLOGO GENERAL'],
+    nav: ['Quiénes somos', 'Hacia dónde vamos', 'Sobre el mapeo digital', 'Curaduría digital', 'Socios, sitios institucionales y referencias', 'Derechos de autor', 'CATÁLOGO GENERAL'],
     footer: 'Repositorio digital de fuentes históricas conservadas en archivos y bibliotecas: mapas, impresos y periódicos, etnografías, catálogos, procesos, informes y bibliografías de colecciones de Portugal y Brasil.',
     search: 'Buscar',
     searchPlaceholder: 'título, descripción, palabra clave…',
@@ -79,8 +79,9 @@ const TRADUCOES = {
       paragraphs: [
         'We are a thematic digital repository resulting from a postdoctoral research project in History conducted at the Graduate Program in History (PPGHIS), at the School of Philosophy and Human Sciences (FAFICH) of the Federal University of Minas Gerais (UFMG). The project brings together primary and secondary sources on the history of African and Afro-Brazilian religions and religious practices across the Atlantic world.',
         'This repository is entitled “Digital Cartography of Historical Sources in the Atlantic World (CDFHMA): African and Afro-Brazilian Religions and Religious Practices.” It was organized by historian Prof. Dr. Erivaldo Sales Nunes, affiliated with the Federal Institute of Education, Science and Technology of Bahia (IFBA), Salvador campus. The project was supervised with the collaboration of Prof. Dr. Vanicléia Silva Santos (University of Pennsylvania/UFMG).',
+        'The catalog was structured and stored in a worldwide digital address, with the technological contribution of Prof. Dr. Luiz Machado and research fellow Gabriel Borba, both members of the Digital Games program at the Federal Institute of Education, Science and Technology of Bahia (IFBA), Lauro de Freitas campus.',
         'The catalog brings together physical documents, mostly dating from the twentieth century, which were digitized as part of research carried out during a doctoral research period at Universidade Nova de Lisboa in 2015. These digital documents come from physical collections held in public historical archives and public and private libraries in Lisbon, Portugal.',
-        'The historical archives and libraries consulted were the Diplomatic Archives and Library of the Ministry of Foreign Affairs (ADBMNE), the Overseas Historical Archive (AHU), the National Archive of Torre do Tombo (ANTT), the Library of the School of Social Sciences and Humanities of Universidade Nova de Lisboa (BFCHS/UNL), and the National Library of Portugal (BNP). The sources represent the first stage in disseminating multi-referenced knowledge (museum, geographic, historical, anthropological, and digital) through a responsive website.'
+        'The historical sources consulted here represent the first stage in the diffusion of multi-referenced knowledge (museum, geographic, historical, anthropological, and digital), making it visible through storage on a responsive website.'
       ]
     },
     'onde-chegar': {
@@ -88,52 +89,47 @@ const TRADUCOES = {
       heading: 'Where We Are Going',
       caption: '<strong>Baobab:</strong> The tree of life in Africa represents strength, ancestry, deep roots, and lasting growth. It embodies our destination: to stand firm and flourish.',
       paragraphs: [
-        'Over the past ten years, we have mapped places where collections on the history of Afro-diasporic religions and religious practices in the Americas were created, documented, and organized, in dialogue with the Northern and Southern Atlantic worlds. We intend to expand this cartography with sources from other collections in Brazil and elsewhere in the Afro-diasporic Americas, provided they relate to the subject.',
-        'Historical archives in the Brazilian cities of Salvador, Santo Amaro da Purificação, Rio de Janeiro, and Belo Horizonte are expected to become part of this database. The cartography may also expand to include archives and libraries in Lima, Peru, as well as Providence, Rhode Island, and New Orleans, Louisiana, in the United States.',
-        'The Digital Cartography initially aims to provide a catalog of historical sources on African and Afro-Brazilian religions and religious practices from archives in Atlantic-world countries: <strong>Brazil, Angola, the Democratic Republic of the Congo, the Republic of the Congo, and Portugal</strong>. As research continues, this corpus may expand to encompass the Atlantic and Pacific worlds, including Brazil, Peru, the United States, Portugal, Congo, and Angola.'
-      ]
-    },
-    'recorte-temporal': {
-      eyebrow: 'Methodology',
-      heading: 'Time Frame',
-      caption: '<strong>Sankofa:</strong> An Adinkra bird looking back to retrieve an egg from its back; its name means “go back and get it.” It represents learning from the past to build the future.',
-      paragraphs: [
-        'The historical sources presented in this digital cartography cover three distinct periods. The first, and central, period spans 1916 to 1966 (the first half of the twentieth century), the timeframe of the studies examined in the doctoral dissertation on the history and memory of Congo-Angola Candomblé in Bahia (Nunes, 2017).',
-        'The second period focuses on the second half of the twentieth century. It includes sources on liberation movements in the Congo (1960) and Angola (1975), the struggles for independence from colonial rule, and the postcolonial period (1980–1990).',
-        'A further period includes documents from the eighteenth and nineteenth centuries. This timeframe was added because of the importance of approaches to enslavement, customs, languages, and religious practices in the territories concerned.',
-        'The sources mainly concern territories in Central Africa (the Democratic Republic of the Congo, the Republic of the Congo, and Angola). Although this was not the original scope of the research, some archives also yielded documentary sources from West and East Africa.'
-      ]
+        'This digital mapping initially aims to provide a catalog of historical sources on African and Afro-Brazilian religions and religious practices from historical archives in Atlantic-world countries: Brazil, Angola, the Democratic Republic of the Congo, the Republic of the Congo, and Portugal. This corpus may expand as research continues, encompassing the Atlantic/Pacific worlds: Brazil, Peru, the United States, Portugal, Congo, and Angola.',
+        'In due course, historical archives in the Brazilian cities of Salvador-BA, Santo Amaro da Purificação-BA, Rio de Janeiro-RJ, and Belo Horizonte-MG will become part of this database. The mapping may be expanded to include documents from archives/libraries in Lima/Peru, Providence/Rhode Island, New Orleans/Louisiana, and New York City/New York, located in the United States of America.'
+      ],
+      temporalParagraphs: [
+        'With regard to the time frame presented by the mapping, there are three distinct periods. The first, considered central, concerns sources from 1916 to 1966 (the first half of the twentieth century), since this period encompassed the studies examined in my doctoral thesis on the history and memory of Candomblé Congo-Angola in Bahia (Nunes, 2017).',
+        'The second period focuses on the second half of the twentieth century, with sources discussing the liberation movements in Congo (1960) and Angola (1975), including the period of struggles for colonial independence and post-colonization (1980-1990).',
+        'There is also a further period, represented by some documents dated to the eighteenth and nineteenth centuries. I added this period because I consider important the approaches concerning the processes of enslavement, customs, languages, and religious practices of the territories involved.',
+        'I clarify that the sources are mostly concentrated on documents concerning the territories of Central Africa (the Democratic Republic of the Congo, the Republic of the Congo, and Angola). However, although this was not the scope of the research, some archives also made it possible to include documentary sources from West and East Africa.'
+      ],
+      sankofaCaption: 'An Adinkra bird that looks back while seeking an egg on its back — it means “go back and get it”. It represents the idea of learning from the past to build the future.'
     },
     'sobre-cdfhma': {
       eyebrow: 'Research Data',
-      heading: 'About the Digital Cartography (CDFHMA)',
+      heading: 'About the Digital Mapping',
       caption: '<strong>Connected map of Africa:</strong> The terracotta-colored continent, crossed by a network of bright nodes and lines, represents territory mapped digitally; each node is a story, a data point, or a community.',
       paragraphs: [
-        'This Digital Cartography of Historical Sources in the Atlantic World (CDFHMA) systematized and cataloged <strong>129 historical sources</strong> from three public archives and two libraries, one public and one private. Of these, 30 are primary sources (cartography, iconography, manuscripts, civil and political proceedings, and reports), while 99 are secondary sources (catalogs, bibliographies, and printed materials such as newspapers and bulletins).',
-        'Public archives account for 72 sources, or 55.81% of the collection. The libraries account for 57 sources (44.19%). Among the institutions surveyed, the AHU holds the largest share, at 28.68% (37 items), followed by the BFCHS at 24.81% (32) and the BNP at 19.38% (25). The ADBMNE accounts for 14.73% (19 items), and the ANTT for 12.40% (16).',
-        'Among the source types, bibliographic sources make up 48.06% (62), printed materials 17.05% (22), and catalogs 11.63% (15). Iconography accounts for 10.08% (13); manuscripts and civil/political proceedings each account for 4.65% (6). Reports and cartography complete the collection at 3.10% (4) and 0.78% (1), respectively.',
+        'In this mapping, it was possible to systematize and catalog <strong>129 historical sources</strong>, distributed across three public archives and two libraries, one public and one private. Of these, 30 refer to primary sources (cartography, iconography, manuscripts, civil and political proceedings, and reports), while 99 are secondary sources (catalogs, bibliographies, and printed materials — newspapers and bulletins).',
+        'Public archives account for 72 sources, equivalent to 55.81% of the sources collected. The libraries account for 57 sources (44.19%). Among the institutions surveyed, according to Graph and Table 1, the AHU holds 28.68% (37), followed by the BFCHS at 24.81% (32) and the BNP at 19.38% (25). The ADBMNE accounts for 14.73% (19), and the ANTT for 12.40% (16).',
+        'Among the source types systematized according to Table 2 and Graph 2, bibliographic sources stand out at 48.06% (62), followed by printed sources at 17.05% (22) and catalogs at 11.63% (15). Iconography represents 10.08% (13), while manuscripts and civil/political proceedings each represent 4.65% (6). Reports and cartography complete the collection at 3.1% (4) and 0.78% (1), respectively.',
         'Of the 129 historical sources, only seven digital objects (documents) are unavailable on the website. According to the catalog numbering, these are: <strong>ADBMNE</strong> — items 8 and 12; <strong>AHU</strong> — item 56; <strong>ANTT</strong> — items 66, 67, and 68; <strong>BNP</strong> — item 123.',
         'The sources collected made it necessary to catalog and organize access to the documents in a database, initially structured in Microsoft Excel spreadsheets. Each record was cataloged using the following data categories, or metadata:',
         'The database model was developed and hosted online with contributions from Prof. Dr. Luiz Machado and research scholarship holder Gabriel Borba, members of the Digital Games program at the Federal Institute of Education, Science and Technology of Bahia (IFBA), Lauro de Freitas campus.'
       ],
       tableCaptions: [
         'Table 1 — Documents cataloged in archives and libraries in Lisbon',
-        'Table 2 — Summary of systematized historical sources'
+        'Table 2: Consolidation of Systematized Historical Sources'
       ],
       tableHeaders: [
-        'Archive', 'Number range', 'No. of documents', '%',
-        'Source type', 'ADBMNE', 'AHU', 'ANTT', 'BFCHS', 'BNP', 'Total', '%'
+        'Archives', 'Numbering', 'Qtd Docs', '%',
+        'Source Types', 'ADBMNE', 'AHU', 'ANTT', 'BFCHS', 'BNP', 'Total', '(%)'
       ],
       tableRows: [
-        'C = Cartography', 'CAT = Catalog', 'B = Bibliography', 'I = Iconography',
+        'C= Cartography', 'CAT = Catalog', 'B= Bibliography', 'I= Iconography',
         'IMP = Printed material/Newspaper-Bulletin', 'M = Manuscript',
         'PPC = Political and Civil Proceedings', 'RELAT = Report'
       ],
       tableTotals: ['Total', 'Total sources'],
       metadataTitles: [
-        'Document number (No.)', 'Archive consulted', 'Source type', 'Source title',
-        'Number of pages', 'Subject area (topic)', 'Source year', 'Source description',
-        'File link', 'Reference code', 'City/country'
+        'Document number in the cartography', 'Archive abbreviation consulted', 'Source type collected', 'Source title',
+        'Number of pages', 'Area of interest/topic', 'Source year', 'Brief source description',
+        'Link to source PDF', 'Reference code', 'City/Country'
       ],
       metadataDescriptions: [
         'A fixed number assigned to uniquely identify each document cataloged in the digital cartography database.',
@@ -149,14 +145,24 @@ const TRADUCOES = {
         'The location of the archive or library.'
       ],
       metadataHeading: 'Metadata Description',
-      finalParagraph: 'The database model was developed and hosted online with contributions from Prof. Dr. Luiz Machado and research scholarship holder Gabriel Borba, members of the Digital Games program at the Federal Institute of Education, Science and Technology of Bahia (IFBA), Lauro de Freitas campus.'
+      finalParagraph: 'The database model was developed and hosted online with contributions from Prof. Dr. Luiz Machado and research scholarship holder Gabriel Borba, members of the Digital Games program at the Federal Institute of Education, Science and Technology of Bahia (IFBA), Lauro de Freitas campus.',
+      chartCaptions: [
+        'Graph 1 — Archives/Libraries — Quantity of Documents Mapped',
+        'Graph 2– Archives/Libraries — Quantity and (%) of Documents Mapped by Types'
+      ],
+      sourceLabels: [
+        'Sources: ADBMNE, AHU, ANTT, BFCHS, BNP, 2015.',
+        'Sources: ADBMNE, AHU, ANTT, BFCHS, BNP, 2015.',
+        'Sources: ADBMNE, AHU, ANTT, BFCHS, BNP, 2015.',
+        'Sources: ADBMNE, AHU, ANTT, BFCHS, BNP, 2015.'
+      ]
     },
     'direitos-autorais': {
       eyebrow: 'Legal Matters',
       heading: 'Copyright',
       caption: '<strong>Protective hand over a shield:</strong> The open hand above the shield symbolizes care, guardianship, and protection—not ownership, but responsible stewardship.',
       paragraphs: [
-        'A few copyright matters must be clarified regarding this CDFHMA on African and Afro-Brazilian religions and religious practices. Books and historical archival documents that have entered the public domain may be used freely, reproduced, distributed, and adapted without prior authorization.',
+        'For the preparation of this catalog/mapping, some clarifications about Copyright are necessary. Books and documents in historical archives, once they enter the public domain, may be used freely. Reproduction, distribution, and adaptation are permitted without prior authorization.',
         'In Brazil, Law No. 9,610/98 (the Copyright Act) guarantees authorship and the rights to use, benefit from, and distribute a work for 70 years after the author’s death; authorization is required during that period. Government documents produced by public bodies—such as minutes, laws, and official reports held in historical archives—are not protected by copyright and may be freely used in the public interest, subject to Law No. 13,709/2018 (the General Data Protection Law, LGPD).',
         'Regarding digitization and rights in copies, every cataloged source is identified by its sequential cartography number, archive name or abbreviation, source type and title, number of pages in the available file, subject area, year, summary description, archive reference code, and a link to the digitized document. Links may provide full or partial access. We also provide the institutional websites of the archives and libraries consulted, making it easier to locate and verify sources in their original collections.',
         'As this cartography was organized in 2026, the works and documents listed here are subject to the following conditions:'
@@ -172,22 +178,21 @@ const TRADUCOES = {
       heading: 'About Digital Curation',
       caption: '<strong>An elder’s hands over a woven basket:</strong> Curation as ancestral wisdom—experienced hands make thoughtful selections.',
       paragraphs: [
-        'Defining where digital objects are stored through content repositories and metadata is an important step in the digitization and ongoing maintenance of the CDFHMA repository. This process, known as digital curation, is essential to preserving the quality, integrity, and continuity of digital objects throughout their life cycle.',
-        'Digitization and digital curation are complementary processes. Digitization transforms a physical document into a digital representation, while curation adds information and procedures that preserve and contextualize it. A digitized source should not be confused with the original document: moving from a physical medium to a digital environment entails losses, shifts, and new forms of mediation. The digitized source is therefore an immaterial representation of the document.',
-        'Documentary analysis of digital objects must go beyond the text displayed on a screen. It should also investigate who created the document, under what circumstances and for what purpose, on which medium, where it was preserved, and how it entered the digital environment. In the second phase of the digital cartography, ongoing curation will monitor and add newly digitized documents from public archives in Salvador, Santo Amaro da Purificação, Rio de Janeiro, and Belo Horizonte.',
-        'The digital curator is <strong>Erivaldo Sales Nunes</strong>, a Brazilian historian from Salvador, Bahia. He completed a postdoctoral residency in History at the Federal University of Minas Gerais (UFMG) in 2025–2026 and earned a PhD in Social History from the Federal University of Bahia (UFBA) in 2017, including a doctoral research period in Anthropology at Universidade Nova de Lisboa, Portugal. Since 2011, he has been a tenured History professor in basic, technical, and technological education at the Federal Institute of Education, Science and Technology of Bahia (IFBA).',
-        'For his academic background, see his Lattes CV at <a href="http://lattes.cnpq.br/1891027810023631" target="_blank" rel="noopener">lattes.cnpq.br/1891027810023631</a>. His principal publications are available at <a href="https://linktr.ee/erivaldonunes?utm_source=linktree_profile_share" target="_blank" rel="noopener">linktr.ee/erivaldonunes</a>.'
+        'Defining where digital objects are kept through content repositories and the creation of metadata is a relevant step that will connect and continue the digitization and maintenance of the repository, here called “Digital Curation” (Gregório, Costa, Maciel, 2025).',
+        'As a digital curator, I wish to ensure the preservation, quality, integrity, and continuity of digital objects throughout their life cycle. Every curator tells a story. In this repository, I sought to select, digitize, systematize, and disseminate documents on the history of African, Afro-Brazilian, and Amefrican religions and religious practices, dated to the first half of the twentieth century.',
+        'In addition to being the digital curator, I completed a postdoctoral research period in History at the Federal University of Minas Gerais (UFMG). I completed a PhD in Social History at the Federal University of Bahia (UFBA), with a doctoral research period in Anthropology at Universidade Nova de Lisboa, Portugal. I am a Full Professor of History in Basic, Technical, and Technological Education at the Federal Institute of Education, Science and Technology of Bahia (IFBA).',
+        'To access my academic background, please consult my Lattes CV at <a href="http://lattes.cnpq.br/1891027810023631" target="_blank" rel="noopener">http://lattes.cnpq.br/1891027810023631</a>. For my main publications, visit <a href="https://linktr.ee/erivaldonunes?utm_source=linktree_profile_share" target="_blank" rel="noopener">https://linktr.ee/erivaldonunes?utm_source=linktree_profile_share</a>.'
       ],
       subheading: 'Curator in Charge',
       contact: 'Contact us: <a href="mailto:cartdigitalfh@gmail.com">cartdigitalfh@gmail.com</a>'
     },
     parceiros: {
       eyebrow: 'Collaborative Network',
-      heading: 'Institutional Partners and Research Websites',
+      heading: 'Partners, Institutional Websites and References',
       caption: '<strong>Circle of joined hands:</strong> Seven hands joined in a ring—a symbol of partnership, alliance, and mutual trust. Each hand represents a partner.',
       paragraphs: [
         'The institutional partners listed here are connected to the doctoral research (2012–2017) and postdoctoral research (2025–2026), both conducted in Brazil, with a doctoral research period in Lisbon, Portugal, in 2015.',
-        'The archives and libraries included in this cartography can be accessed through the following links:'
+        'Regarding institutional websites for searching and consulting historical sources, the archives and libraries included in this cartography can be accessed directly through the following links:'
       ],
       partnerHeadings: [
         'Funding Agency', 'Public and Private Universities',
@@ -195,13 +200,16 @@ const TRADUCOES = {
       ],
       subheading: 'Institutional Websites for Searching and Consulting Historical Sources',
       archiveLinks: [
-        'Diplomatic Archives and Library of the Ministry of Foreign Affairs:',
+        'Diplomatic Archives and Library, Ministry of Foreign Affairs:',
         'Overseas Historical Archive:',
         'National Archive of Torre do Tombo:',
-        'Library of the School of Social Sciences and Humanities / Universidade Nova de Lisboa:',
+        'Library of the School of Social Sciences and Humanities/Universidade Nova de Lisboa:',
         'National Library of Portugal:',
         'National Digital Library of Portugal:'
-      ]
+      ],
+      referenceHeading: 'References',
+      referenceIntro: 'Regarding the bibliographic references that supported the presentation text of this website/database, the following sources are highlighted:',
+      referenceCaption: '<strong>Open book with two forms of knowledge:</strong> The left page has 16 Adinkra symbols (African writing/encoded knowledge); the right page has spirals (orality and the flow of narrated history).'
     },
     referencias: {
       eyebrow: 'Works Consulted',
@@ -217,8 +225,9 @@ const TRADUCOES = {
       paragraphs: [
         'Somos un repositorio digital temático fruto de un proyecto de investigación posdoctoral en Historia, realizado en el Programa de Posgrado en Historia (PPGHIS) de la Facultad de Filosofía y Ciencias Humanas (FAFICH) de la Universidad Federal de Minas Gerais (UFMG). El proyecto reúne fuentes primarias y secundarias sobre la historia de las religiones y religiosidades africanas y afrobrasileñas en el mundo atlántico.',
         'Este repositorio se titula «Cartografía Digital de Fuentes Históricas en el Mundo Atlántico (CDFHMA): Religiones y religiosidades africanas y afrobrasileñas». Fue organizado por el historiador Prof. Dr. Erivaldo Sales Nunes, vinculado al Instituto Federal de Educación, Ciencia y Tecnología de Bahía (IFBA), campus Salvador. La supervisión del proyecto contó con la colaboración de la Profa. Dra. Vanicléia Silva Santos (University of Pennsylvania/UFMG).',
+        'El modelo de creación del repositorio digital con base de datos se estructuró y almacenó en una dirección de la red de alcance mundial. Esa contribución tecnológica se realizó con la colaboración del Prof. Dr. Luiz Machado y del becario-investigador Gabriel Borba, integrantes del curso de Juegos Digitales del Instituto Federal de Educación, Ciencia y Tecnología de Bahía (IFBA), campus Lauro de Freitas.',
         'El catálogo reúne documentos físicos, en su mayoría del siglo XX, digitalizados durante investigaciones realizadas en una estancia doctoral en la Universidade Nova de Lisboa en 2015. Estos documentos digitales proceden de colecciones físicas conservadas en archivos históricos públicos y bibliotecas públicas y privadas de Lisboa, Portugal.',
-        'Se consultaron el Archivo Diplomático y Biblioteca del Ministerio de Asuntos Exteriores (ADBMNE), el Archivo Histórico Ultramarino (AHU), el Archivo Nacional de Torre do Tombo (ANTT), la Biblioteca de la Facultad de Ciencias Sociales y Humanas de la Universidade Nova de Lisboa (BFCHS/UNL) y la Biblioteca Nacional de Portugal (BNP). Las fuentes representan la primera etapa de difusión de un conocimiento multirreferencial (museístico, geográfico, histórico, antropológico y digital) mediante un sitio web adaptable.'
+        'Las fuentes históricas aquí consultadas representan la primera etapa de difusión de un conocimiento multirreferencial (museístico, geográfico, histórico, antropológico y digital), que se difunde mediante almacenamiento en un sitio web adaptable.'
       ]
     },
     'onde-chegar': {
@@ -226,52 +235,47 @@ const TRADUCOES = {
       heading: 'Hacia dónde vamos',
       caption: '<strong>Baobab:</strong> El árbol de la vida africano representa fuerza, ancestralidad, raíces profundas y crecimiento duradero. Es nuestro destino: mantenernos firmes y dar frutos.',
       paragraphs: [
-        'Durante los últimos diez años hemos cartografiado espacios de producción, registro y organización de colecciones (archivos históricos) sobre la historia de las religiones y religiosidades afrodiaspóricas en las Américas, en diálogo con el mundo atlántico norte y sur. Queremos ampliar esta cartografía con fuentes de otras colecciones de Brasil y de otros territorios afrodiaspóricos de las Américas que se relacionen con el tema.',
-        'Está previsto incorporar archivos históricos de las ciudades brasileñas de Salvador, Santo Amaro da Purificação, Río de Janeiro y Belo Horizonte. La cartografía también podría ampliarse con archivos y bibliotecas de Lima, Perú, así como de Providence, Rhode Island, y Nueva Orleans, Luisiana, en Estados Unidos.',
-        'En una primera etapa, la Cartografía Digital busca ofrecer un catálogo de fuentes históricas sobre religiones y religiosidades africanas y afrobrasileñas procedentes de archivos de países del mundo atlántico: <strong>Brasil, Angola, República Democrática del Congo, República del Congo y Portugal</strong>. A medida que avance la investigación, este conjunto podrá ampliarse para abarcar los mundos atlántico y pacífico: Brasil, Perú, Estados Unidos, Portugal, Congo y Angola.'
-      ]
-    },
-    'recorte-temporal': {
-      eyebrow: 'Metodología',
-      heading: 'Marco temporal',
-      caption: '<strong>Sankofa:</strong> Ave Adinkra que mira hacia atrás para recoger un huevo de su espalda; su nombre significa «regresa y recógelo». Representa aprender del pasado para construir el futuro.',
-      paragraphs: [
-        'Las fuentes históricas presentadas en esta cartografía digital abarcan tres períodos distintos. El primero, considerado central, comprende de 1916 a 1966 (la primera mitad del siglo XX), período relacionado con los estudios analizados en la tesis doctoral sobre la historia y la memoria del candomblé Congo-Angola en Bahía (Nunes, 2017).',
-        'El segundo período se concentra en la segunda mitad del siglo XX. Incluye fuentes sobre los movimientos de liberación en el Congo (1960) y Angola (1975), las luchas por la independencia colonial y la etapa poscolonial (1980–1990).',
-        'También se contempla un período con documentos de los siglos XVIII y XIX. Se incorporó por la importancia de abordar los procesos de esclavización, las costumbres, las lenguas y las religiosidades de los territorios estudiados.',
-        'Las fuentes se concentran principalmente en territorios de África Central (República Democrática del Congo, República del Congo y Angola). Aunque no formaba parte del alcance inicial de la investigación, algunos archivos también permitieron incluir fuentes documentales de África Occidental y Oriental.'
-      ]
+        'Este mapeo digital busca ofrecer inicialmente un catálogo de fuentes históricas sobre religiones y religiosidades africanas y afrobrasileñas procedentes de archivos históricos de países del mundo atlántico: Brasil, Angola, República Democrática del Congo, República del Congo y Portugal. Este conjunto podrá ampliarse a medida que avance la investigación, abarcando los mundos atlántico/pacífico: Brasil, Perú, Estados Unidos, Portugal, Congo y Angola.',
+        'A su debido tiempo, los archivos históricos de las ciudades brasileñas de Salvador-BA, Santo Amaro da Purificação-BA, Río de Janeiro-RJ y Belo Horizonte-MG formarán parte de esta base de datos. El mapeo podrá ampliarse para incluir documentos de archivos/bibliotecas de Lima/Perú, Providence/Rhode Island, New Orleans/Louisiana y New York City/New York, situadas en los Estados Unidos de América.'
+      ],
+      temporalParagraphs: [
+        'En cuanto al recorte temporal que presenta el mapeo, hay tres momentos distintos. El primero, considerado central, comprende las fuentes del período entre 1916 y 1966 (primera mitad del siglo XX), pues esta temporalidad abarcaba los estudios examinados en mi tesis doctoral sobre la historia y la memoria del candomblé Congo-Angola en Bahía (Nunes, 2017).',
+        'El segundo recorte temporal se concentra en la segunda mitad del siglo XX, con fuentes que abordan el movimiento de liberación en el Congo (1960) y en Angola (1975), e incluye el período de luchas por la independencia colonial y la poscolonización (1980-1990).',
+        'También se contempla otro recorte temporal, que comprende algunos documentos fechados en los siglos XVIII y XIX. Añadí este recorte porque considero importantes los enfoques sobre los procesos de esclavización, las costumbres, las lenguas y las religiosidades de los territorios involucrados.',
+        'Aclaro que las fuentes se concentran mayoritariamente en documentos relacionados con los territorios de África Central (República Democrática del Congo, República del Congo y Angola). Sin embargo, aunque no formaba parte del alcance de la investigación, en algunos archivos fue posible incluir fuentes documentales de África Occidental y Oriental.'
+      ],
+      sankofaCaption: 'Ave Adinkra que mira hacia atrás buscando un huevo en su dorso; significa «vuelve y recógelo». Representa la idea de aprender del pasado para construir el futuro.'
     },
     'sobre-cdfhma': {
       eyebrow: 'Datos de la investigación',
-      heading: 'Sobre la Cartografía Digital (CDFHMA)',
+      heading: 'Sobre el mapeo digital',
       caption: '<strong>Mapa conectado de África:</strong> El continente en tonos terracota, atravesado por una red de nodos y líneas luminosas, representa un territorio cartografiado digitalmente; cada nodo es una historia, un dato o una comunidad.',
       paragraphs: [
-        'En esta Cartografía Digital de Fuentes Históricas en el Mundo Atlántico (CDFHMA) se sistematizaron y catalogaron <strong>129 fuentes históricas</strong>, procedentes de tres archivos públicos y dos bibliotecas, una pública y otra privada. De ellas, 30 son fuentes primarias (cartografía, iconografía, manuscritos, procesos civiles y políticos e informes) y 99 son fuentes secundarias (catálogos, bibliografías e impresos, como periódicos y boletines).',
-        'Los archivos públicos reúnen 72 fuentes, equivalentes al 55,81 % del total. Las bibliotecas aportan 57 fuentes (44,19 %). Entre las instituciones investigadas, el AHU concentra el 28,68 % (37 documentos), seguido por la BFCHS con el 24,81 % (32) y la BNP con el 19,38 % (25). El ADBMNE aporta el 14,73 % (19 documentos) y el ANTT el 12,40 % (16).',
-        'Entre los tipos de fuentes destacan las bibliográficas, con el 48,06 % (62); los impresos, con el 17,05 % (22); y los catálogos, con el 11,63 % (15). La iconografía representa el 10,08 % (13); los manuscritos y los procesos civiles/políticos representan, cada uno, el 4,65 % (6). Los informes y la cartografía completan el conjunto con el 3,10 % (4) y el 0,78 % (1), respectivamente.',
+        'En este mapeo fue posible sistematizar y catalogar <strong>129 fuentes históricas</strong>, distribuidas en tres archivos públicos y dos bibliotecas, una pública y otra privada. De ellas, 30 se refieren a fuentes primarias (cartografía, iconografía, manuscritos, procesos civiles y políticos e informes), y 99 son fuentes secundarias (catálogos, bibliografías e impresos —periódicos y boletines).',
+        'Los archivos públicos reúnen 72 fuentes, equivalentes al 55,81 % de las fuentes recopiladas. Las bibliotecas aportan 57 fuentes (44,19 %). Según el Gráfico y la Tabla 1, entre las instituciones investigadas el AHU concentra el 28,68 % (37), seguido por la BFCHS con el 24,81 % (32) y la BNP con el 19,38 % (25). El ADBMNE aporta el 14,73 % (19) y el ANTT el 12,40 % (16).',
+        'Entre los tipos de fuentes sistematizados según la Tabla 2 y el Gráfico 2 destacan las fuentes bibliográficas, con el 48,06 % (62); los impresos, con el 17,05 % (22); y los catálogos, con el 11,63 % (15). La iconografía representa el 10,08 % (13), mientras que los manuscritos y los procesos políticos/civiles representan, cada uno, el 4,65 % (6). Los informes y la cartografía completan el conjunto con el 3,1 % (4) y el 0,78 % (1), respectivamente.',
         'De las 129 fuentes históricas, solo siete objetos digitales (documentos) no están disponibles en el sitio. Según la numeración del catálogo, son: <strong>ADBMNE</strong>: documentos 8 y 12; <strong>AHU</strong>: documento 56; <strong>ANTT</strong>: documentos 66, 67 y 68; <strong>BNP</strong>: documento 123.',
         'Las fuentes recopiladas hicieron necesario catalogar y organizar el acceso a los documentos mediante una base de datos, estructurada inicialmente en hojas de cálculo de Microsoft Excel. Cada registro se catalogó con las siguientes categorías de datos o metadatos:',
         'El modelo de la base de datos se desarrolló y alojó en línea con la colaboración del Prof. Dr. Luiz Machado y del becario e investigador Gabriel Borba, integrantes del curso de Juegos Digitales del Instituto Federal de Educación, Ciencia y Tecnología de Bahía (IFBA), campus Lauro de Freitas.'
       ],
       tableCaptions: [
         'Tabla 1 — Documentos catalogados en archivos y bibliotecas de Lisboa',
-        'Tabla 2 — Resumen de las fuentes históricas sistematizadas'
+        'Tabla 2: Consolidación de las Fuentes Históricas Sistematizadas'
       ],
       tableHeaders: [
-        'Archivo', 'Numeración', 'N.º de documentos', '%',
-        'Tipo de fuente', 'ADBMNE', 'AHU', 'ANTT', 'BFCHS', 'BNP', 'Total', '%'
+        'Archivos', 'Numeración', 'Qtd Docs', '%',
+        'Tipo de fuentes', 'ADBMNE', 'AHU', 'ANTT', 'BFCHS', 'BNP', 'Total', '(%)'
       ],
       tableRows: [
-        'C = Cartografía', 'CAT = Catálogo', 'B = Bibliografía', 'I = Iconografía',
+        'C= Cartografía', 'CAT = Catálogo', 'B= Bibliografía', 'I= Iconografía',
         'IMP = Impreso/Periódico-Boletín', 'M = Manuscrito',
         'PPC = Proceso político y civil', 'RELAT = Informe'
       ],
       tableTotals: ['Total', 'Total de fuentes'],
       metadataTitles: [
-        'Número del documento (N.º)', 'Archivo consultado', 'Tipo de fuente', 'Título de la fuente',
-        'Número de páginas', 'Área de interés (temática)', 'Año de la fuente', 'Descripción de la fuente',
-        'Enlace al archivo', 'Código de referencia', 'Ciudad/país'
+        'Número del documento en la cartografía', 'Sigla del archivo consultado', 'Tipo de fuente recopilada', 'Título de la fuente',
+        'Número de páginas', 'Área de interés/temática', 'Año de la fuente', 'Descripción sumaria de la fuente',
+        'Enlace de acceso a la fuente en PDF', 'Código de referencia', 'Ciudad/País'
       ],
       metadataDescriptions: [
         'Numeración fija asignada para identificar de forma exclusiva cada documento registrado en la base de datos de la cartografía digital.',
@@ -287,14 +291,24 @@ const TRADUCOES = {
         'Ubicación del archivo histórico o de la biblioteca.'
       ],
       metadataHeading: 'Descripción de los metadatos',
-      finalParagraph: 'El modelo de la base de datos se desarrolló y alojó en línea con la colaboración del Prof. Dr. Luiz Machado y del becario e investigador Gabriel Borba, integrantes del curso de Juegos Digitales del Instituto Federal de Educación, Ciencia y Tecnología de Bahía (IFBA), campus Lauro de Freitas.'
+      finalParagraph: 'El modelo de la base de datos se desarrolló y alojó en línea con la colaboración del Prof. Dr. Luiz Machado y del becario e investigador Gabriel Borba, integrantes del curso de Juegos Digitales del Instituto Federal de Educación, Ciencia y Tecnología de Bahía (IFBA), campus Lauro de Freitas.',
+      chartCaptions: [
+        'Gráfico 1 – Archivos/Bibliotecas – Cantidad de Documentos Mapeados',
+        'Gráfico 2– Archivos/Bibliotecas – Cantidad y (%) de Documentos Mapeados por Tipologías'
+      ],
+      sourceLabels: [
+        'Fuentes: ADBMNE, AHU, ANTT, BFCHS, BNP, 2015.',
+        'Fuentes: ADBMNE, AHU, ANTT, BFCHS, BNP, 2015.',
+        'Fuentes: ADBMNE, AHU, ANTT, BFCHS, BNP, 2015.',
+        'Fuentes: ADBMNE, AHU, ANTT, BFCHS, BNP, 2015.'
+      ]
     },
     'direitos-autorais': {
       eyebrow: 'Aspectos legales',
       heading: 'Derechos de autor',
       caption: '<strong>Mano protectora sobre el escudo:</strong> La mano abierta sobre el escudo simboliza cuidado, tutela y protección; no posesión, sino custodia responsable.',
       paragraphs: [
-        'Para elaborar esta CDFHMA sobre religiones y religiosidades africanas y afrobrasileñas, es necesario aclarar algunas cuestiones sobre los derechos de autor. Los libros y documentos de archivos históricos que han pasado al dominio público pueden utilizarse libremente, reproducirse, distribuirse y adaptarse sin autorización previa.',
+        'Para elaborar este catálogo/mapeo, es necesario aclarar algunas cuestiones sobre los derechos de autor. Los libros y documentos de archivos históricos que pasan al dominio público pueden utilizarse libremente. Se permite su reproducción, distribución y adaptación sin autorización previa.',
         'En Brasil, la Ley n.º 9.610/98 (Ley de Derechos de Autor) garantiza la autoría y los derechos de uso, disfrute y distribución durante 70 años después de la muerte del autor; durante ese período se requiere autorización. Los documentos gubernamentales producidos por organismos públicos —como actas, leyes e informes oficiales conservados en archivos históricos— no están protegidos por derechos de autor y pueden utilizarse libremente por ser de interés público, siempre respetando la Ley n.º 13.709/2018 (Ley General de Protección de Datos, LGPD).',
         'En cuanto a la digitalización y los derechos sobre las copias, cada fuente catalogada se identifica con un número secuencial de la cartografía, el nombre o la sigla del archivo, el tipo y el título de la fuente, el número de páginas del archivo disponible, el área temática, el año, una descripción resumida, el código de referencia y un enlace al documento digitalizado. El acceso mediante los enlaces puede ser total o parcial. También ofrecemos los sitios institucionales de los archivos y bibliotecas consultados para facilitar la localización y verificación de las fuentes en sus colecciones originales.',
         'Dado que esta cartografía se organizó en 2026, las obras y documentos aquí enumerados están sujetos a las siguientes condiciones:'
@@ -310,22 +324,21 @@ const TRADUCOES = {
       heading: 'Sobre la curaduría digital',
       caption: '<strong>Manos de una persona mayor sobre una cesta tejida:</strong> La curaduría como sabiduría ancestral: manos experimentadas que seleccionan con criterio.',
       paragraphs: [
-        'La definición de los espacios de almacenamiento de objetos digitales mediante repositorios de contenidos y la creación de metadatos es una etapa importante para dar continuidad a la digitalización y al mantenimiento del repositorio CDFHMA. Este proceso, denominado curaduría digital, es fundamental para preservar la calidad, la integridad y la continuidad de los objetos digitales durante todo su ciclo de vida.',
-        'La digitalización y la curaduría digital son procesos complementarios. La digitalización transforma un documento físico en una representación digital, mientras que la curaduría incorpora información y procedimientos para preservar y contextualizar esa representación. La fuente digitalizada no debe confundirse con el documento original: el paso del soporte físico al entorno digital implica pérdidas, desplazamientos y nuevas formas de mediación. Por ello, la fuente digitalizada constituye una representación inmaterial del documento.',
-        'El análisis documental de objetos digitales no puede limitarse al contenido textual que aparece en pantalla. También es necesario investigar quién produjo el documento, en qué circunstancias y con qué finalidad, en qué soporte, dónde se conservó y mediante qué procesos llegó al entorno digital. En la segunda fase de la cartografía digital, la curaduría realizará un seguimiento permanente y actualizará los documentos digitalizados procedentes de archivos públicos de Salvador, Santo Amaro da Purificação, Río de Janeiro y Belo Horizonte.',
-        'El curador digital responsable es <strong>Erivaldo Sales Nunes</strong>, historiador brasileño natural de Salvador, Bahía. Realizó una estancia posdoctoral en Historia en la Universidad Federal de Minas Gerais (UFMG) en 2025–2026 y obtuvo el doctorado en Historia Social por la Universidad Federal de Bahía (UFBA) en 2017, con una estancia doctoral en Antropología en la Universidade Nova de Lisboa, Portugal. Desde 2011 es profesor titular de Historia en educación básica, técnica y tecnológica en el Instituto Federal de Educación, Ciencia y Tecnología de Bahía (IFBA).',
-        'Para consultar su trayectoria académica, visite su Currículo Lattes en <a href="http://lattes.cnpq.br/1891027810023631" target="_blank" rel="noopener">lattes.cnpq.br/1891027810023631</a>. Sus principales publicaciones están disponibles en <a href="https://linktr.ee/erivaldonunes?utm_source=linktree_profile_share" target="_blank" rel="noopener">linktr.ee/erivaldonunes</a>.'
+        'La definición de los espacios de custodia de los objetos digitales mediante repositorios de contenidos y la creación de metadatos es una etapa relevante que articulará y dará continuidad a la digitalización y al mantenimiento del repositorio, aquí denominado «Curaduría digital» (Gregório, Costa, Maciel, 2025).',
+        'Como curador digital, deseo garantizar la preservación, la calidad, la integridad y la continuidad de los objetos digitales durante todo su ciclo de vida. Todo curador cuenta una historia. En este repositorio procuré seleccionar, digitalizar, sistematizar y difundir documentos sobre la historia de las religiones y religiosidades africanas, afrobrasileñas y amefricanas, fechados en la primera mitad del siglo XX.',
+        'Además de ser el curador digital responsable, realicé una estancia posdoctoral en Historia en la Universidad Federal de Minas Gerais (UFMG). Concluí el doctorado en Historia Social en la Universidad Federal de Bahía (UFBA), con una estancia doctoral en Antropología en la Universidade Nova de Lisboa, Portugal. Soy Profesor Titular de Historia en la Educación Básica, Técnica y Tecnológica del Instituto Federal de Educación, Ciencia y Tecnología de Bahía (IFBA).',
+        'Para acceder a mi trayectoria académica, consulte mi Currículo Lattes en <a href="http://lattes.cnpq.br/1891027810023631" target="_blank" rel="noopener">http://lattes.cnpq.br/1891027810023631</a>. Para consultar mis principales publicaciones, visite <a href="https://linktr.ee/erivaldonunes?utm_source=linktree_profile_share" target="_blank" rel="noopener">https://linktr.ee/erivaldonunes?utm_source=linktree_profile_share</a>.'
       ],
       subheading: 'Curador responsable',
       contact: 'Contacto: <a href="mailto:cartdigitalfh@gmail.com">cartdigitalfh@gmail.com</a>'
     },
     parceiros: {
       eyebrow: 'Red de colaboración',
-      heading: 'Socios institucionales y sitios de consulta',
+      heading: 'Socios, sitios institucionales y referencias',
       caption: '<strong>Círculo de manos unidas:</strong> Siete manos entrelazadas en una rueda, símbolo de cooperación, alianza y confianza mutua. Cada mano representa a un socio.',
       paragraphs: [
         'Los socios institucionales aquí mencionados están vinculados a las investigaciones de doctorado (2012–2017) y posdoctorado (2025–2026), ambas realizadas en Brasil, con una estancia doctoral en Lisboa, Portugal, en 2015.',
-        'Se puede acceder directamente a los archivos y bibliotecas que forman parte de esta cartografía mediante los siguientes enlaces:'
+        'En cuanto a los sitios institucionales para buscar y consultar fuentes históricas, se puede acceder directamente a los archivos y bibliotecas que forman parte de esta cartografía mediante los siguientes enlaces:'
       ],
       partnerHeadings: [
         'Agencia de financiación', 'Universidades públicas y privadas',
@@ -333,13 +346,16 @@ const TRADUCOES = {
       ],
       subheading: 'Sitios institucionales para buscar y consultar fuentes históricas',
       archiveLinks: [
-        'Archivo Diplomático y Biblioteca del Ministerio de Asuntos Exteriores:',
+        'Archivo Diplomático y Biblioteca Ministerio de Asuntos Exteriores:',
         'Archivo Histórico Ultramarino:',
         'Archivo Nacional de Torre do Tombo:',
-        'Biblioteca de la Facultad de Ciencias Sociales y Humanas / Universidade Nova de Lisboa:',
+        'Biblioteca de la Facultad de Ciencias Sociales y Humanas/Universidade Nova de Lisboa:',
         'Biblioteca Nacional de Portugal:',
         'Biblioteca Nacional Digital de Portugal:'
-      ]
+      ],
+      referenceHeading: 'Referencias',
+      referenceIntro: 'En cuanto a las referencias bibliográficas que fundamentaron el texto de presentación de este sitio/base de datos, destaco las siguientes fuentes:',
+      referenceCaption: '<strong>Libro abierto con dos formas de conocimiento:</strong> La página izquierda muestra 16 Adinkras (escritura africana/conocimiento codificado); la derecha, espirales (oralidad y flujo de la historia narrada).'
     },
     referencias: {
       eyebrow: 'Bibliografía consultada',
@@ -353,37 +369,37 @@ const ALT_TEXTOS = {
   en: {
     home: ['Catalog chest'],
     'quem-somos': ['About us'],
-    'onde-chegar': ['Where we are going', 'Expanded digital cartography logo'],
-    'recorte-temporal': ['Time frame'],
-    'sobre-cdfhma': ['About the Digital Cartography'],
+    'onde-chegar': ['Where we are going', 'Sankofa image'],
+    'sobre-cdfhma': ['About the Digital Mapping', 'Graph 1: Distribution of Documents by Archives/Libraries', 'Graph 2: Quantity and percentage of sources by types'],
     'direitos-autorais': ['Copyright'],
     'curadoria-digital': ['Digital curation'],
-    parceiros: ['Institutional partners and websites'],
+    parceiros: ['Institutional partners and websites', 'Open book with two forms of knowledge'],
     referencias: ['References']
   },
   es: {
     home: ['Baúl del catálogo'],
     'quem-somos': ['Quiénes somos'],
-    'onde-chegar': ['Hacia dónde vamos', 'Logotipo de la cartografía digital ampliada'],
-    'recorte-temporal': ['Marco temporal'],
-    'sobre-cdfhma': ['Sobre la cartografía digital'],
+    'onde-chegar': ['Hacia dónde vamos', 'Imagen de Sankofa'],
+    'sobre-cdfhma': ['Sobre el mapeo digital', 'Gráfico 1: Distribución de documentos por archivos/bibliotecas', 'Gráfico 2: Cantidad y porcentaje de fuentes por tipologías'],
     'direitos-autorais': ['Derechos de autor'],
     'curadoria-digital': ['Curaduría digital'],
-    parceiros: ['Socios institucionales y sitios web'],
+    parceiros: ['Socios institucionales y sitios web', 'Libro abierto con dos formas de conocimiento'],
     referencias: ['Referencias']
   }
 };
 
 function substituir(selector, valores, contexto = document, usarHtml = true) {
   const elementos = contexto.querySelectorAll(selector);
+  if (elementos.length === 0 || valores.length === 0) return;
+  const limite = Math.min(elementos.length, valores.length);
   if (elementos.length !== valores.length) {
-    console.error(`Traducción incompleta para "${selector}": se esperaban ${elementos.length} textos y hay ${valores.length}.`);
-    return;
+    console.warn(`Traducción incompleta para "${selector}": se esperaban ${elementos.length} textos y hay ${valores.length}. Usando os ${limite} primeiros disponíveis.`);
   }
-  elementos.forEach((elemento, indice) => {
+  for (let indice = 0; indice < limite; indice += 1) {
+    const elemento = elementos[indice];
     if (usarHtml) elemento.innerHTML = valores[indice];
     else elemento.textContent = valores[indice];
-  });
+  }
 }
 
 function traduzirInterface(idioma) {
@@ -414,7 +430,7 @@ function traduzirInterface(idioma) {
     idioma === 'en' ? 'Institutional image' : 'Imagen institucional';
   substituir('.site-nav .site-nav-row:first-child a, .site-nav .site-nav-row--fichario a', texto.nav, document, false);
   document.querySelector('footer').textContent = texto.footer;
-  const images = document.querySelectorAll('.page-intro-figure img, .page-figure img, .content-image-frame img');
+  const images = document.querySelectorAll('.page-intro-figure img, .page-figure img, .content-image-frame img, .chart-figure img');
   const alternativeTexts = ALT_TEXTOS[idioma][pagina];
   if (images.length !== alternativeTexts.length) {
     console.error(`Textos alternativos incompletos para a página "${pagina}" (${idioma}).`);
@@ -455,13 +471,28 @@ function traduzirInterface(idioma) {
     const conteudo = document.querySelector('.content-page');
     conteudo.querySelector('.content-eyebrow').textContent = traducao.eyebrow;
     conteudo.querySelector('h2').textContent = traducao.heading;
-    substituir('.page-figure-caption', [traducao.caption], conteudo);
+    substituir(
+      '.content-page > .content-wrap > .content-body-with-image > .page-figure > .page-figure-caption',
+      [traducao.caption],
+      conteudo
+    );
 
     if (traducao.paragraphs) {
-      substituir('.content-text > p:not(.ref-item)', traducao.paragraphs, conteudo);
+      substituir(
+        '.content-body-with-image:not(.temporal-block) > .content-text > p:not(.ref-item):not(.chart-source):not(.table-source)',
+        traducao.paragraphs,
+        conteudo
+      );
+    }
+    if (traducao.temporalParagraphs) {
+      substituir('.temporal-block .content-text > p', traducao.temporalParagraphs, conteudo);
+      const sankofaCaption = conteudo.querySelector('.sankofa-caption');
+      if (sankofaCaption) {
+        sankofaCaption.textContent = traducao.sankofaCaption;
+      }
     }
     if (traducao.listItems) substituir('.content-text ul:first-of-type li', traducao.listItems, conteudo, false);
-    if (traducao.subheading) substituir('.content-text h3', [traducao.subheading], conteudo, false);
+    if (traducao.subheading) substituir('.content-text > h3', [traducao.subheading], conteudo, false);
     if (traducao.contact) substituir('.contact-box', [traducao.contact], conteudo);
     if (traducao.partnerHeadings) substituir('.partner-cols h4', traducao.partnerHeadings, conteudo, false);
     if (traducao.archiveLinks) {
@@ -475,6 +506,18 @@ function traduzirInterface(idioma) {
       } else {
         console.error('A quantidade de links institucionais não corresponde à tradução.');
       }
+    }
+    if (traducao.referenceHeading) {
+      const heading = conteudo.querySelector('.references-section > h3');
+      if (heading) heading.textContent = traducao.referenceHeading;
+      const intro = conteudo.querySelector('.reference-intro');
+      if (intro) intro.textContent = traducao.referenceIntro;
+      const caption = conteudo.querySelector('.references-section .page-figure-caption');
+      if (caption) caption.innerHTML = traducao.referenceCaption;
+    }
+    if (traducao.chartCaptions) {
+      substituir('.chart-figure figcaption', traducao.chartCaptions, conteudo, false);
+      substituir('.chart-source, .table-source', traducao.sourceLabels, conteudo, false);
     }
     if (traducao.tableCaptions) substituir('.info-table caption', traducao.tableCaptions, conteudo, false);
     if (traducao.tableHeaders) {
