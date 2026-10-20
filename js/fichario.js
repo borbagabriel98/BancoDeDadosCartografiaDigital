@@ -48,7 +48,35 @@ const textosCatalogo = {
     openFile: 'Open digitized file →',
     unavailable: 'Link unavailable',
     sourceTypes: 'Source types',
-    archives: 'Archives'
+    archives: 'Archives',
+    originalTitle: 'Original title',
+    tipos: {
+      'Bibliografia': 'Bibliography',
+      'Bibliografia/Jornal': 'Bibliography/Newspaper',
+      'Cartografia': 'Cartography',
+      'Catálogo': 'Catalog',
+      'Iconografia': 'Iconography',
+      'Impresso/Jornal-Boletim': 'Printed material/Newspaper-Bulletin',
+      'Manuscrito': 'Manuscript',
+      'Processo Político e Civil': 'Political and Civil Proceedings',
+      'Relatório': 'Report'
+    },
+    legendaTipos: {
+      C: 'Cartography', B: 'Bibliography', I: 'Iconography', F: 'Photography',
+      D: 'Official document', M: 'Manuscript', A: 'Audio/Oral testimony',
+      IMP: 'Printed material/Newspaper-Bulletin', PPC: 'Political and Civil Proceedings',
+      CAT: 'Catalog', RELAT: 'Report'
+    },
+    legendaArquivos: {
+      ADBMNE: 'Diplomatic Archives and Library of the Ministry of Foreign Affairs',
+      AHU: 'Overseas Historical Archive',
+      ANTT: 'National Archive of Torre do Tombo',
+      BFCHS: 'Library of the School of Social Sciences and Humanities, Universidade Nova de Lisboa',
+      BNP: 'National Library of Portugal'
+    },
+    anos: { 'Sem data': 'Undated', 'Séculos XVI ao XX': '16th to 20th centuries', 'Séculos XVII ao XX': '17th to 20th centuries' },
+    cidades: { 'Lisboa': 'Lisbon' },
+    paises: { 'PT': 'Portugal' }
   },
   es: {
     year: 'Año',
@@ -59,7 +87,35 @@ const textosCatalogo = {
     openFile: 'Abrir archivo digitalizado →',
     unavailable: 'Enlace no disponible',
     sourceTypes: 'Tipos de fuente',
-    archives: 'Archivos'
+    archives: 'Archivos',
+    originalTitle: 'Título original',
+    tipos: {
+      'Bibliografia': 'Bibliografía',
+      'Bibliografia/Jornal': 'Bibliografía/Periódico',
+      'Cartografia': 'Cartografía',
+      'Catálogo': 'Catálogo',
+      'Iconografia': 'Iconografía',
+      'Impresso/Jornal-Boletim': 'Impreso/Periódico-Boletín',
+      'Manuscrito': 'Manuscrito',
+      'Processo Político e Civil': 'Proceso político y civil',
+      'Relatório': 'Informe'
+    },
+    legendaTipos: {
+      C: 'Cartografía', B: 'Bibliografía', I: 'Iconografía', F: 'Fotografía',
+      D: 'Documento oficial', M: 'Manuscrito', A: 'Audio/Testimonio oral',
+      IMP: 'Impreso/Periódico-Boletín', PPC: 'Proceso político y civil',
+      CAT: 'Catálogo', RELAT: 'Informe'
+    },
+    legendaArquivos: {
+      ADBMNE: 'Archivo Diplomático y Biblioteca del Ministerio de Asuntos Exteriores',
+      AHU: 'Archivo Histórico Ultramarino',
+      ANTT: 'Archivo Nacional de Torre do Tombo',
+      BFCHS: 'Biblioteca de la Facultad de Ciencias Sociales y Humanas de la Universidade Nova de Lisboa',
+      BNP: 'Biblioteca Nacional de Portugal'
+    },
+    anos: { 'Sem data': 'Sin fecha', 'Séculos XVI ao XX': 'Siglos XVI al XX', 'Séculos XVII ao XX': 'Siglos XVII al XX' },
+    cidades: {},
+    paises: { 'PT': 'Portugal' }
   }
 };
 const textoCatalogo = textosCatalogo[idioma] || {
@@ -101,7 +157,7 @@ function renderizar(){
   const ateVal = anoAte.value.trim() ? parseInt(anoAte.value, 10) : null;
 
   let lista = FONTES.filter(f=>{
-    const texto = `${f.titulo} ${f.descricao} ${f.palavrasChave}`.toLowerCase();
+    const texto = `${f.titulo} ${f.descricao} ${f.palavrasChave} ${f.textoOriginal || ''}`.toLowerCase();
     if (termo && !texto.includes(termo)) return false;
     if (arq && f.arquivo !== arq) return false;
     if (tipo && f.tipo !== tipo) return false;
@@ -124,7 +180,7 @@ function renderizar(){
       const bi = b.anoInicio === null ? Infinity : b.anoInicio;
       return ai - bi;
     }
-    if (criterio === 'titulo') return a.titulo.localeCompare(b.titulo, 'pt-BR');
+    if (criterio === 'titulo') return a.titulo.localeCompare(b.titulo, idioma || 'pt-BR');
     return a.id - b.id;
   });
 
@@ -144,6 +200,9 @@ function renderizar(){
       <div class="catalog-no">Nº ${String(f.id).padStart(4,'0')} · ${escapeHtml(f.arquivo)}</div>
       <span class="tipo-tag">${escapeHtml(f.tipo)}</span>
       <h3>${escapeHtml(f.titulo)}</h3>
+      ${(f.tituloOriginal && f.tituloOriginal !== f.titulo)
+        ? `<p class="titulo-original"><em>${textoCatalogo.originalTitle}:</em> ${escapeHtml(f.tituloOriginal)}</p>`
+        : ''}
       <p class="desc">${escapeHtml(f.descricao)}</p>
       <div class="tema">${escapeHtml(f.area)}</div>
       <div class="meta-row">
@@ -166,11 +225,38 @@ function renderizar(){
   el.addEventListener('change', renderizar);
 });
 
+async function traduzirFontes(fontes){
+  if (!textosCatalogo[idioma]) return fontes;
+  try{
+    const resp = await fetch(`fontes-${idioma}.json`, { cache: 'no-store' });
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    const traducoes = await resp.json();
+    return fontes.map(f=>{
+      const t = traducoes[f.id] || {};
+      return {
+        ...f,
+        tituloOriginal: f.titulo,
+        textoOriginal: `${f.titulo} ${f.descricao} ${f.area}`,
+        titulo: t.titulo || f.titulo,
+        descricao: t.descricao || f.descricao,
+        area: t.area || f.area,
+        tipo: textoCatalogo.tipos[f.tipo] || f.tipo,
+        ano: textoCatalogo.anos[f.ano] || f.ano,
+        cidade: textoCatalogo.cidades[f.cidade] || f.cidade,
+        pais: textoCatalogo.paises[f.pais] || f.pais
+      };
+    });
+  }catch(e){
+    console.error(`Falha ao carregar fontes-${idioma}.json; exibindo textos em português:`, e);
+    return fontes;
+  }
+}
+
 async function carregarDados(){
   try{
     const resp = await fetch('fontes.json', { cache: 'no-store' });
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
-    FONTES = await resp.json();
+    FONTES = await traduzirFontes(await resp.json());
     popularSelect(filtroArquivo, FONTES.map(f=>f.arquivo));
     popularSelect(filtroTipo, FONTES.map(f=>f.tipo));
     popularSelect(filtroArea, FONTES.map(f=>f.area));
@@ -195,7 +281,7 @@ function renderizarLegenda(){
         <div class="legenda-item">
           <span class="swatch" style="background:var(--c-${cod}, var(--brass))"></span>
           <span class="sigla">${escapeHtml(cod)}</span>
-          <span>${escapeHtml(TIPO_LEGENDA[cod] || '(adicionar legenda)')}</span>
+          <span>${escapeHtml((textoCatalogo.legendaTipos || TIPO_LEGENDA)[cod] || TIPO_LEGENDA[cod] || '(adicionar legenda)')}</span>
         </div>
       `).join('')}
     </div>`;
@@ -206,7 +292,7 @@ function renderizarLegenda(){
       ${arquivosUsados.map(sigla => `
         <div class="legenda-item">
           <span class="sigla">${escapeHtml(sigla)}</span>
-          <span>${escapeHtml(ARQUIVO_LEGENDA[sigla] || '(adicionar legenda)')}</span>
+          <span>${escapeHtml((textoCatalogo.legendaArquivos || ARQUIVO_LEGENDA)[sigla] || ARQUIVO_LEGENDA[sigla] || '(adicionar legenda)')}</span>
         </div>
       `).join('')}
     </div>`;
