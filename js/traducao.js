@@ -77,11 +77,11 @@ const TRADUCOES = {
       heading: 'About Us',
       caption: '<strong>Ubuntu:</strong> “I am because we are.” The three embracing figures represent community, mutual support, and ancestry.',
       paragraphs: [
-        'We are a thematic digital repository resulting from the postdoctoral research project entitled “Digital Cartography of Historical Sources in the Atlantic World: Afro-Brazilian Religions and Religious Practices,” developed at the Graduate Program in History (PPGHIS), at the School of Philosophy and Human Sciences (FAFICH) of the Federal University of Minas Gerais (UFMG). It brings together primary and secondary sources on the history of religions and religious practices located across the Atlantic world.',
-        'This repository is entitled “Digital Humanities in the Atlantic World: African and Afro-Brazilian Religions and Religious Practices.” It was organized by historian Prof. Dr. Erivaldo Sales Nunes, affiliated with the Federal Institute of Education, Science and Technology of Bahia (IFBA), Salvador campus. The project was supervised with the collaboration of Prof. Dr. Vanicléia Silva Santos (University of Pennsylvania/UFMG).',
-        'The catalog was structured and stored in a worldwide digital address, with the technological contribution of Prof. Dr. Luiz Machado and research fellow Gabriel Borba, both members of the Digital Games program at the Federal Institute of Education, Science and Technology of Bahia (IFBA), Lauro de Freitas campus.',
-        'The catalog brings together physical documents, mostly dating from the twentieth century, which were digitized as part of research carried out during a doctoral research period at Universidade Nova de Lisboa in 2015. These digital documents come from physical collections held in public historical archives and public and private libraries in Lisbon, Portugal.',
-        'The historical sources consulted here represent the first stage in the diffusion of multi-referenced knowledge (museum, geographic, historical, anthropological, and digital), making it visible through storage on a responsive website.'
+        'This thematic digital repository is entitled “Digital Humanities in the Atlantic World: African and Afro-Brazilian Religions and Religious Practices” and was organized by historian Prof. Dr. Erivaldo Sales Nunes, affiliated with the Federal Institute of Education, Science and Technology of Bahia (IFBA), Salvador campus. It brings together primary and secondary sources on the history of religions and religious practices located across the Atlantic world.',
+        'We are a digital repository resulting from the postdoctoral research project entitled “Digital Cartography of Historical Sources in the Atlantic World: Afro-Brazilian Religions and Religious Practices,” developed at the Graduate Program in History (PPGHIS), at the School of Philosophy and Human Sciences (FAFICH) of the Federal University of Minas Gerais (UFMG). The project was supervised with the collaboration of Prof. Dr. Vanicléia Silva Santos (University of Pennsylvania/UFMG).',
+        'The model for creating the digital repository and its database was structured and stored at an address on the World Wide Web. This technological contribution came from the collaboration of Prof. Dr. Luiz Machado and research fellow Gabriel Borba, members of the Digital Games program at the Federal Institute of Education, Science and Technology of Bahia (IFBA), Lauro de Freitas campus.',
+        'It is a mapping of physical documents, mostly dating from the twentieth century, which were digitized as a result of research carried out during a doctoral research period at Universidade Nova de Lisboa in 2015. On that occasion, the following historical archives and libraries were visited: the Diplomatic Archives and Library of the Ministry of Foreign Affairs (ADBMNE), the Overseas Historical Archive (AHU), the National Archive of Torre do Tombo (ANTT), the Library of the School of Social Sciences and Humanities of Universidade Nova de Lisboa (BFCHS/UNL), and the National Library of Portugal (BNP).',
+        'The historical sources consulted here represent the first stage in the diffusion of multi-referenced knowledge (museum, geographic, historical, anthropological, and digital), making it public through storage on a responsive website.'
       ]
     },
     'onde-chegar': {
@@ -223,11 +223,11 @@ const TRADUCOES = {
       heading: 'Quiénes somos',
       caption: '<strong>Ubuntu:</strong> «Yo soy porque nosotros somos». Las tres figuras abrazadas representan comunidad, apoyo mutuo y ancestralidad.',
       paragraphs: [
-        'Somos un repositorio digital temático fruto del proyecto de investigación posdoctoral titulado «Cartografía Digital de Fuentes Históricas en el Mundo Atlántico: Religiones y religiosidades afrobrasileñas», desarrollado en el Programa de Posgrado en Historia (PPGHIS) de la Facultad de Filosofía y Ciencias Humanas (FAFICH) de la Universidad Federal de Minas Gerais (UFMG), que reúne fuentes primarias y secundarias sobre la historia de las religiones y religiosidades localizadas territorialmente en el mundo atlántico.',
-        'Este repositorio se titula «Humanidades Digitales en el Mundo Atlántico: Religiones y religiosidades africanas y afrobrasileñas». Fue organizado por el historiador Prof. Dr. Erivaldo Sales Nunes, vinculado al Instituto Federal de Educación, Ciencia y Tecnología de Bahía (IFBA), campus Salvador. La supervisión del proyecto contó con la colaboración de la Profa. Dra. Vanicléia Silva Santos (University of Pennsylvania/UFMG).',
+        'Este repositorio digital temático se titula «Humanidades Digitales en el Mundo Atlántico: Religiones y religiosidades africanas y afrobrasileñas» y fue organizado por el historiador Prof. Dr. Erivaldo Sales Nunes, vinculado al Instituto Federal de Educación, Ciencia y Tecnología de Bahía (IFBA), campus Salvador. Reúne fuentes primarias y secundarias sobre la historia de las religiones y religiosidades localizadas territorialmente en el mundo atlántico.',
+        'Somos un repositorio digital fruto del proyecto de investigación posdoctoral titulado «Cartografía Digital de Fuentes Históricas en el Mundo Atlántico: Religiones y religiosidades afrobrasileñas», desarrollado en el Programa de Posgrado en Historia (PPGHIS) de la Facultad de Filosofía y Ciencias Humanas (FAFICH) de la Universidad Federal de Minas Gerais (UFMG). La supervisión del proyecto contó con la colaboración de la Profa. Dra. Vanicléia Silva Santos (University of Pennsylvania/UFMG).',
         'El modelo de creación del repositorio digital con base de datos se estructuró y almacenó en una dirección de la red de alcance mundial. Esa contribución tecnológica se realizó con la colaboración del Prof. Dr. Luiz Machado y del becario-investigador Gabriel Borba, integrantes del curso de Juegos Digitales del Instituto Federal de Educación, Ciencia y Tecnología de Bahía (IFBA), campus Lauro de Freitas.',
-        'El catálogo reúne documentos físicos, en su mayoría del siglo XX, digitalizados durante investigaciones realizadas en una estancia doctoral en la Universidade Nova de Lisboa en 2015. Estos documentos digitales proceden de colecciones físicas conservadas en archivos históricos públicos y bibliotecas públicas y privadas de Lisboa, Portugal.',
-        'Las fuentes históricas aquí consultadas representan la primera etapa de difusión de un conocimiento multirreferencial (museístico, geográfico, histórico, antropológico y digital), que se difunde mediante almacenamiento en un sitio web adaptable.'
+        'Se trata de un mapeo de documentos físicos, en su mayoría del siglo XX, que fueron digitalizados como resultado de investigaciones realizadas en una estancia doctoral en la Universidade Nova de Lisboa en 2015. En aquella ocasión se recorrieron los siguientes archivos históricos y bibliotecas: el Archivo Diplomático y Biblioteca del Ministerio de Asuntos Exteriores (ADBMNE), el Archivo Histórico Ultramarino (AHU), el Archivo Nacional de Torre do Tombo (ANTT), la Biblioteca de la Facultad de Ciencias Sociales y Humanas de la Universidade Nova de Lisboa (BFCHS/UNL) y la Biblioteca Nacional de Portugal (BNP).',
+        'Las fuentes históricas aquí consultadas representan la primera etapa de difusión de un conocimiento multirreferencial (museístico, geográfico, histórico, antropológico y digital), que se hace público mediante su almacenamiento en un sitio web adaptable.'
       ]
     },
     'onde-chegar': {
@@ -560,4 +560,35 @@ function traduzirInterface(idioma) {
   }
 }
 
+const ROTULOS_FONTE = {
+  pt: { grupo: 'Tamanho da letra', medio: 'A Médio', grande: 'A+ Grande' },
+  en: { grupo: 'Text size', medio: 'A Medium', grande: 'A+ Large' },
+  es: { grupo: 'Tamaño de letra', medio: 'A Mediano', grande: 'A+ Grande' }
+};
+
+function configurarTamanhoFonte(idioma) {
+  const seletor = document.querySelector('.font-size-switcher');
+  if (!seletor) return;
+  const rotulos = ROTULOS_FONTE[idioma];
+  seletor.setAttribute('aria-label', rotulos.grupo);
+  seletor.querySelector('.font-size-label').textContent = rotulos.grupo;
+  const botoes = seletor.querySelectorAll('button');
+
+  function aplicar(tamanho) {
+    if (tamanho === 'grande') document.documentElement.dataset.fonte = 'grande';
+    else delete document.documentElement.dataset.fonte;
+    botoes.forEach(botao => botao.setAttribute('aria-pressed', String(botao.dataset.fonte === tamanho)));
+  }
+
+  botoes.forEach(botao => {
+    botao.textContent = rotulos[botao.dataset.fonte];
+    botao.addEventListener('click', () => {
+      aplicar(botao.dataset.fonte);
+      try { localStorage.setItem('tamanhoFonte', botao.dataset.fonte); } catch (e) { /* preferência só nesta visita */ }
+    });
+  });
+  aplicar(document.documentElement.dataset.fonte === 'grande' ? 'grande' : 'medio');
+}
+
+configurarTamanhoFonte(IDIOMA_ATIVO);
 traduzirInterface(IDIOMA_ATIVO);
