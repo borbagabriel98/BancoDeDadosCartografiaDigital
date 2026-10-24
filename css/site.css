@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+3:wght@600&display=swap');
 
   :root{
     --paper: #EFE7D6;
@@ -26,6 +26,7 @@
 
     --escala-fonte: 1;
     --fonte-texto: 'Merriweather', 'Georgia', serif;
+    --fonte-menu: 'Source Sans 3', 'Segoe UI', Arial, sans-serif;
   }
 
   *{box-sizing:border-box;}
@@ -266,9 +267,10 @@
     width:100%;
   }
   .site-nav a{
-    font-family:var(--fonte-texto);
-    font-size:calc(10.5px * var(--escala-fonte));
-    letter-spacing:.07em;
+    font-family:var(--fonte-menu);
+    font-weight:600;
+    font-size:calc(13px * var(--escala-fonte));
+    letter-spacing:.04em;
     text-transform:uppercase;
     color:var(--ink-soft);
     background:transparent;
@@ -277,7 +279,8 @@
     border-radius:2px;
     cursor:pointer;
     transition: all .15s ease;
-    white-space:nowrap;
+    max-width:100%;
+    text-align:center;
   }
   .site-nav a:hover{
     color:var(--ink);
