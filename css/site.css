@@ -260,6 +260,17 @@
     justify-content:center;
     gap:6px;
   }
+  /* Mantém "Parceiros" e "Direitos Autorais" juntos: no celular o grupo é
+     transparente; em telas maiores os dois quebram de linha como um bloco só. */
+  .site-nav-par{ display:contents; }
+  @media (min-width:1024px){
+    .site-nav-par{
+      display:flex;
+      flex-wrap:nowrap;
+      gap:6px;
+    }
+    .site-nav-par a{ white-space:nowrap; }
+  }
   .site-nav-row--fichario{
     margin-top:2px;
     padding-top:10px;
@@ -675,6 +686,23 @@
     white-space:nowrap;
   }
   .count-tag b{ color:var(--ink); }
+
+  /* Telas estreitas: filtros em grade, para os rótulos não se encostarem */
+  @media (max-width:900px){
+    .drawer{ position:static; padding-left:24px; padding-right:24px; }
+    .drawer-row,
+    .drawer-row-secondary{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(140px, 1fr));
+      gap:12px;
+      align-items:end;
+      overflow-x:visible;
+    }
+    .drawer-row .field:has(#busca),
+    .drawer-row .count-tag{ grid-column:1 / -1; }
+    .drawer-row .count-tag{ text-align:center; padding-bottom:0; }
+    .field input, .field select, #busca{ min-width:0; }
+  }
 
   /* ---------- Grid de fichas ---------- */
   main{
