@@ -1,0 +1,40 @@
+name: Deploy por FTP
+
+# Envia o site ao servidor FTP a cada push na main.
+# Também pode ser disparado manualmente na aba Actions.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Evita dois envios simultâneos para o mesmo servidor.
+concurrency:
+  group: deploy-ftp
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v4
+
+      - name: Enviar arquivos por FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          # Variáveis opcionais (Settings > Secrets and variables > Actions > Variables)
+          protocol: ${{ vars.FTP_PROTOCOL || 'ftps' }}
+          port: ${{ vars.FTP_PORT || 21 }}
+          # Pasta de destino no servidor; precisa terminar com "/"
+          server-dir: ${{ vars.FTP_SERVER_DIR || './' }}
+          # Arquivos do repositório que não fazem parte do site
+          exclude: |
+            **/.git*
+            **/.git*/**
+            .github/**
+            README.md
+            ToDo
+            *.pdf
