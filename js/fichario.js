@@ -275,7 +275,7 @@ function renderizarLegenda(){
   const arquivosUsados = [...new Set(FONTES.map(f=>f.arquivo).filter(Boolean))].sort();
 
   const blocoTipos = `
-    <div class="legenda-grupo">
+    <div class="legenda-grupo com-swatch">
       <h4>${textoCatalogo.sourceTypes}</h4>
       ${tiposUsados.map(cod => `
         <div class="legenda-item">

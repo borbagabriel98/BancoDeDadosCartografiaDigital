@@ -867,6 +867,25 @@
     font-family:var(--fonte-texto);
     font-weight:700;
     min-width:44px;
+    flex-shrink:0;
+    white-space:nowrap;
+  }
+  /* Alinha as descrições pela sigla mais larga de cada grupo (ex.: ADBMNE) */
+  @supports (grid-template-columns: subgrid){
+    .legenda-grupo{
+      display:grid;
+      grid-template-columns:max-content 1fr;
+      column-gap:8px;
+      align-content:start;
+    }
+    .legenda-grupo.com-swatch{ grid-template-columns:max-content max-content 1fr; }
+    .legenda-grupo h4{ grid-column:1 / -1; }
+    .legenda-item{
+      display:grid;
+      grid-template-columns:subgrid;
+      grid-column:1 / -1;
+    }
+    .legenda-item .swatch{ align-self:center; }
   }
 
   .empty, .erro{
