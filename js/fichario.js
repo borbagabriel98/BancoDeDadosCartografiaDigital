@@ -18,7 +18,7 @@ const ARQUIVO_LEGENDA = {
   "ADBMNE": "Arquivo Diplomático e Biblioteca do Ministério dos Negócios Estrangeiros",
   "AHU": "Arquivo Histórico Ultramarino",
   "ANTT": "Arquivo Nacional Torre do Tombo",
-  "BFCHS": "Biblioteca da Faculdade de Ciências Humanas e Sociais da Universidade Nova de Lisboa",
+  "BFCSH": "Biblioteca da Faculdade de Ciências Sociais e Humanas da Universidade Nova de Lisboa",
   "BNP": "Biblioteca Nacional de Portugal",
 };
 
@@ -71,7 +71,7 @@ const textosCatalogo = {
       ADBMNE: 'Diplomatic Archives and Library of the Ministry of Foreign Affairs',
       AHU: 'Overseas Historical Archive',
       ANTT: 'National Archive of Torre do Tombo',
-      BFCHS: 'Library of the School of Social Sciences and Humanities, Universidade Nova de Lisboa',
+      BFCSH: 'Library of the School of Social Sciences and Humanities, Universidade Nova de Lisboa',
       BNP: 'National Library of Portugal'
     },
     anos: { 'Sem data': 'Undated', 'Séculos XVI ao XX': '16th to 20th centuries', 'Séculos XVII ao XX': '17th to 20th centuries' },
@@ -110,7 +110,7 @@ const textosCatalogo = {
       ADBMNE: 'Archivo Diplomático y Biblioteca del Ministerio de Asuntos Exteriores',
       AHU: 'Archivo Histórico Ultramarino',
       ANTT: 'Archivo Nacional de Torre do Tombo',
-      BFCHS: 'Biblioteca de la Facultad de Ciencias Sociales y Humanas de la Universidade Nova de Lisboa',
+      BFCSH: 'Biblioteca de la Facultad de Ciencias Sociales y Humanas de la Universidade Nova de Lisboa',
       BNP: 'Biblioteca Nacional de Portugal'
     },
     anos: { 'Sem data': 'Sin fecha', 'Séculos XVI ao XX': 'Siglos XVI al XX', 'Séculos XVII ao XX': 'Siglos XVII al XX' },

@@ -80,7 +80,7 @@ const TRADUCOES = {
         'This thematic digital repository is entitled “Digital Humanities in the Atlantic World: African and Afro-Brazilian Religions and Religious Practices” and was organized by historian Prof. Dr. Erivaldo Sales Nunes, affiliated with the Federal Institute of Education, Science and Technology of Bahia (IFBA), Salvador campus. It brings together primary and secondary sources on the history of religions and religious practices located across the Atlantic world.',
         'We are a digital repository resulting from the postdoctoral research project entitled “Digital Cartography of Historical Sources in the Atlantic World: Afro-Brazilian Religions and Religious Practices,” developed at the Graduate Program in History (PPGHIS), at the School of Philosophy and Human Sciences (FAFICH) of the Federal University of Minas Gerais (UFMG). The project was supervised with the collaboration of Prof. Dr. Vanicléia Silva Santos (University of Pennsylvania/UFMG).',
         'The model for creating the digital repository and its database was structured and stored at an address on the World Wide Web. This technological contribution came from the collaboration of Prof. Dr. Luiz Machado and research fellow Gabriel Borba, members of the Digital Games program at the Federal Institute of Education, Science and Technology of Bahia (IFBA), Lauro de Freitas campus.',
-        'It is a mapping of physical documents, mostly dating from the twentieth century, which were digitized as a result of research carried out during a doctoral research period at Universidade Nova de Lisboa in 2015. On that occasion, the following historical archives and libraries were visited: the Diplomatic Archives and Library of the Ministry of Foreign Affairs (ADBMNE), the Overseas Historical Archive (AHU), the National Archive of Torre do Tombo (ANTT), the Library of the School of Social Sciences and Humanities of Universidade Nova de Lisboa (BFCHS/UNL), and the National Library of Portugal (BNP).',
+        'It is a mapping of physical documents, mostly dating from the twentieth century, which were digitized as a result of research carried out during a doctoral research period at Universidade Nova de Lisboa in 2015. On that occasion, the following historical archives and libraries were visited: the Diplomatic Archives and Library of the Ministry of Foreign Affairs (ADBMNE), the Overseas Historical Archive (AHU), the National Archive of Torre do Tombo (ANTT), the Library of the School of Social Sciences and Humanities of Universidade Nova de Lisboa (BFCSH/UNL), and the National Library of Portugal (BNP).',
         'The historical sources consulted here represent the first stage in the diffusion of multi-referenced knowledge (museum, geographic, historical, anthropological, and digital), making it public through storage on a responsive website.'
       ]
     },
@@ -107,7 +107,7 @@ const TRADUCOES = {
       caption: '<strong>Connected map of Africa:</strong> The terracotta-colored continent, crossed by a network of bright nodes and lines, represents territory mapped digitally; each node is a story, a data point, or a community.',
       paragraphs: [
         'In this mapping, it was possible to systematize and catalog <strong>129 historical sources</strong>, distributed across three public archives and two libraries, one public and one private. Of these, 30 refer to primary sources (cartography, iconography, manuscripts, civil and political proceedings, and reports), while 99 are secondary sources (catalogs, bibliographies, and printed materials — newspapers and bulletins).',
-        'Public archives account for 72 sources, equivalent to 55.81% of the sources collected. The libraries account for 57 sources (44.19%). Among the institutions surveyed, according to Graph and Table 1, the AHU holds 28.68% (37), followed by the BFCHS at 24.81% (32) and the BNP at 19.38% (25). The ADBMNE accounts for 14.73% (19), and the ANTT for 12.40% (16).',
+        'Public archives account for 72 sources, equivalent to 55.81% of the sources collected. The libraries account for 57 sources (44.19%). Among the institutions surveyed, according to Graph and Table 1, the AHU holds 28.68% (37), followed by the BFCSH at 24.81% (32) and the BNP at 19.38% (25). The ADBMNE accounts for 14.73% (19), and the ANTT for 12.40% (16).',
         'Among the source types systematized according to Table 2 and Graph 2, bibliographic sources stand out at 48.06% (62), followed by printed sources at 17.05% (22) and catalogs at 11.63% (15). Iconography represents 10.08% (13), while manuscripts and civil/political proceedings each represent 4.65% (6). Reports and cartography complete the collection at 3.1% (4) and 0.78% (1), respectively.',
         'Of the 129 historical sources, only seven digital objects (documents) are unavailable on the website. According to the catalog numbering, these are: <strong>ADBMNE</strong> — items 8 and 12; <strong>AHU</strong> — item 56; <strong>ANTT</strong> — items 66, 67, and 68; <strong>BNP</strong> — item 123.',
         'The sources collected made it necessary to catalog and organize access to the documents in a database, initially structured in Microsoft Excel spreadsheets. Each record was cataloged using the following data categories, or metadata:'
@@ -118,7 +118,7 @@ const TRADUCOES = {
       ],
       tableHeaders: [
         'Archives', 'Numbering', 'Qtd Docs', '%',
-        'Source Types', 'ADBMNE', 'AHU', 'ANTT', 'BFCHS', 'BNP', 'Total', '(%)'
+        'Source Types', 'ADBMNE', 'AHU', 'ANTT', 'BFCSH', 'BNP', 'Total', '(%)'
       ],
       tableRows: [
         'C= Cartography', 'CAT = Catalog', 'B= Bibliography', 'I= Iconography',
@@ -150,10 +150,10 @@ const TRADUCOES = {
         'Graph 2– Archives/Libraries — Quantity and (%) of Documents Mapped by Types'
       ],
       sourceLabels: [
-        'Sources: ADBMNE, AHU, ANTT, BFCHS, BNP, 2015.',
-        'Sources: ADBMNE, AHU, ANTT, BFCHS, BNP, 2015.',
-        'Sources: ADBMNE, AHU, ANTT, BFCHS, BNP, 2015.',
-        'Sources: ADBMNE, AHU, ANTT, BFCHS, BNP, 2015.'
+        'Sources: ADBMNE, AHU, ANTT, BFCSH, BNP, 2015.',
+        'Sources: ADBMNE, AHU, ANTT, BFCSH, BNP, 2015.',
+        'Sources: ADBMNE, AHU, ANTT, BFCSH, BNP, 2015.',
+        'Sources: ADBMNE, AHU, ANTT, BFCSH, BNP, 2015.'
       ]
     },
     'direitos-autorais': {
@@ -227,7 +227,7 @@ const TRADUCOES = {
         'Este repositorio digital temático se titula «Humanidades Digitales en el Mundo Atlántico: Religiones y religiosidades africanas y afrobrasileñas» y fue organizado por el historiador Prof. Dr. Erivaldo Sales Nunes, vinculado al Instituto Federal de Educación, Ciencia y Tecnología de Bahía (IFBA), campus Salvador. Reúne fuentes primarias y secundarias sobre la historia de las religiones y religiosidades localizadas territorialmente en el mundo atlántico.',
         'Somos un repositorio digital fruto del proyecto de investigación posdoctoral titulado «Cartografía Digital de Fuentes Históricas en el Mundo Atlántico: Religiones y religiosidades afrobrasileñas», desarrollado en el Programa de Posgrado en Historia (PPGHIS) de la Facultad de Filosofía y Ciencias Humanas (FAFICH) de la Universidad Federal de Minas Gerais (UFMG). La supervisión del proyecto contó con la colaboración de la Profa. Dra. Vanicléia Silva Santos (University of Pennsylvania/UFMG).',
         'El modelo de creación del repositorio digital con base de datos se estructuró y almacenó en una dirección de la red de alcance mundial. Esa contribución tecnológica se realizó con la colaboración del Prof. Dr. Luiz Machado y del becario-investigador Gabriel Borba, integrantes del curso de Juegos Digitales del Instituto Federal de Educación, Ciencia y Tecnología de Bahía (IFBA), campus Lauro de Freitas.',
-        'Se trata de un mapeo de documentos físicos, en su mayoría del siglo XX, que fueron digitalizados como resultado de investigaciones realizadas en una estancia doctoral en la Universidade Nova de Lisboa en 2015. En aquella ocasión se recorrieron los siguientes archivos históricos y bibliotecas: el Archivo Diplomático y Biblioteca del Ministerio de Asuntos Exteriores (ADBMNE), el Archivo Histórico Ultramarino (AHU), el Archivo Nacional de Torre do Tombo (ANTT), la Biblioteca de la Facultad de Ciencias Sociales y Humanas de la Universidade Nova de Lisboa (BFCHS/UNL) y la Biblioteca Nacional de Portugal (BNP).',
+        'Se trata de un mapeo de documentos físicos, en su mayoría del siglo XX, que fueron digitalizados como resultado de investigaciones realizadas en una estancia doctoral en la Universidade Nova de Lisboa en 2015. En aquella ocasión se recorrieron los siguientes archivos históricos y bibliotecas: el Archivo Diplomático y Biblioteca del Ministerio de Asuntos Exteriores (ADBMNE), el Archivo Histórico Ultramarino (AHU), el Archivo Nacional de Torre do Tombo (ANTT), la Biblioteca de la Facultad de Ciencias Sociales y Humanas de la Universidade Nova de Lisboa (BFCSH/UNL) y la Biblioteca Nacional de Portugal (BNP).',
         'Las fuentes históricas aquí consultadas representan la primera etapa de difusión de un conocimiento multirreferencial (museístico, geográfico, histórico, antropológico y digital), que se hace público mediante su almacenamiento en un sitio web adaptable.'
       ]
     },
@@ -254,7 +254,7 @@ const TRADUCOES = {
       caption: '<strong>Mapa conectado de África:</strong> El continente en tonos terracota, atravesado por una red de nodos y líneas luminosas, representa un territorio cartografiado digitalmente; cada nodo es una historia, un dato o una comunidad.',
       paragraphs: [
         'En este mapeo fue posible sistematizar y catalogar <strong>129 fuentes históricas</strong>, distribuidas en tres archivos públicos y dos bibliotecas, una pública y otra privada. De ellas, 30 se refieren a fuentes primarias (cartografía, iconografía, manuscritos, procesos civiles y políticos e informes), y 99 son fuentes secundarias (catálogos, bibliografías e impresos —periódicos y boletines).',
-        'Los archivos públicos reúnen 72 fuentes, equivalentes al 55,81 % de las fuentes recopiladas. Las bibliotecas aportan 57 fuentes (44,19 %). Según el Gráfico y la Tabla 1, entre las instituciones investigadas el AHU concentra el 28,68 % (37), seguido por la BFCHS con el 24,81 % (32) y la BNP con el 19,38 % (25). El ADBMNE aporta el 14,73 % (19) y el ANTT el 12,40 % (16).',
+        'Los archivos públicos reúnen 72 fuentes, equivalentes al 55,81 % de las fuentes recopiladas. Las bibliotecas aportan 57 fuentes (44,19 %). Según el Gráfico y la Tabla 1, entre las instituciones investigadas el AHU concentra el 28,68 % (37), seguido por la BFCSH con el 24,81 % (32) y la BNP con el 19,38 % (25). El ADBMNE aporta el 14,73 % (19) y el ANTT el 12,40 % (16).',
         'Entre los tipos de fuentes sistematizados según la Tabla 2 y el Gráfico 2 destacan las fuentes bibliográficas, con el 48,06 % (62); los impresos, con el 17,05 % (22); y los catálogos, con el 11,63 % (15). La iconografía representa el 10,08 % (13), mientras que los manuscritos y los procesos políticos/civiles representan, cada uno, el 4,65 % (6). Los informes y la cartografía completan el conjunto con el 3,1 % (4) y el 0,78 % (1), respectivamente.',
         'De las 129 fuentes históricas, solo siete objetos digitales (documentos) no están disponibles en el sitio. Según la numeración del catálogo, son: <strong>ADBMNE</strong>: documentos 8 y 12; <strong>AHU</strong>: documento 56; <strong>ANTT</strong>: documentos 66, 67 y 68; <strong>BNP</strong>: documento 123.',
         'Las fuentes recopiladas hicieron necesario catalogar y organizar el acceso a los documentos mediante una base de datos, estructurada inicialmente en hojas de cálculo de Microsoft Excel. Cada registro se catalogó con las siguientes categorías de datos o metadatos:'
@@ -265,7 +265,7 @@ const TRADUCOES = {
       ],
       tableHeaders: [
         'Archivos', 'Numeración', 'Qtd Docs', '%',
-        'Tipo de fuentes', 'ADBMNE', 'AHU', 'ANTT', 'BFCHS', 'BNP', 'Total', '(%)'
+        'Tipo de fuentes', 'ADBMNE', 'AHU', 'ANTT', 'BFCSH', 'BNP', 'Total', '(%)'
       ],
       tableRows: [
         'C= Cartografía', 'CAT = Catálogo', 'B= Bibliografía', 'I= Iconografía',
@@ -297,10 +297,10 @@ const TRADUCOES = {
         'Gráfico 2– Archivos/Bibliotecas – Cantidad y (%) de Documentos Mapeados por Tipologías'
       ],
       sourceLabels: [
-        'Fuentes: ADBMNE, AHU, ANTT, BFCHS, BNP, 2015.',
-        'Fuentes: ADBMNE, AHU, ANTT, BFCHS, BNP, 2015.',
-        'Fuentes: ADBMNE, AHU, ANTT, BFCHS, BNP, 2015.',
-        'Fuentes: ADBMNE, AHU, ANTT, BFCHS, BNP, 2015.'
+        'Fuentes: ADBMNE, AHU, ANTT, BFCSH, BNP, 2015.',
+        'Fuentes: ADBMNE, AHU, ANTT, BFCSH, BNP, 2015.',
+        'Fuentes: ADBMNE, AHU, ANTT, BFCSH, BNP, 2015.',
+        'Fuentes: ADBMNE, AHU, ANTT, BFCSH, BNP, 2015.'
       ]
     },
     'direitos-autorais': {

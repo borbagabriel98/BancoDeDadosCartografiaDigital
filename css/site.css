@@ -260,15 +260,18 @@
     justify-content:center;
     gap:6px;
   }
-  /* Mantém "Parceiros" e "Direitos Autorais" juntos: no celular o grupo é
-     transparente; em telas maiores os dois quebram de linha como um bloco só. */
-  .site-nav-par{ display:contents; }
+  /* Mantém "Parceiros" e "Direitos Autorais" juntos: no celular os dois
+     quebram e ficam centralizados; em telas maiores ficam lado a lado. */
+  .site-nav-par{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:6px;
+    max-width:100%;
+  }
+  .site-nav a{ display:inline-block; }
   @media (min-width:1024px){
-    .site-nav-par{
-      display:flex;
-      flex-wrap:nowrap;
-      gap:6px;
-    }
+    .site-nav-par{ flex-wrap:nowrap; }
     .site-nav-par a{ white-space:nowrap; }
   }
   .site-nav-row--fichario{
@@ -898,6 +901,8 @@
     flex-shrink:0;
     white-space:nowrap;
   }
+  /* Respiro extra entre a sigla e o seu significado */
+  .legenda-item > span:last-child{ margin-left:12px; }
   /* Alinha as descrições pela sigla mais larga de cada grupo (ex.: ADBMNE) */
   @supports (grid-template-columns: subgrid){
     .legenda-grupo{
